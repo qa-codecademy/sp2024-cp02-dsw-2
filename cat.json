@@ -1,0 +1,49 @@
+{
+    "products": [
+      {
+        "id": "001",
+        "name": "Modern Sofa Set",
+        "category": "Living Room Furniture",
+        "price": 1200.00,
+        "isOnDiscount": false,
+        "discountedPrice": null,
+        "description": "A stylish modern sofa set featuring plush seating and sleek design. Perfect for contemporary living rooms.",
+        "imageUrl": "https://example.com/images/modern-sofa-set.jpg",
+        "stock": 15
+      },
+      {
+        "id": "002",
+        "name": "Vintage Coffee Table",
+        "category": "Dining Room Furniture",
+        "price": 450.00,
+        "isOnDiscount": true,
+        "discountedPrice": 360.00,
+        "description": "A beautifully crafted vintage coffee table with a distressed finish. Ideal for adding character to your dining room.",
+        "imageUrl": "https://example.com/images/vintage-coffee-table.jpg",
+        "stock": 20
+      },
+      {
+        "id": "003",
+        "name": "Contemporary Desk",
+        "category": "Office Furniture",
+        "price": 800.00,
+        "isOnDiscount": false,
+        "discountedPrice": null,
+        "description": "A sleek and functional contemporary desk designed for productivity. Features ample storage and ergonomic design.",
+        "imageUrl": "https://example.com/images/contemporary-desk.jpg",
+        "stock": 10
+      },
+      {
+        "id": "004",
+        "name": "Luxury King Bed",
+        "category": "Bedroom Furniture",
+        "price": 1500.00,
+        "isOnDiscount": true,
+        "discountedPrice": 1350.00,
+        "description": "Elevate your bedroom with this luxurious king bed featuring high-quality materials and a comfortable mattress.",
+        "imageUrl": "https://example.com/images/luxury-king-bed.jpg",
+        "stock": 5
+      }
+    ]
+  }
+  

@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.product-container  {
+        max-width: 300px;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 2px 2px 2px;
+        background-color: rgb(148, 170, 148);
+        border: 2px solid rgb(90, 76, 76);
+  }
+
+
+.product-card img {
+    width: 100%;
+  }
