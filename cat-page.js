@@ -1,6 +1,6 @@
 const productsContainerEl = document.querySelector(".products-container");
 
-const PRODUCTS_URL = "cay.json";
+const PRODUCTS_URL = "cat.json";
 
 function fetchProducts() {
   fetch(PRODUCTS_URL)
