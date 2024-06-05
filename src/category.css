@@ -1,0 +1,12 @@
+.col-md-5th {
+    flex: 0 0 19%;
+    max-width: 19%;
+    margin: 0.5%;
+}
+.card {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}

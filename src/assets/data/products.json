@@ -1,0 +1,133 @@
+
+
+[
+  {
+      "id": 1,
+      "name": "Product 1",
+      "category": "sofas",
+      "description": "Comfortable and stylish sofa.",
+      "isOnDiscount": true,
+      "image": "assets/data/images/1.jpeg",
+      "detailsImages": [
+        "assets/data/images/product7.jpg",
+        "assets/data/images/product6.jpg",
+        "assets/data/images/product9.webp"
+      ]
+  },
+  {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Description for product 2.",
+      "image": "assets/data/images/product2.webp",
+      "detailsImages": [
+          "assets/data/images/product7.jpg",
+          "assets/data/images/product7.jpg",
+          "assets/data/images/product7.jpg"
+      ]
+  },
+
+  {
+    "id": 2,
+    "name": "Product 2",
+    "description": "Description for product 2.",
+    "image": "assets/data/images/product2.webp",
+    "detailsImages": [
+        "assets/data/images/product2-1.webp",
+        "assets/data/images/product2-2.webp",
+        "assets/data/images/product2-3.webp"
+    ]
+},
+
+{
+  "id": 2,
+  "name": "Product 2",
+  "description": "Description for product 2.",
+  "image": "assets/data/images/product2.webp",
+  "detailsImages": [
+      "assets/data/images/product2-1.webp",
+      "assets/data/images/product2-2.webp",
+      "assets/data/images/product2-3.webp"
+  ]
+},
+{
+  "id": 1,
+  "name": "Product 1",
+  "category": "sofas",
+  "description": "Comfortable and stylish sofa.",
+  "isOnDiscount": true,
+  "image": "assets/data/images/1.jpeg",
+  "detailsImages": [
+    "assets/data/images/product7.jpg",
+    "assets/data/images/product6.jpg",
+    "assets/data/images/product9.webp"
+  ]
+},
+{
+  "id": 1,
+  "name": "Product 1",
+  "category": "sofas",
+  "description": "Comfortable and stylish sofa.",
+  "isOnDiscount": true,
+  "image": "assets/data/images/1.jpeg",
+  "detailsImages": [
+    "assets/data/images/product7.jpg",
+    "assets/data/images/product6.jpg",
+    "assets/data/images/product9.webp"
+  ]
+},
+{
+  "id": 1,
+  "name": "Product 1",
+  "category": "sofas",
+  "description": "Comfortable and stylish sofa.",
+  "isOnDiscount": true,
+  "image": "assets/data/images/1.jpeg",
+  "detailsImages": [
+    "assets/data/images/product7.jpg",
+    "assets/data/images/product6.jpg",
+    "assets/data/images/product9.webp"
+  ]
+},
+{
+  "id": 1,
+  "name": "Product 1",
+  "category": "sofas",
+  "description": "Comfortable and stylish sofa.",
+  "isOnDiscount": true,
+  "image": "assets/data/images/1.jpeg",
+  "detailsImages": [
+    "assets/data/images/product7.jpg",
+    "assets/data/images/product6.jpg",
+    "assets/data/images/product9.webp"
+  ]
+},
+{
+  "id": 1,
+  "name": "Product 1",
+  "category": "sofas",
+  "description": "Comfortable and stylish sofa.",
+  "isOnDiscount": true,
+  "image": "assets/data/images/1.jpeg",
+  "detailsImages": [
+    "assets/data/images/product7.jpg",
+    "assets/data/images/product6.jpg",
+    "assets/data/images/product9.webp"
+  ]
+},
+{
+  "id": 1,
+  "name": "Product 1",
+  "category": "sofas",
+  "description": "Comfortable and stylish sofa.",
+  "isOnDiscount": true,
+  "image": "assets/data/images/1.jpeg",
+  "detailsImages": [
+    "assets/data/images/product7.jpg",
+    "assets/data/images/product6.jpg",
+    "assets/data/images/product9.webp"
+  ]
+}
+
+
+  
+]
