@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const productImagesContainer = document.getElementById('product-images');
         productDetails.detailsImages.forEach(image => {
-            console.log('Adding image:', image);
+            console.log('Adding image:',image);
             const imgElement = document.createElement('img');
-            imgElement.src = 'assets/data/images/sofas/sofa1/' + image;
+            imgElement.src = image;
 
             imgElement.alt = productDetails.name;
             imgElement.classList.add('img-fluid', 'mb-2'); 

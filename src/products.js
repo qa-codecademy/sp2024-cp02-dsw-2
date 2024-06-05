@@ -34,3 +34,6 @@ function viewProductDetails(productId) {
       })
       .catch(error => console.error('Error fetching product details:', error));
 }
+
+
+
