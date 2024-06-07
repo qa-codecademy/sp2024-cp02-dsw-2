@@ -16,6 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
             imgElement.classList.add('img-fluid', 'mb-2'); 
             productImagesContainer.appendChild(imgElement);
         });
+
+        const priceContainer = document.getElementById('product-price');
+        if (productDetails.isOnDiscount) {
+       
+            const discountedPrice = productDetails.price * 0.9; 
+            priceContainer.innerHTML = `
+                <p class="text-danger"><strong>Discounted Price: $${discountedPrice.toFixed(2)}</strong></p>
+                <p class="text-muted"><del>Regular Price: $${productDetails.price.toFixed(2)}</del></p>
+            `;
+        } else {
+            priceContainer.innerHTML = `<p><strong>Price: $${productDetails.price.toFixed(2)}</strong></p>`;
+        }
     } else {
         console.error('No product details found in localStorage');
     }

@@ -10,6 +10,7 @@ fetch('assets/data/products.json')
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">${product.description}</p>
+                    <p class="card-text"><strong>Price: $${product.price.toFixed(2)}</strong></p>
                     <button class="btn btn-primary" onclick="viewProductDetails(${product.id})">Details</button>
                 </div>
             </div>

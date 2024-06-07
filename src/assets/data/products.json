@@ -6,6 +6,7 @@
       "name": "Sofa 1",
       "category": "furniture",
       "description": "Comfortable and stylish sofa.",
+      "price": 2399.99,
       "isOnDiscount": true,
       "image": "assets/data/images/1.jpeg",
       "detailsImages": [
@@ -18,6 +19,7 @@
       "id": 2,
       "name": "Product 2",
       "category": "living",
+      "price": 2399.99,
       "description": "Tables and chairs",
       "image": "assets/data/images/product2.webp",
       "detailsImages": [
@@ -30,6 +32,8 @@
   {
     "id": 2,
     "name": "Product 2",
+    "category": "living",
+    "price": 2399.99,
     "description": "Description for product 2.",
     "image": "assets/data/images/product2.webp",
     "detailsImages": [
@@ -42,6 +46,8 @@
 {
   "id": 2,
   "name": "Product 2",
+  "category": "living",
+  "price": 2399.99,
   "description": "Description for product 2.",
   "image": "assets/data/images/product2.webp",
   "detailsImages": [
@@ -54,6 +60,7 @@
   "id": 1,
   "name": "Product 1",
   "category": "sofas",
+  "price": 2399.99,
   "description": "Comfortable and stylish sofa.",
   "isOnDiscount": true,
   "image": "assets/data/images/1.jpeg",
@@ -67,6 +74,7 @@
   "id": 1,
   "name": "Product 1",
   "category": "sofas",
+  "price": 2399.99,
   "description": "Comfortable and stylish sofa.",
   "isOnDiscount": true,
   "image": "assets/data/images/1.jpeg",
@@ -80,6 +88,7 @@
   "id": 1,
   "name": "Product 1",
   "category": "sofas",
+  "price": 2399.99,
   "description": "Comfortable and stylish sofa.",
   "isOnDiscount": true,
   "image": "assets/data/images/1.jpeg",
@@ -93,6 +102,9 @@
   "id": 1,
   "name": "Product 1",
   "category": "sofas",
+  "price": 2399.99,
+  "discountedPrice": 2149.99,
+  
   "description": "Comfortable and stylish sofa.",
   "isOnDiscount": true,
   "image": "assets/data/images/1.jpeg",
@@ -106,6 +118,7 @@
   "id": 1,
   "name": "Product 1",
   "category": "sofas",
+  "price": 2399.99,
   "description": "Comfortable and stylish sofa.",
   "isOnDiscount": true,
   "image": "assets/data/images/1.jpeg",
@@ -119,6 +132,7 @@
   "id": 1,
   "name": "Product 1",
   "category": "sofas",
+  "price": 2399.99,
   "description": "Comfortable and stylish sofa.",
   "isOnDiscount": true,
   "image": "assets/data/images/1.jpeg",
