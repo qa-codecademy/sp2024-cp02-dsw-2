@@ -869,7 +869,8 @@
       "description": "Ambient table lamp that creates a warm and inviting atmosphere.",
       "imageUrl": "../images/tableLamps/ambientglow.jpg",
       "stock": "In Stock"
-    },
+    }, 
+    
     {
       "id": 81,
       "name": "Wall Lamp Elegant",
