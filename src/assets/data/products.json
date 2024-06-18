@@ -8,7 +8,11 @@
       "discountPrice": 2000,
       "isOnDiscount": true,
       "description": "",
-      "imageUrl": "../images/sofas/breat.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/breat.jpg",
+        "assets/data/images/sofas/breat1.jpg",
+        "assets/data/images/sofas/breat2.jpg"
+      ],
       "stock": 11
     },
     {
@@ -19,7 +23,11 @@
       "discountPrice": 500,
       "isOnDiscount": false,
       "description": "",
-      "imageUrl": "../images/sofas/laguno.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/laguno.jpg",
+        "assets/data/images/sofas/laguno1.jpg",
+        "assets/data/images/sofas/laguno2.jpg"
+      ],
       "stock": 21
     },
     {
@@ -30,7 +38,12 @@
       "discountPrice": 2000,
       "isOnDiscount": true,
       "description": "",
-      "imageUrl": "../images/sofas/omega.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/omega.jpg",
+        "assets/data/images/sofas/omega1.jpg",
+        "assets/data/images/sofas/omega2.jpg",
+        "assets/data/images/sofas/omega3.jpg"
+      ],
       "stock": 2
     },
     {
@@ -41,7 +54,12 @@
       "discountPrice": 0,
       "isOnDiscount": false,
       "description": "",
-      "imageUrl": "../images/sofas/montasi.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/montasi.jpg",
+        "assets/data/images/sofas/montasi1.jpg",
+        "assets/data/images/sofas/montasi2.jpg"
+        
+      ],
       "stock": 20
     },
     {
@@ -52,7 +70,12 @@
       "discountPrice": 2000,
       "isOnDiscount": true,
       "description": "",
-      "imageUrl": "../images/sofas/opera.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/opera.jpg",
+        "assets/data/images/sofas/opera1.jpg",
+        "assets/data/images/sofas/opera2.jpg"
+        
+      ],
       "stock": 10
     },
     {
@@ -63,7 +86,12 @@
       "discountPrice": 2000,
       "isOnDiscount": true,
       "description": "",
-      "imageUrl": "../images/sofas/rochelle.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/rochelle.jpg",
+        "assets/data/images/sofas/rochelle1.jpg",
+        "assets/data/images/sofas/rochelle2.jpg"
+        
+      ],
       "stock": 6
     },
     {
@@ -74,7 +102,14 @@
       "discountPrice": 2000,
       "isOnDiscount": true,
       "description": "",
-      "imageUrl": "../images/sofas/walter.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/walter.jpg",
+        "assets/data/images/sofas/walter1.jpg",
+        "assets/data/images/sofas/walter2.jpg"
+        
+      ],
+       
+      
       "stock": 32
     },
     {
@@ -85,7 +120,12 @@
       "discountPrice": 4000,
       "isOnDiscount": true,
       "description": "",
-      "imageUrl": "../images/sofas/varna.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/varna.jpg",
+        "assets/data/images/sofas/varna1.jpg",
+        "assets/data/images/sofas/varna2.jpg"
+        
+      ],
       "stock":1
     },
     {
@@ -96,7 +136,12 @@
       "discountPrice": 2000,
       "isOnDiscount": true,
       "description": "",
-      "imageUrl": "../images/sofas/vini.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/vini.jpg",
+        "assets/data/images/sofas/vini1.jpg",
+        "assets/data/images/sofas/vini2.jpg"
+        
+      ],
       "stock": 5
     },
     {
@@ -107,7 +152,12 @@
       "discountPrice": 2000,
       "isOnDiscount": true,
       "description": "",
-      "imageUrl": "../images/sofas/plum.jpg",
+      "imageUrl": [
+        "assets/data/images/sofas/plum.jpg",
+        "assets/data/images/sofas/plum1.jpg",
+        "assets/data/images/sofas/plum2.jpg"
+        
+      ],
       "stock": 11
     },
     {
@@ -118,7 +168,14 @@
       "discountPrice": 899,
       "isOnDiscount": true,
       "description": "A stylish and comfortable chair with a modern design.",
-      "imageUrl": "../images/chairs/laguno.jpg",
+      "imageUrl": [
+        "assets/data/images/chairs/laguno.jpg",
+        "assets/data/images/chairs/laguno1.jpg",
+        "assets/data/images/chairs/laguno2.jpg"
+
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -129,7 +186,13 @@
       "discountPrice": 750,
       "isOnDiscount": true,
       "description": "Elegant chair with a classic touch, perfect for any living room.",
-      "imageUrl": "../images/chairs/verona.jpg",
+      "imageUrl":  [
+        "assets/data/images/chairs/verona.jpg",
+        "assets/data/images/chairs/verona1.jpg",
+        "assets/data/images/chairs/verona2.jpg"
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -140,7 +203,13 @@
       "discountPrice": 0,
       "isOnDiscount": false,
       "description": "Comfortable chair with a sleek design, ideal for relaxation.",
-      "imageUrl": "../images/chairs/delfino.jpg",
+      "imageUrl":  [
+        "assets/data/images/chairs/delfino.jpg",
+        "assets/data/images/chairs/delfino1.jpg",
+        "assets/data/images/chairs/delfino2.jpg"
+        
+        
+      ],
       "stock": 10
     },
     {
@@ -151,7 +220,13 @@
       "discountPrice": 799,
       "isOnDiscount": true,
       "description": "Luxurious chair with premium materials and excellent craftsmanship.",
-      "imageUrl": "../images/chairs/bellini.jpg",
+      "imageUrl":  [
+        "assets/data/images/chairs/bellini.jpg",
+        "assets/data/images/chairs/bellini1.jpg",
+        "assets/data/images/chairs/bellini2.jpg"
+        
+        
+      ],
       "stock": 23
     },
     {
@@ -162,7 +237,13 @@
       "discountPrice": 0,
       "isOnDiscount": false,
       "description": "A robust and durable chair suitable for both indoor and outdoor use.",
-      "imageUrl": "../images/chairs/monterosso.jpg",
+      "imageUrl":  [
+        "assets/data/images/chairs/monterosso.jpg",
+        "assets/data/images/chairs/monterosso1.jpg",
+        "assets/data/images/chairs/monterosso2.jpg"
+        
+        
+      ],
       "stock": 22
     },
     {
@@ -173,7 +254,13 @@
       "discountPrice": 0,
       "isOnDiscount": false,
       "description": "A perfect blend of style and comfort, ideal for any setting.",
-      "imageUrl": "../images/chairs/riccardo.jpg",
+      "imageUrl":  [
+        "assets/data/images/chairs/riccardo.jpg",
+        "assets/data/images/chairs/riccardo1.jpg",
+        "assets/data/images/chairs/riccardo2.jpg"
+        
+        
+      ],
       "stock": 50
     },
     {
@@ -184,7 +271,13 @@
       "discountPrice": 0,
       "isOnDiscount": false,
       "description": "A chic chair with a contemporary design, adding elegance to any space.",
-      "imageUrl": "../images/chairs/lucano.jpg",
+      "imageUrl":  [
+        "assets/data/images/chairs/lucano.jpg",
+        "assets/data/images/chairs/lucano1.jpg",
+        "assets/data/images/chairs/lucano2.jpg"
+        
+        
+      ],
       "stock":11
     },
     {
@@ -195,7 +288,13 @@
       "discountPrice": 599,
       "isOnDiscount": true,
       "description": "Modern chair with ergonomic design for maximum comfort.",
-      "imageUrl": "../images/chairs/bellagio.jpg",
+      "imageUrl":  [
+        "assets/data/images/chairs/bellagio.jpg",
+        "assets/data/images/chairs/bellagio1.jpg",
+        "assets/data/images/chairs/bellagio2.jpg"
+        
+        
+      ],
       "stock": 14
     },
     {
@@ -206,7 +305,13 @@
       "discountPrice": 0,
       "isOnDiscount": false,
       "description": "Elegant chair with a minimalist design, perfect for any decor.",
-      "imageUrl": "../images/chairs/sorrento.jpg",
+      "imageUrl":  [
+        "assets/data/images/chairs/sorrento.jpg",
+        "assets/data/images/chairs/sorrento1.jpg",
+        "assets/data/images/chairs/sorrento2.jpg"
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -217,7 +322,13 @@
       "discountPrice": 700,
       "isOnDiscount": true,
       "description": "Stylish chair with a timeless design, ideal for modern interiors.",
-      "imageUrl": "../images/chairs/amalfi.jpg",
+      "imageUrl":  [
+        "assets/data/images/chairs/amalfi.jpg",
+        "assets/data/images/chairs/amalfi1.jpg",
+        "assets/data/images/chairs/amalfi2.jpg"
+        
+        
+      ],
       "stock": 33
     },
     {
@@ -228,7 +339,13 @@
       "discountPrice": 7000,
       "isOnDiscount": false,
       "description": "Spacious and elegant dining table, perfect for family gatherings.",
-      "imageUrl": "../images/diningTables/verona.jpg",
+      "imageUrl":  [
+        "assets/data/images/diningTables/verona.jpg",
+        "assets/data/images/diningTables/verona1.jpg",
+        "assets/data/images/diningTables/verona2.jpg"
+        
+        
+      ],
       "stock": 44
     },
     {
@@ -239,7 +356,13 @@
       "discountPrice": 7500,
       "isOnDiscount": true,
       "description": "Stylish dining table with a classic design, ideal for any home.",
-      "imageUrl": "../images/diningTables/capri.jpg",
+      "imageUrl":  [
+        "assets/data/images/diningTables/capri.jpg",
+        "assets/data/images/diningTables/capri1.jpg",
+        "assets/data/images/diningTables/capri2.jpg"
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -250,7 +373,13 @@
       "discountPrice": 6500,
       "isOnDiscount": true,
       "description": "Elegant dining table with a timeless design, perfect for any occasion.",
-      "imageUrl": "../images/diningTables/firenze.jpg",
+      "imageUrl":  [
+        "assets/data/images/diningTables/firenze.jpg",
+        "assets/data/images/diningTables/firenze1.jpg",
+        "assets/data/images/diningTables/firenze2.jpg"
+        
+        
+      ],
       "stock": 22
     },
     {
@@ -261,7 +390,13 @@
       "discountPrice": 6800,
       "isOnDiscount": true,
       "description": "Modern dining table with a sturdy frame, great for contemporary interiors.",
-      "imageUrl": "../images/diningTables/torino.jpg",
+      "imageUrl":  [
+        "assets/data/images/diningTables/torino.jpg",
+        "assets/data/images/diningTables/torino1.jpg",
+        "assets/data/images/diningTables/torino2.jpg"
+        
+        
+      ],
       "stock": 10
     },
     {
@@ -272,7 +407,13 @@
       "discountPrice": 7000,
       "isOnDiscount": true,
       "description": "Classic dining table offering a comfortable dining experience.",
-      "imageUrl": "../images/diningTables/palermo.jpg",
+      "imageUrl":  [
+        "assets/data/images/diningTables/palermo.jpg",
+        "assets/data/images/diningTables/palermo1.jpg",
+        "assets/data/images/diningTables/palermo2.jpg"
+        
+        
+      ],
       "stock": 5
     },
     {
@@ -283,7 +424,13 @@
       "discountPrice": 7500,
       "isOnDiscount": true,
       "description": "Beautiful dining table with a sophisticated design, perfect for any home.",
-      "imageUrl": "../images/diningTables/siena.jpg",
+      "imageUrl":  [
+        "assets/data/images/diningTables/siena.jpg",
+        "assets/data/images/diningTables/siena1.jpg",
+        "assets/data/images/diningTables/siena2.jpg"
+        
+        
+      ],
       "stock": 7
     },
     {
@@ -294,7 +441,13 @@
       "discountPrice": 7900,
       "isOnDiscount": false,
       "description": "Stylish and modern dining table, offering a comfortable design.",
-      "imageUrl": "../images/diningTables/ravello.jpg",
+      "imageUrl":  [
+        "assets/data/images/diningTables/ravello.jpg",
+        "assets/data/images/diningTables/ravello1.jpg",
+        "assets/data/images/diningTables/ravello2.jpg"
+        
+        
+      ],
       "stock": 14
     },
     {
@@ -305,7 +458,13 @@
       "discountPrice": 10000,
       "isOnDiscount": true,
       "description": "Modern kitchen with sleek cabinets and state-of-the-art appliances.",
-      "imageUrl": "../images/kitchens/nova.jpg",
+      "imageUrl":  [
+        "assets/data/images/kitchens/nova.jpg",
+        "assets/data/images/kitchens/nova1.jpg",
+        "assets/data/images/kitchens/nova2.jpg"
+        
+        
+      ],
       "stock": 32
     },
     {
@@ -316,7 +475,13 @@
       "discountPrice": 12000,
       "isOnDiscount": true,
       "description": "Elegant kitchen with high-end finishes and ample storage.",
-      "imageUrl": "../images/kitchens/elegance.jpg",
+      "imageUrl": [
+        "assets/data/images/kitchens/elegance.jpg",
+        "assets/data/images/kitchens/elegance1.jpg",
+        "assets/data/images/kitchens/elegance2.jpg"
+        
+        
+      ],
       "stock":3
        },
     {
@@ -327,7 +492,13 @@
       "discountPrice": 9000,
       "isOnDiscount": true,
       "description": "Spacious kitchen with a harmonious blend of modern and traditional styles.",
-      "imageUrl": "../images/kitchens/harmony.jpg",
+      "imageUrl": [
+        "assets/data/images/kitchens/harmony.jpg",
+        "assets/data/images/kitchens/harmony1.jpg",
+        "assets/data/images/kitchens/harmony2.jpg"
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -338,7 +509,13 @@
       "discountPrice": 15000,
       "isOnDiscount": true,
       "description": "Top-of-the-line kitchen with premium materials and cutting-edge technology.",
-      "imageUrl": "../images/kitchens/zenith.jpg",
+      "imageUrl": [
+        "assets/data/images/kitchens/zenith.jpg",
+        "assets/data/images/kitchens/zenith1.jpg",
+        "assets/data/images/kitchens/zenith2.jpg"
+        
+        
+      ],
       "stock": 15
     },
     {
@@ -349,7 +526,13 @@
       "discountPrice": 8000,
       "isOnDiscount": true,
       "description": "Innovative kitchen design that blends functionality with style.",
-      "imageUrl": "../images/kitchens/fusion.jpg",
+      "imageUrl": [
+        "assets/data/images/kitchens/fusion.jpg",
+        "assets/data/images/kitchens/fusion1.jpg",
+        "assets/data/images/kitchens/fusion2.jpg"
+        
+        
+      ],
       "stock": 3
     },
     {
@@ -360,7 +543,13 @@
       "discountPrice": 13000,
       "isOnDiscount": true,
       "description": "Prestigious kitchen with luxury finishes and advanced appliances.",
-      "imageUrl": "../images/kitchens/prestige.jpg",
+      "imageUrl": [
+        "assets/data/images/kitchens/prestige.jpg",
+        "assets/data/images/kitchens/prestige1.jpg",
+        "assets/data/images/kitchens/prestige2.jpg"
+        
+        
+      ],
       "stock": 2
     },
     {
@@ -371,7 +560,13 @@
       "discountPrice": 11000,
       "isOnDiscount": true,
       "description": "Bright and airy kitchen with an inviting ambiance and practical layout.",
-      "imageUrl": "../images/kitchens/aura.jpg",
+      "imageUrl": [
+        "assets/data/images/kitchens/aura.jpg",
+        "assets/data/images/kitchens/aura1.jpg",
+        "assets/data/images/kitchens/aura2.jpg"
+        
+        
+      ],
       "stock": 4
     },
     {
@@ -382,7 +577,13 @@
       "discountPrice": 800,
       "isOnDiscount": true,
       "description": "Elegant and sturdy bar stool with a natural oak finish, providing comfort and style.",
-      "imageUrl": "../images/bar_stools/alpine_oak.jpg",
+      "imageUrl": [
+        "assets/data/images/barStool/alpineoak.jpg",
+        "assets/data/images/barStool/alpineoak1.jpg",
+        "assets/data/images/barStool/alpineoak2.jpg"
+        
+        
+      ],
       "stock": 2
     },
     {
@@ -393,7 +594,13 @@
       "discountPrice": 900,
       "isOnDiscount": true,
       "description": "Sleek and modern bar stool with a metal frame and comfortable seating, perfect for any contemporary space.",
-      "imageUrl": "../images/bar_stools/urban_chic.jpg",
+      "imageUrl": [
+        "assets/data/images/barStool/urbanchic.jpg",
+        "assets/data/images/barStool/urbanchic1.jpg",
+        "assets/data/images/barStool/urbanchic2.jpg"
+        
+        
+      ],
       "stock": 3
     },
     {
@@ -404,7 +611,13 @@
       "discountPrice": 700,
       "isOnDiscount": true,
       "description": "Light and airy bar stool with a coastal design, featuring a white-washed finish and woven seat.",
-      "imageUrl": "../images/bar_stools/coastal_breeze.jpg",
+      "imageUrl": [
+        "assets/data/images/barStool/coastalbreeze.jpg",
+        "assets/data/images/barStool/coastalbreeze1.jpg",
+        "assets/data/images/barStool/coastalbreeze2.jpg"
+        
+        
+      ],
       "stock": 14
     },
     {
@@ -415,7 +628,13 @@
       "discountPrice": 600,
       "isOnDiscount": true,
       "description": "Classic bar stool with vintage charm, featuring a distressed wood finish and cushioned seat for added comfort.",
-      "imageUrl": "../images/bar_stools/vintage_charm.jpg",
+      "imageUrl": [
+        "assets/data/images/barStool/vintagecharm.jpg",
+        "assets/data/images/barStool/vintagecharm1.jpg",
+        "assets/data/images/barStool/vintagecharm2.jpg"
+        
+        
+      ],
       "stock": 2
     },
     {
@@ -426,7 +645,13 @@
       "discountPrice": 500,
       "isOnDiscount": true,
       "description": "Contemporary bar stool with a luxurious faux leather seat and sleek chrome base.",
-      "imageUrl": "../images/bar_stools/modern_luxe.jpg",
+      "imageUrl": [
+        "assets/data/images/barStool/modernluxe.jpg",
+        "assets/data/images/barStool/modernluxe1.jpg",
+        "assets/data/images/barStool/modernluxe2.jpg"
+        
+        
+      ],
       "stock": 13
     },
     {
@@ -437,7 +662,13 @@
       "discountPrice": 4500,
       "isOnDiscount": true,
       "description": "Luxurious bed with a modern design, perfect for a stylish bedroom.",
-      "imageUrl": "../images/bedroom_bed/aurora.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/aurora.jpg",
+        "assets/data/images/bedroomBed/aurora1.jpg",
+        "assets/data/images/bedroomBed/aurora2.jpg"
+        
+        
+      ],
       "stock": 10
     },
     {
@@ -448,7 +679,13 @@
       "discountPrice": 7000,
       "isOnDiscount": true,
       "description": "Elegant and comfortable bed with a timeless design, providing a serene sleep experience.",
-      "imageUrl": "../images/bedroom_bed/serenity.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/serenity.jpg",
+        "assets/data/images/bedroomBed/serenity1.jpg",
+        "assets/data/images/bedroomBed/serenity2.jpg"
+        
+        
+      ],
       "stock": 4
     },
     {
@@ -459,7 +696,13 @@
       "discountPrice": 6000,
       "isOnDiscount": true,
       "description": "Beautiful bed with a harmonious blend of style and comfort, ideal for any bedroom.",
-      "imageUrl": "../images/bedroom_bed/harmony.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/harmony.jpg",
+        "assets/data/images/bedroomBed/harmony1.jpg",
+        "assets/data/images/bedroomBed/harmony2.jpg"
+        
+        
+      ],
       "stock":23
     },
     {
@@ -470,7 +713,13 @@
       "discountPrice": 5500,
       "isOnDiscount": true,
       "description": "Comfortable and sturdy bed with a minimalist design, offering a tranquil sleep environment.",
-      "imageUrl": "../images/bedroom_bed/tranquility.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/tranquility.jpg",
+        "assets/data/images/bedroomBed/tranquility1.jpg",
+        "assets/data/images/bedroomBed/tranquility2.jpg"
+        
+        
+      ],
       "stock": 4
     },
     {
@@ -481,7 +730,13 @@
       "discountPrice": 5000,
       "isOnDiscount": true,
       "description": "Modern bed with an elegant design, providing a perfect oasis for relaxation.",
-      "imageUrl": "../images/bedroom_bed/oasis.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/oasis.jpg",
+        "assets/data/images/bedroomBed/oasis1.jpg",
+        "assets/data/images/bedroomBed/oasis2.jpg"
+        
+        
+      ],
       "stock": 21
     },
     {
@@ -492,7 +747,13 @@
       "discountPrice": 6000,
       "isOnDiscount": true,
       "description": "Stylish bed with a luxurious feel, offering a blissful sleep experience.",
-      "imageUrl": "../images/bedroom_bed/elysium.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/elysium.jpg",
+        "assets/data/images/bedroomBed/elysium1.jpg",
+        "assets/data/images/bedroomBed/elysium2.jpg"
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -503,7 +764,13 @@
       "discountPrice": 4000,
       "isOnDiscount": true,
       "description": "Elegant bed with a classic design, providing comfort and style to any bedroom.",
-      "imageUrl": "../images/bedroom_bed/celeste.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/celeste.jpg",
+        "assets/data/images/bedroomBed/celeste1.jpg",
+        "assets/data/images/bedroomBed/celeste2.jpg"
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -514,7 +781,13 @@
       "discountPrice": 7500,
       "isOnDiscount": true,
       "description": "Luxurious bed with a contemporary design, perfect for creating a bedroom paradise.",
-      "imageUrl": "../images/bedroom_bed/paradise.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/paradise.jpg",
+        "assets/data/images/bedroomBed/paradise1.jpg",
+        "assets/data/images/bedroomBed/paradise2.jpg"
+        
+        
+      ],
       "stock": 1
     },
     {
@@ -525,7 +798,13 @@
       "discountPrice": 6800,
       "isOnDiscount": true,
       "description": "Comfortable and stylish bed with a modern design, providing a nirvana-like sleep experience.",
-      "imageUrl": "../images/bedroom_bed/nirvana.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/nirvana.jpg",
+        "assets/data/images/bedroomBed/nirvana1.jpg",
+        "assets/data/images/bedroomBed/nirvana2.jpg"
+        
+        
+      ],
       "stock": 13
     },
     {
@@ -536,7 +815,13 @@
       "discountPrice": 7200,
       "isOnDiscount": true,
       "description": "Elegant and comfortable bed with a sleek design, offering a blissful night’s sleep.",
-      "imageUrl": "../images/bedroom_bed/bliss.jpg",
+      "imageUrl": [
+        "assets/data/images/bedroomBed/bliss.jpg",
+        "assets/data/images/bedroomBed/bliss1.jpg",
+        "assets/data/images/bedroomBed/bliss2.jpg"
+        
+        
+      ],
       "stock": 13
     },
     {
@@ -547,7 +832,13 @@
       "discountPrice": 2500,
       "isOnDiscount": true,
       "description": "Spacious and stylish closet with ample storage, perfect for organizing your wardrobe.",
-      "imageUrl": "../images/closet/harmony.jpg",
+      "imageUrl": [
+        "assets/data/images/closet/harmony.jpg",
+        "assets/data/images/closet/harmony1.jpg",
+        "assets/data/images/closet/harmony2.jpg"
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -558,7 +849,13 @@
       "discountPrice": 3500,
       "isOnDiscount": true,
       "description": "Elegant closet with a sleek design, providing both style and functionality.",
-      "imageUrl": "../images/closet/serenity.jpg",
+      "imageUrl":  [
+        "assets/data/images/closet/serenity.jpg",
+        "assets/data/images/closet/serenity1.jpg",
+        "assets/data/images/closet/serenity2.jpg"
+        
+        
+      ],
       "stock": 11
     },
     {
@@ -569,7 +866,13 @@
       "discountPrice": 3000,
       "isOnDiscount": true,
       "description": "Modern closet with a minimalist design, offering a tranquil and organized space.",
-      "imageUrl": "../images/closet/tranquility.jpg",
+      "imageUrl":  [
+        "assets/data/images/closet/tranquility.jpg",
+        "assets/data/images/closet/tranquility1.jpg",
+        "assets/data/images/closet/tranquility2.jpg"
+        
+        
+      ],
       "stock": 23
     },
     {
@@ -580,7 +883,13 @@
       "discountPrice": 2800,
       "isOnDiscount": true,
       "description": "Functional closet with an elegant finish, providing a perfect oasis for your clothing.",
-      "imageUrl": "../images/closet/oasis.jpg",
+      "imageUrl":  [
+        "assets/data/images/closet/oasis.jpg",
+        "assets/data/images/closet/oasis1.jpg",
+        "assets/data/images/closet/oasis2.jpg"
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -591,7 +900,13 @@
       "discountPrice": 3200,
       "isOnDiscount": true,
       "description": "Luxurious closet with a sophisticated design, offering ample space for all your storage needs.",
-      "imageUrl": "../images/closet/elysium.jpg",
+      "imageUrl":  [
+        "assets/data/images/closet/elysium.jpg",
+        "assets/data/images/closet/elysium1.jpg",
+        "assets/data/images/closet/elysium2.jpg"
+        
+        
+      ],
       "stock": 10
     },
     {
@@ -602,7 +917,13 @@
       "discountPrice": 2000,
       "isOnDiscount": true,
       "description": "Elegant closet with a classic design, providing both style and practicality.",
-      "imageUrl": "../images/closet/celeste.jpg",
+      "imageUrl":  [
+        "assets/data/images/closet/celeste.jpg",
+        "assets/data/images/closet/celeste1.jpg",
+        "assets/data/images/closet/celeste2.jpg"
+        
+        
+      ],
       "stock": 12
     },
     {
@@ -613,7 +934,13 @@
       "discountPrice": 4000,
       "isOnDiscount": true,
       "description": "Luxurious closet with a contemporary design, perfect for organizing your wardrobe in style.",
-      "imageUrl": "../images/closet/paradise.jpg",
+      "imageUrl":  [
+        "assets/data/images/closet/paradise.jpg",
+        "assets/data/images/closet/paradise1.jpg",
+        "assets/data/images/closet/paradise2.jpg"
+        
+        
+      ],
       "stock": 21
     },
     {
@@ -624,7 +951,13 @@
       "discountPrice": 2700,
       "isOnDiscount": true,
       "description": "Modern closet with ample storage space, providing a nirvana-like experience for your organization needs.",
-      "imageUrl": "../images/closet/nirvana.jpg",
+      "imageUrl":  [
+        "assets/data/images/closet/nirvana.jpg",
+        "assets/data/images/closet/nirvana1.jpg",
+        "assets/data/images/closet/nirvana2.jpg"
+        
+        
+      ],
       "stock":18
     },
     {
@@ -635,7 +968,13 @@
       "discountPrice": 3500,
       "isOnDiscount": false,
       "description": "Elegant closet with a sleek design, offering a blissful and organized storage solution.",
-      "imageUrl": "../images/closet/bliss.jpg",
+      "imageUrl":  [
+        "assets/data/images/closet/bliss.jpg",
+        "assets/data/images/closet/bliss1.jpg",
+        "assets/data/images/closet/bliss2.jpg"
+        
+        
+      ],
       "stock": 19
     },
     {
@@ -646,7 +985,13 @@
       "discountPrice": 2600,
       "isOnDiscount": false,
       "description": "Stylish and functional closet with a bright and airy design, perfect for any bedroom.",
-      "imageUrl": "../images/closet/aura.jpg",
+      "imageUrl":  [
+        "assets/data/images/closet/aura.jpg",
+        "assets/data/images/closet/aura1.jpg",
+        "assets/data/images/closet/aura2.jpg"
+        
+        
+      ],
       "stock": 10
     },
 
@@ -658,7 +1003,13 @@
     "discountPrice": 1090,
     "isOnDiscount": false,
     "description": "High-quality mattress offering exceptional comfort and support for a restful sleep.",
-    "imageUrl": "../images/mattress/comfortplus.jpg",
+    "imageUrl":  [
+      "assets/data/images/mattress/comfortplus.jpg",
+      "assets/data/images/mattress/comfortplus1.jpg",
+      "assets/data/images/mattress/comfortplus2.jpg"
+      
+      
+    ],
     "stock": 14
   },
   {
@@ -669,7 +1020,13 @@
     "discountPrice": 1000,
     "isOnDiscount": true,
     "description": "Luxurious mattress designed to provide the ultimate sleeping experience with superior comfort.",
-    "imageUrl": "../images/mattress/dreamease.jpg",
+    "imageUrl":  [
+      "assets/data/images/mattress/dreamease.jpg",
+      "assets/data/images/mattress/dreamease1.jpg",
+      "assets/data/images/mattress/dreamease2.jpg"
+      
+      
+    ],
     "stock": 10
   },
   {
@@ -680,7 +1037,13 @@
     "discountPrice": 1500,
     "isOnDiscount": false,
     "description": "Premium mattress ensuring a good night's sleep with excellent support and durability.",
-    "imageUrl": "../images/mattress/sleepwell.jpg",
+    "imageUrl":  [
+      "assets/data/images/mattress/sleepwell.jpg",
+      "assets/data/images/mattress/sleepwell1.jpg",
+      "assets/data/images/mattress/sleepwell2.jpg"
+      
+      
+    ],
     "stock": 2
   },
   {
@@ -691,7 +1054,13 @@
     "discountPrice": 1200,
     "isOnDiscount": false,
     "description": "Comfortable mattress with a soft feel, providing a cozy and restful sleep experience.",
-    "imageUrl": "../images/mattress/cozyrest.jpg",
+    "imageUrl":  [
+      "assets/data/images/mattress/cozyrest.jpg",
+      "assets/data/images/mattress/cozyrest1.jpg",
+      "assets/data/images/mattress/cozyrest2.jpg"
+      
+      
+    ],
     "stock": 5
   },
   {
@@ -702,7 +1071,13 @@
     "discountPrice": 2800,
     "isOnDiscount": false,
     "description": "Serene and comfortable mattress offering great support and a peaceful night's sleep.",
-    "imageUrl": "../images/mattress/serenitysleek.jpg",
+    "imageUrl": [
+      "assets/data/images/mattress/serenitysleep.jpg",
+      "assets/data/images/mattress/serenitysleep1.jpg",
+      "assets/data/images/mattress/serenitysleep2.jpg"
+      
+      
+    ],
     "stock": 8
   },
   {
@@ -713,7 +1088,13 @@
     "discountPrice": 2500,
     "isOnDiscount": false,
     "description": "Innovative mattress with advanced support technology for a dream-like sleep experience.",
-    "imageUrl": "../images/mattress/dreamnest.jpg",
+    "imageUrl": [
+      "assets/data/images/mattress/dreamnest.jpg",
+      "assets/data/images/mattress/dreamnest1.jpg",
+      "assets/data/images/mattress/dreamnest2.jpg"
+      
+      
+    ],
     "stock": 9
   },
   {
@@ -724,7 +1105,13 @@
     "discountPrice": 500,
     "isOnDiscount": true,
     "description": "Plush mattress offering exceptional comfort, making you feel like you're on cloud nine.",
-    "imageUrl": "../images/mattress/cloudnine.jpg",
+    "imageUrl": [
+      "assets/data/images/mattress/cloudnine.jpg",
+      "assets/data/images/mattress/cloudnine1.jpg",
+      "assets/data/images/mattress/cloudnine2.jpg"
+      
+      
+    ],
     "stock": 0
   },
   {
@@ -735,7 +1122,13 @@
     "discountPrice": 2400,
     "isOnDiscount": false,
     "description": "Durable mattress designed for optimal support and a peaceful night's sleep.",
-    "imageUrl": "../images/mattress/peacefulnight.jpg",
+    "imageUrl": [
+      "assets/data/images/mattress/peacefulnight.jpg",
+      "assets/data/images/mattress/peacefulnight1.jpg",
+      "assets/data/images/mattress/peacefulnight2.jpg"
+      
+      
+    ],
     "stock": 2
   },
   {
@@ -746,7 +1139,13 @@
     "discountPrice": 5000,
     "isOnDiscount": false,
     "description": "High-end mattress offering a blissful sleep experience with superior comfort and support.",
-    "imageUrl": "../images/mattress/blissrest.jpg",
+    "imageUrl": [
+      "assets/data/images/mattress/blissrest.jpg",
+      "assets/data/images/mattress/blissrest1.jpg",
+      "assets/data/images/mattress/blissrest2.jpg"
+      
+      
+    ],
     "stock": 14
   },
   {
@@ -757,7 +1156,13 @@
     "discountPrice": 2200,
     "isOnDiscount": false,
     "description": "Comfortable mattress providing a heavenly sleep experience with excellent support.",
-    "imageUrl": "../images/mattress/heavenlysleep.jpg",
+    "imageUrl": [
+      "assets/data/images/mattress/heavenlysleep.jpg",
+      "assets/data/images/mattress/heavenlysleep1.jpg",
+      "assets/data/images/mattress/heavenlysleep2.jpg"
+      
+      
+    ],
     "stock": 9
   },
   {
@@ -768,7 +1173,13 @@
     "discountPrice": 400,
     "isOnDiscount": false,
     "description": "Elegant table lamp that adds a warm and luminous glow to any room.",
-    "imageUrl": "../images/tableLamps/luminousglow.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/luminousglow.jpg",
+      "assets/data/images/tableLamps/luminousglow1.jpg",
+      "assets/data/images/tableLamps/luminousglow2.jpg"
+      
+      
+    ],
     "stock":0
   },
   {
@@ -779,7 +1190,13 @@
     "discountPrice": 500,
     "isOnDiscount": true,
     "description": "Stylish table lamp designed to provide radiant light and enhance your decor.",
-    "imageUrl": "../images/tableLamps/radiantlight.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/radiantlight.jpg",
+      "assets/data/images/tableLamps/radiantlight1.jpg",
+      "assets/data/images/tableLamps/radiantlight2.jpg"
+      
+      
+    ],
     "stock": 0
   },
   {
@@ -790,7 +1207,13 @@
     "discountPrice": 300,
     "isOnDiscount": false,
     "description": "Calm and serene table lamp, perfect for creating a relaxing ambiance.",
-    "imageUrl": "../images/tableLamps/serenityglow.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/serenityglow.jpg",
+      "assets/data/images/tableLamps/serenityglow1.jpg",
+      "assets/data/images/tableLamps/serenityglow2.jpg"
+      
+      
+    ],
     "stock": 14
   },
   {
@@ -801,7 +1224,13 @@
     "discountPrice": 700,
     "isOnDiscount": false,
     "description": "Cozy table lamp that brings a soft and inviting shine to your living space.",
-    "imageUrl": "../images/tableLamps/cozyshine.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/cozyshine.jpg",
+      "assets/data/images/tableLamps/cozyshine1.jpg",
+      "assets/data/images/tableLamps/cozyshine2.jpg"
+      
+      
+    ],
     "stock": 18
   },
   {
@@ -812,7 +1241,13 @@
     "discountPrice": 500,
     "isOnDiscount": true,
     "description": "Sleek and modern table lamp with a powerful beam of light, ideal for reading.",
-    "imageUrl": "../images/tableLamps/modernbeam.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/modernbeam.jpg",
+      "assets/data/images/tableLamps/modernbeam1.jpg",
+      "assets/data/images/tableLamps/modernbeam2.jpg"
+      
+      
+    ],
     "stock": 3
   },
   {
@@ -823,7 +1258,13 @@
     "discountPrice": 600,
     "isOnDiscount": false,
     "description": "Classic table lamp that adds a timeless glow to any room.",
-    "imageUrl": "../images/tableLamps/classicglow.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/classicglow.jpg",
+      "assets/data/images/tableLamps/classicglow1.jpg",
+      "assets/data/images/tableLamps/classicglow2.jpg"
+      
+      
+    ],
     "stock": 7
   },
   {
@@ -834,7 +1275,13 @@
     "discountPrice": 350,
     "isOnDiscount": true,
     "description": "Soft radiance table lamp, perfect for creating a gentle and relaxing light.",
-    "imageUrl": "../images/tableLamps/softradiance.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/softradiance.jpg",
+      "assets/data/images/tableLamps/softradiance1.jpg",
+      "assets/data/images/tableLamps/softradiance2.jpg"
+      
+      
+    ],
     "stock": 4
   },
   {
@@ -845,7 +1292,13 @@
     "discountPrice": 800,
     "isOnDiscount": false,
     "description": "Elegant table lamp with a lustrous finish, adding sophistication to any decor.",
-    "imageUrl": "../images/tableLamps/elegantlustre.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/elegantlustre.jpg",
+      "assets/data/images/tableLamps/elegantlustre1.jpg",
+      "assets/data/images/tableLamps/elegantlustre2.jpg"
+      
+      
+    ],
     "stock": 6
   },
   {
@@ -856,7 +1309,13 @@
     "discountPrice": 450,
     "isOnDiscount": false,
     "description": "Bright table lamp that enhances the ambiance with its vivid light.",
-    "imageUrl": "../images/tableLamps/brightaura.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/brightaura.jpg",
+      "assets/data/images/tableLamps/brightaura1.jpg",
+      "assets/data/images/tableLamps/brightaura2.jpg"
+      
+      
+    ],
     "stock": 7
   },
   {
@@ -867,7 +1326,13 @@
     "discountPrice": 300,
     "isOnDiscount": false,
     "description": "Ambient table lamp that creates a warm and inviting atmosphere.",
-    "imageUrl": "../images/tableLamps/ambientglow.jpg",
+    "imageUrl": [
+      "assets/data/images/tableLamps/ambientglow.jpg",
+      "assets/data/images/tableLamps/ambientglow1.jpg",
+      "assets/data/images/tableLamps/ambientglow2.jpg"
+      
+      
+    ],
     "stock": 8
   }, 
   
@@ -879,7 +1344,13 @@
     "discountPrice": 1000,
     "isOnDiscount": false,
     "description": "Sophisticated wall lamp that adds a touch of elegance to any room.",
-    "imageUrl": "../images/wallLamps/elegant.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/elegant.jpg",
+      "assets/data/images/wallLamps/elegant1.jpg",
+      "assets/data/images/wallLamps/elegant2.jpg"
+      
+      
+    ],
     "stock": 3
   },
   {
@@ -890,7 +1361,13 @@
     "discountPrice": 1500,
     "isOnDiscount": true,
     "description": "Stylish wall lamp providing radiant light to brighten up your space.",
-    "imageUrl": "../images/wallLamps/radiant.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/radiant.jpg",
+      "assets/data/images/wallLamps/radiant1.jpg",
+      "assets/data/images/wallLamps/radiant2.jpg"
+      
+      
+    ],
     "stock": 14
   },
   {
@@ -901,7 +1378,13 @@
     "discountPrice": 800,
     "isOnDiscount": false,
     "description": "Serene wall lamp, perfect for creating a peaceful ambiance in any room.",
-    "imageUrl": "../images/wallLamps/serenity.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/serenity.jpg",
+      "assets/data/images/wallLamps/serenity1.jpg",
+      "assets/data/images/wallLamps/serenity2.jpg"
+      
+      
+    ],
     "stock": 23
   },
   {
@@ -912,7 +1395,13 @@
     "discountPrice": 2000,
     "isOnDiscount": false,
     "description": "Cozy wall lamp that emits a warm and inviting glow.",
-    "imageUrl": "../images/wallLamps/cozy.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/cozy.jpg",
+      "assets/data/images/wallLamps/cozy1.jpg",
+      "assets/data/images/wallLamps/cozy2.jpg"
+      
+      
+    ],
     "stock": 5
   },
   {
@@ -923,7 +1412,13 @@
     "discountPrice": 1700,
     "isOnDiscount": false,
     "description": "Modern wall lamp with a sleek design, ideal for contemporary spaces.",
-    "imageUrl": "../images/wallLamps/modern.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/modern.jpg",
+      "assets/data/images/wallLamps/modern1.jpg",
+      "assets/data/images/wallLamps/modern2.jpg"
+      
+      
+    ],
     "stock": 0
   },
   {
@@ -934,7 +1429,13 @@
     "discountPrice": 1500,
     "isOnDiscount": false,
     "description": "Classic wall lamp that adds a timeless touch to any decor.",
-    "imageUrl": "../images/wallLamps/classic.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/classic.jpg",
+      "assets/data/images/wallLamps/classic1.jpg",
+      "assets/data/images/wallLamps/classic2.jpg"
+      
+      
+    ],
     "stock": 0
   },
   {
@@ -945,7 +1446,13 @@
     "discountPrice": 1200,
     "isOnDiscount": false,
     "description": "Soft wall lamp, perfect for creating a gentle and relaxing light.",
-    "imageUrl": "../images/wallLamps/soft.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/soft.jpg",
+      "assets/data/images/wallLamps/soft1.jpg",
+      "assets/data/images/wallLamps/soft2.jpg"
+      
+      
+    ],
     "stock": 14
   },
   {
@@ -956,7 +1463,13 @@
     "discountPrice": 2000,
     "isOnDiscount": false,
     "description": "Elegant wall lamp with a lustrous finish, adding sophistication to any decor.",
-    "imageUrl": "../images/wallLamps/elegantlustre.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/elegantLustre.jpg",
+      "assets/data/images/wallLamps/elegantLustre1.jpg",
+      "assets/data/images/wallLamps/elegantLustre2.jpg"
+      
+      
+    ],
     "stock": 3
   },
   {
@@ -967,7 +1480,13 @@
     "discountPrice": 1300,
     "isOnDiscount": false,
     "description": "Bright wall lamp that enhances the ambiance with its vivid light.",
-    "imageUrl": "../images/wallLamps/bright.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/bright.jpg",
+      "assets/data/images/wallLamps/bright1.jpg",
+      "assets/data/images/wallLamps/bright2.jpg"
+      
+      
+    ],
     "stock": 0
   },
   {
@@ -978,7 +1497,13 @@
     "discountPrice": 1000,
     "isOnDiscount": false,
     "description": "Ambient wall lamp that creates a warm and inviting atmosphere.",
-    "imageUrl": "../images/wallLamps/ambient.jpg",
+    "imageUrl": [
+      "assets/data/images/wallLamps/ambient.jpg",
+      "assets/data/images/wallLamps/ambient1.jpg",
+      "assets/data/images/wallLamps/ambient2.jpg"
+      
+      
+    ],
     "stock": 11
   },
   {
@@ -989,7 +1514,13 @@
   "discountPrice": 800,
   "isOnDiscount": false,
   "description": "Elegant floor lamp that adds a touch of sophistication to your living space.",
-  "imageUrl": "../images/floorLamps/elegance.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/elegance.jpg",
+    "assets/data/images/floorLamps/elegance1.jpg",
+    "assets/data/images/floorLamps/elegance2.jpg"
+    
+    
+  ],
   "stock": 20
 },
 {
@@ -1000,7 +1531,13 @@
   "discountPrice": 1000,
   "isOnDiscount": false,
   "description": "Stylish floor lamp providing bright and radiant light for any room.",
-  "imageUrl": "../images/floorLamps/radiance.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/radiance.jpg",
+    "assets/data/images/floorLamps/radiance1.jpg",
+    "assets/data/images/floorLamps/radiance2.jpg"
+    
+    
+  ],
   "stock": 19
 },
 {
@@ -1011,7 +1548,13 @@
   "discountPrice": 500,
   "isOnDiscount": false,
   "description": "Serene floor lamp perfect for creating a peaceful and calming ambiance.",
-  "imageUrl": "../images/floorLamps/serenity.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/serenity.jpg",
+    "assets/data/images/floorLamps/serenity1.jpg",
+    "assets/data/images/floorLamps/serenity2.jpg"
+    
+    
+  ],
   "stock": 24
 },
 {
@@ -1022,7 +1565,13 @@
   "discountPrice": 1200,
   "isOnDiscount": false,
   "description": "Cozy floor lamp that emits a warm and inviting glow to any room.",
-  "imageUrl": "../images/floorLamps/cozylight.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/cozylight.jpg",
+    "assets/data/images/floorLamps/cozylight1.jpg",
+    "assets/data/images/floorLamps/cozylight2.jpg"
+    
+    
+  ],
   "stock": 16
 },
 {
@@ -1033,7 +1582,13 @@
   "discountPrice": 1000,
   "isOnDiscount": true,
   "description": "Modern floor lamp with a sleek design, perfect for contemporary interiors.",
-  "imageUrl": "../images/floorLamps/modernglow.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/modernglow.jpg",
+    "assets/data/images/floorLamps/modernglow1.jpg",
+    "assets/data/images/floorLamps/modernglow2.jpg"
+    
+    
+  ],
   "stock":0
 },
 {
@@ -1044,7 +1599,13 @@
   "discountPrice": 700,
   "isOnDiscount": false,
   "description": "Classic floor lamp that adds a timeless shine to your home decor.",
-  "imageUrl": "../images/floorLamps/classicshine.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/classicshine.jpg",
+    "assets/data/images/floorLamps/classicshine1.jpg",
+    "assets/data/images/floorLamps/classicshine2.jpg"
+    
+    
+  ],
   "stock": 5
 },
 {
@@ -1055,7 +1616,13 @@
   "discountPrice": 600,
   "isOnDiscount": false,
   "description": "Soft floor lamp, ideal for creating a gentle and relaxing light environment.",
-  "imageUrl": "../images/floorLamps/softlight.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/softlight.jpg",
+    "assets/data/images/floorLamps/softlight1.jpg",
+    "assets/data/images/floorLamps/softlight2.jpg"
+    
+    
+  ],
   "stock": 9
 },
 {
@@ -1066,7 +1633,13 @@
   "discountPrice": 900,
   "isOnDiscount": true,
   "description": "Elegant floor lamp with a lustrous finish, adding sophistication to any room.",
-  "imageUrl": "../images/floorLamps/elegantlustre.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/elegantlustre.jpg",
+    "assets/data/images/floorLamps/elegantlustre1.jpg",
+    "assets/data/images/floorLamps/elegantlustre2.jpg"
+    
+    
+  ],
   "stock": 41
 },
 {
@@ -1077,7 +1650,13 @@
   "discountPrice": 700,
   "isOnDiscount": false,
   "description": "Bright floor lamp that enhances the ambiance with its vivid light.",
-  "imageUrl": "../images/floorLamps/brightbeam.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/brightbeam.jpg",
+    "assets/data/images/floorLamps/brightbeam1.jpg",
+    "assets/data/images/floorLamps/brightbeam2.jpg"
+    
+    
+  ],
   "stock": 23
 },
 {
@@ -1088,7 +1667,13 @@
   "discountPrice": 800,
   "isOnDiscount": false,
   "description": "Ambient floor lamp that creates a warm and inviting atmosphere.",
-  "imageUrl": "../images/floorLamps/ambientglow.jpg",
+  "imageUrl": [
+    "assets/data/images/floorLamps/ambientglow.jpg",
+    "assets/data/images/floorLamps/ambientglow1.jpg",
+    "assets/data/images/floorLamps/ambientglow2.jpg"
+    
+    
+  ],
   "stock": 14
 }
 
