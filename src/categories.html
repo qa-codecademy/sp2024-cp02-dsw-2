@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Categories</title>
-    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="stayles.css">
+   
     
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="container">
             <h1>Product Categories</h1>
             <nav class="nav-links">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li> 
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
+
+    <div id="pre-header">
+        <div class="logo">Decor Dazzle Shop</div> 
+       
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+               <li> <a href="#" class="fa fa-shopping-cart"></a></li>
+               <button class="login-btn" id="open-popup">Login</button>
+                
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </div>
 
     <section id="products">
         <div class="container">
@@ -30,14 +51,7 @@
                         <img src="assets/data/images/product1.webp" height="70%" width="100%" alt="Product 1">
                         <h3>Sofas</h3>
                     </a>
-                </div>
-                <div class="product-item" data-category="kitchenAndDining">
-                    <a href="products.html?category=kitchenAndDining" >
-                        <img src="assets/data/images/product2.webp" height="70%" width="100%" alt="Product 2">
-                        <h3>Kitchen and dining</h3>
-                    </a>
-                </div>
-                
+                </div>    
                 <div class="product-item" data-category="bedroom">
                     <a href="products.html?category=bedroom" >
                         <img src="assets/data/images/product3.jpg" height="70%" width="100%" alt="Product 3">
@@ -77,6 +91,7 @@
                 </div>
                 <div class="product-item" data-category="smartHomeDevices">
                     <a href="products.html?category=smarHomeDevices" >
+    
                         <img src="assets/data/images/product9.webp" height="70%" width="100%" alt="Product 9">
                         <h3>Smart Home Devices</h3>
                     </a>
@@ -92,5 +107,7 @@
     </footer>
 
     <script src="main.js"></script>
+ 
+
 </body>
 </html>

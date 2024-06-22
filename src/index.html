@@ -8,19 +8,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="container">
             <h1>Dropshipping Store</h1>
             <nav class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="categories.html">Categories</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li> <a href="#" class="fa fa-shopping-cart"></a></li>
+                 <button class="login-btn" id="open-popup">Login</button>
                 </ul>
             </nav>
+            <label for="nav_check" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
         </div>
-    </header>
+    </header> -->
+    <div id="pre-header">
+        <div class="logo">Decor Dazzle Shop</div> 
+       
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               <li> <a href="#" class="fa fa-shopping-cart"></a></li>
+               <button class="login-btn" id="open-popup">Login</button>
+                
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </div>
+
 
     <section id="slideshow">
         <div class="slideshow-container">
@@ -95,12 +126,7 @@
                         <h3>Chairs</h3>
                     </a>
                 </div>
-                <div class="product-item" data-category="kitchenAndDining">
-                    <a href="products.html?category=kitchenAndDining" >
-                        <img src="assets/data/images/product7.jpg" height="70%" width="100%" alt="Product 7">
-                        <h3>Kitchen and Dining</h3>
-                    </a>
-                </div>
+                
                 <div class="product-item" data-category="lighting">
                     <a href="products.html?category=lighting" >
                         <img src="assets/data/images/product9.webp" height="70%" width="100%" alt="Product 9">
@@ -160,12 +186,51 @@
 
     </div>
 </div>
-<footer>
-    <div  id="footer">
-        <p>&copy; 2024 Dropsipping store. All rights reserved.</p>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">Sofas</a></li>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Kitchen and Dining</a></li>
+                    <li><a href="#">Decorative Items</a></li>
+                    <li><a href="#">Smart Home Devices</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
     <script src="main.js"></script>
+    
 </body>
 </html>

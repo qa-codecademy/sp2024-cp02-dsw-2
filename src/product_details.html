@@ -8,14 +8,40 @@
     <title>Product Details</title>
 </head>
 <body>
-    <div class="container my-4">
+
+    <div id="pre-header">
+        <div class="logo">Decor Dazzle Shop</div> 
+       
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+               <li> <a href="#" class="fa fa-shopping-cart"></a></li>
+               <button class="login-btn" id="open-popup">Login</button>
+                
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </div>
+
+ <div class="container my-4">
         <h1 id="product-title">Product Details</h1>
         <div id="product-images" class="product-images"></div>
         <p id="product-description"></p>
         <div id="product-price"></div>
         <button id="add-to-cart" class="btn btn-primary">Add to Cart</button>
     </div>
-    <script src="../src/product_details.js" type="module"></script>
+    
+     <script src="../src/models/product/product_details.js"></script>
+   
+
+
 
 </body>
 </html>
