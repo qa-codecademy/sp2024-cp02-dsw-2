@@ -596,7 +596,7 @@ ul{
 
     .slideshow-text p {
         font-size: 13px;
-=======
+    }
     .slideshow-text h2 {
         font-size: 20px;
         margin-top: 25%; 
@@ -610,8 +610,8 @@ ul{
     .slideshow-text .btn {
        
         padding: 6px 12px; 
-=======
-        padding: 8px 16px; 
+    }
+      
 
     }
 
@@ -626,7 +626,7 @@ ul{
     .container1 {
         height: auto;
     }
-}
+
 
 
 @media screen and (max-width: 1024px) {
