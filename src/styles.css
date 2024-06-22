@@ -527,6 +527,9 @@ ul{
     }
 
    
+    .container {
+        width: 90%; 
+    }
 
     /* hamburger menu and pre-header */
     .hamburger {
@@ -593,12 +596,23 @@ ul{
 
     .slideshow-text p {
         font-size: 13px;
+=======
+    .slideshow-text h2 {
+        font-size: 20px;
+        margin-top: 25%; 
+    }
+
+    .slideshow-text p {
+        font-size: 15px;
         margin-bottom: 10px; 
     }
 
     .slideshow-text .btn {
        
         padding: 6px 12px; 
+=======
+        padding: 8px 16px; 
+
     }
 
     .product-item {
