@@ -1,6 +1,10 @@
+// imame vo kodov tri glavni funkcii: vcituvanje na podatoci od JSON fajl, filtriranje na podatoci po category i prikazuvanje na detalite na prozivoдот
+//celta e dinamicki da ovozmozi vcituvanje i prikazuvanje na proizvodi na web stranicata
+
+// listener za nastani koje se aktivira koga dokumentot kje se vcita celosno
 document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('category');
+    const urlParams = new URLSearchParams(window.location.search);//window.location.search ja kreira urlParams objekt sto gi sodrzi parametrite na URL-to
+    const category = urlParams.get('category');//da se dobie vrednosta na category od url-to 
     console.log('Category:', category);
 
     if (category) {
@@ -8,18 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         fetchProducts();
     }
-});
+});//ovde vo uslovot , vrz osnova na postoenjeto na  category se povikuva funkcija za vcituvanje na proizvodi spored category ako e zadadena, ako ne funkcijata za  vcituvanje na  site prozivodi
 
-function fetchProductsByCategory(category) {
+function fetchProductsByCategory(category) {// ovaa funkcija  gi vcituva i filtrira proizvodi spored kategorijata
     fetch('assets/data/products.json')
         .then(response => response.json())
         .then(data => {
             console.log('All Products:', data);
             const productGrid = document.getElementById('product-grid');
-            productGrid.innerHTML = '';
+            productGrid.innerHTML = '';// gi cisti predhotno podatocite sto se prikazani
 
-            const filteredProducts = data.filter(product => product.category.toLowerCase() === category.toLowerCase());
+            const filteredProducts = data.filter(product => product.category.toLowerCase() === category.toLowerCase());// gi filtrira spored kategorijata 
             console.log('Filtered Products:', filteredProducts);
+            //ova prikaz na filtriranite podatoci
             if (filteredProducts.length > 0) {
                 filteredProducts.forEach(product => {
                     const productHTML = `
@@ -35,7 +40,7 @@ function fetchProductsByCategory(category) {
                             </div>
                         </div>
                     </div>`;
-                    productGrid.innerHTML += productHTML;
+                    productGrid.innerHTML += productHTML;// se dodava prozivodot vo HTML
                 });
             } else {
                 productGrid.innerHTML = '<p>No products found in this category.</p>';
@@ -44,7 +49,7 @@ function fetchProductsByCategory(category) {
         .catch(error => console.error('Error fetching products:', error));
 }
 
-function fetchProducts() {
+function fetchProducts() {//ova fukcija gi vcituva i prikazuva site produkti , kako predhodnata samo bez filter 
     fetch('assets/data/products.json')
         .then(response => response.json())
         .then(data => {
@@ -72,17 +77,21 @@ function fetchProducts() {
         .catch(error => console.error('Error fetching products:', error));
 }
 
-function viewProductDetails(productId) {
+function viewProductDetails(productId) {// gi prikazuva detalite za izbran prozivod
     fetch('assets/data/products.json')
         .then(response => response.json())
         .then(data => {
-            const product = data.find(p => p.id === productId);
+            const product = data.find(p => p.id === productId);// kje go najde po id produktot
             if (product) {
-                localStorage.setItem('productDetails', JSON.stringify(product));
-                window.location.href = 'product_details.html';
+                localStorage.setItem('productDetails', JSON.stringify(product));// gi zacuvuva detalite za prozivodot vo local storage
+                window.location.href = 'product_details.html';//ovde prenasocuva na stanicata product_details.html
             } else {
                 console.error('Product not found');
             }
         })
         .catch(error => console.error('Error fetching product details:', error));
 }
+
+//kodov : vcituva i prikazuva podatoci spored kategoriajta ili site proizvodi, 
+//        prikazuva detali za proizvodite
+//        koristi locale storage za da gi zacuva informaciite
