@@ -334,7 +334,7 @@
     {
       "id": 21,
       "name": "Dining Table Verona",
-      "category": "diningTables",
+      "category": "tables",
       "price": 23000,
       "discountPrice": 7000,
       "isOnDiscount": false,
@@ -351,7 +351,7 @@
     {
       "id": 22,
       "name": "Dining Table Capri",
-      "category": "diningTables",
+      "category": "tables",
       "price": 24000,
       "discountPrice": 7500,
       "isOnDiscount": true,
@@ -368,7 +368,7 @@
     {
       "id": 23,
       "name": "Dining Table Firenze",
-      "category": "diningTables",
+      "category": "tables",
       "price": 22000,
       "discountPrice": 6500,
       "isOnDiscount": true,
@@ -385,7 +385,7 @@
     {
       "id": 24,
       "name": "Dining Table Torino",
-      "category": "diningTables",
+      "category": "tables",
       "price": 21000,
       "discountPrice": 6800,
       "isOnDiscount": true,
@@ -402,7 +402,7 @@
     {
       "id": 25,
       "name": "Dining Table Palermo",
-      "category": "diningTables",
+      "category": "tables",
       "price": 21500,
       "discountPrice": 7000,
       "isOnDiscount": true,
@@ -419,7 +419,7 @@
     {
       "id": 26,
       "name": "Dining Table Siena",
-      "category": "diningTables",
+      "category": "tables",
       "price": 22500,
       "discountPrice": 7500,
       "isOnDiscount": true,
@@ -436,7 +436,7 @@
     {
       "id": 27,
       "name": "Dining Table Ravello",
-      "category": "diningTables",
+      "category": "tables",
       "price": 23500,
       "discountPrice": 7900,
       "isOnDiscount": false,
@@ -572,7 +572,7 @@
     {
       "id": 35,
       "name": "Alpine Oak Bar Stool",
-      "category": "barStool",
+      "category": "chairs",
       "price": 2800,
       "discountPrice": 800,
       "isOnDiscount": true,
@@ -589,7 +589,7 @@
     {
       "id": 36,
       "name": "Urban Chic Bar Stool",
-      "category": "barStool",
+      "category": "chairs",
       "price": 3000,
       "discountPrice": 900,
       "isOnDiscount": true,
@@ -606,7 +606,7 @@
     {
       "id": 37,
       "name": "Coastal Breeze Bar Stool",
-      "category": "barStool",
+      "category": "chairs",
       "price": 2500,
       "discountPrice": 700,
       "isOnDiscount": true,
@@ -623,7 +623,7 @@
     {
       "id": 38,
       "name": "Vintage Charm Bar Stool",
-      "category": "barStool",
+      "category": "chairs",
       "price": 2900,
       "discountPrice": 600,
       "isOnDiscount": true,
@@ -640,7 +640,7 @@
     {
       "id": 39,
       "name": "Modern Luxe Bar Stool",
-      "category": "barStool",
+      "category": "chairs",
       "price": 2700,
       "discountPrice": 500,
       "isOnDiscount": true,
@@ -657,7 +657,7 @@
     {
       "id": 41,
       "name": "Bed Aurora",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 32000,
       "discountPrice": 4500,
       "isOnDiscount": true,
@@ -674,7 +674,7 @@
     {
       "id": 42,
       "name": "Bed Serenity",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 48000,
       "discountPrice": 7000,
       "isOnDiscount": true,
@@ -691,7 +691,7 @@
     {
       "id": 43,
       "name": "Bed Harmony",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 35000,
       "discountPrice": 6000,
       "isOnDiscount": true,
@@ -708,7 +708,7 @@
     {
       "id": 44,
       "name": "Bed Tranquility",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 41000,
       "discountPrice": 5500,
       "isOnDiscount": true,
@@ -725,7 +725,7 @@
     {
       "id": 45,
       "name": "Bed Oasis",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 37000,
       "discountPrice": 5000,
       "isOnDiscount": true,
@@ -742,7 +742,7 @@
     {
       "id": 46,
       "name": "Bed Elysium",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 45000,
       "discountPrice": 6000,
       "isOnDiscount": true,
@@ -759,7 +759,7 @@
     {
       "id": 47,
       "name": "Bed Celeste",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 30000,
       "discountPrice": 4000,
       "isOnDiscount": true,
@@ -776,7 +776,7 @@
     {
       "id": 48,
       "name": "Bed Paradise",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 49000,
       "discountPrice": 7500,
       "isOnDiscount": true,
@@ -793,7 +793,7 @@
     {
       "id": 49,
       "name": "Bed Nirvana",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 43000,
       "discountPrice": 6800,
       "isOnDiscount": true,
@@ -810,7 +810,7 @@
     {
       "id": 50,
       "name": "Bed Bliss",
-      "category": "bedroomBed",
+      "category": "bedroom",
       "price": 46000,
       "discountPrice": 7200,
       "isOnDiscount": true,
@@ -827,7 +827,7 @@
     {
       "id": 51,
       "name": "Closet Harmony",
-      "category": "closet",
+      "category": "bedroom",
       "price": 21000,
       "discountPrice": 2500,
       "isOnDiscount": true,
@@ -844,7 +844,7 @@
     {
       "id": 52,
       "name": "Closet Serenity",
-      "category": "closet",
+      "category": "bedroom",
       "price": 29000,
       "discountPrice": 3500,
       "isOnDiscount": true,
@@ -861,7 +861,7 @@
     {
       "id": 53,
       "name": "Closet Tranquility",
-      "category": "closet",
+      "category": "bedroom",
       "price": 25000,
       "discountPrice": 3000,
       "isOnDiscount": true,
@@ -878,7 +878,7 @@
     {
       "id": 54,
       "name": "Closet Oasis",
-      "category": "closet",
+      "category": "bedroom",
       "price": 23000,
       "discountPrice": 2800,
       "isOnDiscount": true,
@@ -895,7 +895,7 @@
     {
       "id": 55,
       "name": "Closet Elysium",
-      "category": "closet",
+      "category": "bedroom",
       "price": 27000,
       "discountPrice": 3200,
       "isOnDiscount": true,
@@ -912,7 +912,7 @@
     {
       "id": 56,
       "name": "Closet Celeste",
-      "category": "closet",
+      "category": "bedroom",
       "price": 20000,
       "discountPrice": 2000,
       "isOnDiscount": true,
@@ -929,7 +929,7 @@
     {
       "id": 57,
       "name": "Closet Paradise",
-      "category": "closet",
+      "category": "bedroom",
       "price": 30000,
       "discountPrice": 4000,
       "isOnDiscount": true,
@@ -946,7 +946,7 @@
     {
       "id": 58,
       "name": "Closet Nirvana",
-      "category": "closet",
+      "category": "bedroom",
       "price": 24000,
       "discountPrice": 2700,
       "isOnDiscount": true,
@@ -963,7 +963,7 @@
     {
       "id": 59,
       "name": "Closet Bliss",
-      "category": "closet",
+      "category": "bedroom",
       "price": 28000,
       "discountPrice": 3500,
       "isOnDiscount": false,
@@ -980,7 +980,7 @@
     {
       "id": 60,
       "name": "Closet Aura",
-      "category": "closet",
+      "category": "bedroom",
       "price": 22000,
       "discountPrice": 2600,
       "isOnDiscount": false,
@@ -998,7 +998,7 @@
   {
     "id": 61,
     "name": "Mattress ComfortPlus",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 15000,
     "discountPrice": 1090,
     "isOnDiscount": false,
@@ -1015,7 +1015,7 @@
   {
     "id": 62,
     "name": "Mattress DreamEase",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 18000,
     "discountPrice": 1000,
     "isOnDiscount": true,
@@ -1032,7 +1032,7 @@
   {
     "id": 63,
     "name": "Mattress SleepWell",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 17000,
     "discountPrice": 1500,
     "isOnDiscount": false,
@@ -1049,7 +1049,7 @@
   {
     "id": 64,
     "name": "Mattress CozyRest",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 16000,
     "discountPrice": 1200,
     "isOnDiscount": false,
@@ -1066,7 +1066,7 @@
   {
     "id": 65,
     "name": "Mattress SerenitySleep",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 14000,
     "discountPrice": 2800,
     "isOnDiscount": false,
@@ -1083,7 +1083,7 @@
   {
     "id": 66,
     "name": "Mattress DreamNest",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 13000,
     "discountPrice": 2500,
     "isOnDiscount": false,
@@ -1100,7 +1100,7 @@
   {
     "id": 67,
     "name": "Mattress CloudNine",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 19000,
     "discountPrice": 500,
     "isOnDiscount": true,
@@ -1117,7 +1117,7 @@
   {
     "id": 68,
     "name": "Mattress PeacefulNight",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 12000,
     "discountPrice": 2400,
     "isOnDiscount": false,
@@ -1134,7 +1134,7 @@
   {
     "id": 69,
     "name": "Mattress BlissRest",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 20000,
     "discountPrice": 5000,
     "isOnDiscount": false,
@@ -1151,7 +1151,7 @@
   {
     "id": 70,
     "name": "Mattress HeavenlySleep",
-    "category": "mattress",
+    "category": "bedroom",
     "price": 11000,
     "discountPrice": 2200,
     "isOnDiscount": false,
@@ -1168,7 +1168,7 @@
   {
     "id": 71,
     "name": "Table Lamp LuminousGlow",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 2500,
     "discountPrice": 400,
     "isOnDiscount": false,
@@ -1185,7 +1185,7 @@
   {
     "id": 72,
     "name": "Table Lamp RadiantLight",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 3000,
     "discountPrice": 500,
     "isOnDiscount": true,
@@ -1202,7 +1202,7 @@
   {
     "id": 73,
     "name": "Table Lamp SerenityGlow",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 2200,
     "discountPrice": 300,
     "isOnDiscount": false,
@@ -1219,7 +1219,7 @@
   {
     "id": 74,
     "name": "Table Lamp CozyShine",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 3500,
     "discountPrice": 700,
     "isOnDiscount": false,
@@ -1236,7 +1236,7 @@
   {
     "id": 75,
     "name": "Table Lamp ModernBeam",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 2800,
     "discountPrice": 500,
     "isOnDiscount": true,
@@ -1253,7 +1253,7 @@
   {
     "id": 76,
     "name": "Table Lamp ClassicGlow",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 3200,
     "discountPrice": 600,
     "isOnDiscount": false,
@@ -1270,7 +1270,7 @@
   {
     "id": 77,
     "name": "Table Lamp SoftRadiance",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 2400,
     "discountPrice": 350,
     "isOnDiscount": true,
@@ -1287,7 +1287,7 @@
   {
     "id": 78,
     "name": "Table Lamp ElegantLustre",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 4000,
     "discountPrice": 800,
     "isOnDiscount": false,
@@ -1304,7 +1304,7 @@
   {
     "id": 79,
     "name": "Table Lamp BrightAura",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 2700,
     "discountPrice": 450,
     "isOnDiscount": false,
@@ -1321,7 +1321,7 @@
   {
     "id": 80,
     "name": "Table Lamp AmbientGlow",
-    "category": "tableLamps",
+    "category": "lighting",
     "price": 2100,
     "discountPrice": 300,
     "isOnDiscount": false,
@@ -1339,7 +1339,7 @@
   {
     "id": 81,
     "name": "Wall Lamp Elegant",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 9000,
     "discountPrice": 1000,
     "isOnDiscount": false,
@@ -1356,7 +1356,7 @@
   {
     "id": 82,
     "name": "Wall Lamp Radiant",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 11000,
     "discountPrice": 1500,
     "isOnDiscount": true,
@@ -1373,7 +1373,7 @@
   {
     "id": 83,
     "name": "Wall Lamp Serenity",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 8000,
     "discountPrice": 800,
     "isOnDiscount": false,
@@ -1390,7 +1390,7 @@
   {
     "id": 84,
     "name": "Wall Lamp Cozy",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 14000,
     "discountPrice": 2000,
     "isOnDiscount": false,
@@ -1407,7 +1407,7 @@
   {
     "id": 85,
     "name": "Wall Lamp Modern",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 13000,
     "discountPrice": 1700,
     "isOnDiscount": false,
@@ -1424,7 +1424,7 @@
   {
     "id": 86,
     "name": "Wall Lamp Classic",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 12000,
     "discountPrice": 1500,
     "isOnDiscount": false,
@@ -1441,7 +1441,7 @@
   {
     "id": 87,
     "name": "Wall Lamp Soft",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 10000,
     "discountPrice": 1200,
     "isOnDiscount": false,
@@ -1458,7 +1458,7 @@
   {
     "id": 88,
     "name": "Wall Lamp ElegantLustre",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 15000,
     "discountPrice": 2000,
     "isOnDiscount": false,
@@ -1475,7 +1475,7 @@
   {
     "id": 89,
     "name": "Wall Lamp Bright",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 11000,
     "discountPrice": 1300,
     "isOnDiscount": false,
@@ -1492,7 +1492,7 @@
   {
     "id": 90,
     "name": "Wall Lamp Ambient",
-    "category": "wallLamps",
+    "category": "lighting",
     "price": 9000,
     "discountPrice": 1000,
     "isOnDiscount": false,
@@ -1509,7 +1509,7 @@
   {
   "id": 91,
   "name": "Floor Lamp Elegance",
-  "category": "floorLamps",
+  "category": "lighting",
   "price": 5000,
   "discountPrice": 800,
   "isOnDiscount": false,
@@ -1526,7 +1526,7 @@
 {
   "id": 92,
   "name": "Floor Lamp Radiance",
-  "category": "floorLamps",
+  "category": "lighting",
   "price": 6000,
   "discountPrice": 1000,
   "isOnDiscount": false,
@@ -1543,7 +1543,7 @@
 {
   "id": 93,
   "name": "Floor Lamp Serenity",
-  "category": "floorLamps",
+  "category": "lighting",
   "price": 3000,
   "discountPrice": 500,
   "isOnDiscount": false,
@@ -1560,7 +1560,7 @@
 {
   "id": 94,
   "name": "Floor Lamp CozyLight",
-  "category": "floorLamps",
+  "category": "lighting",
   "price": 7000,
   "discountPrice": 1200,
   "isOnDiscount": false,
@@ -1577,7 +1577,7 @@
 {
   "id": 95,
   "name": "Floor Lamp ModernGlow",
-  "category": "floorLamps",
+  "category": "lighting",
   "price": 6500,
   "discountPrice": 1000,
   "isOnDiscount": true,
@@ -1611,7 +1611,7 @@
 {
   "id": 97,
   "name": "Floor Lamp SoftLight",
-  "category": "floorLamps",
+  "category": "lighting",
   "price": 3500,
   "discountPrice": 600,
   "isOnDiscount": false,
@@ -1628,7 +1628,7 @@
 {
   "id": 98,
   "name": "Floor Lamp ElegantLustre",
-  "category": "floorLamps",
+  "category": "lighting",
   "price": 5500,
   "discountPrice": 900,
   "isOnDiscount": true,
@@ -1645,7 +1645,7 @@
 {
   "id": 99,
   "name": "Floor Lamp BrightBeam",
-  "category": "floorLamps",
+  "category": "lighting",
   "price": 4800,
   "discountPrice": 700,
   "isOnDiscount": false,
@@ -1662,7 +1662,7 @@
 {
   "id": 100,
   "name": "Floor Lamp AmbientGlow",
-  "category": "floorLamps",
+  "category": "lighting",
   "price": 5200,
   "discountPrice": 800,
   "isOnDiscount": false,
@@ -1675,7 +1675,325 @@
     
   ],
   "stock": 14
+},
+
+
+{
+  "id": 101,
+  "name": "Modern Vase Elegance",
+  "category": "decorative",
+  "price": 3000,
+  "discountPrice": 2500,
+  "isOnDiscount": true,
+  "description": "A sleek and modern vase perfect for any stylish interior.",
+  "imageUrl": [
+    "assets/data/images/decorative/Modern_Vase-1.jpg",
+    "assets/data/images/decorative/Modern_Vase-2.jpg",
+    "assets/data/images/decorative/Modern_Vase-3.jpg"
+  ],
+  "stock": 25
+},
+{
+  "id": 102,
+  "name": "Wall Art Abstract",
+  "category": "decorative",
+  "price": 4500,
+  "discountPrice": 4000,
+  "isOnDiscount": true,
+  "description": "Abstract wall art piece to add a touch of sophistication to your home.",
+  "imageUrl": [
+    "assets/data/images/decorative/Wall_Art-1.jpg",
+    "assets/data/images/wallArt/Wall_Art-2.jpg",
+    "assets/data/images/wallArt/Wall_Art-3.jpg"
+  ],
+  "stock": 10
+},
+{
+  "id": 103,
+  "name": "Ceramic Bowl Artisan",
+  "category": "decorative",
+  "price": 1200,
+  "discountPrice": 1000,
+  "isOnDiscount": true,
+  "description": "Handcrafted ceramic bowl with unique artisan designs.",
+  "imageUrl": [
+    "assets/data/images/decorative/Ceramic_Bowl-1.jpg",
+    "assets/data/images/decorative/Ceramic_Bowl-2.jpg",
+    "assets/data/images/decorative/Ceramic_Bowl-3.jpg"
+  ],
+  "stock": 30
+},
+{
+  "id": 104,
+  "name": "Wooden Sculpture Harmony",
+  "category": "decorative",
+  "price": 8000,
+  "discountPrice": 7000,
+  "isOnDiscount": true,
+  "description": "Beautifully carved wooden sculpture that embodies harmony and grace.",
+  "imageUrl": [
+    "assets/data/images/decorative/Wooden_Sclptur-1.jpg",
+    "assets/data/images/decorative/Wooden_Sclptur-2.jpg",
+    "assets/data/images/decorative/Wooden_Sclptur-3.jpg"
+  ],
+  "stock": 5
+},
+{
+  "id": 105,
+  "name": "Decorative Throw Pillow Comfort",
+  "category": "decorative",
+  "price": 1500,
+  "discountPrice": 1200,
+  "isOnDiscount": true,
+  "description": "Soft and cozy throw pillow to enhance the comfort of your space.",
+  "imageUrl": [
+    "assets/data/images/decorative/Decorative_Throw_Pillow-1.jpg",
+    "assets/data/images/decorative/Decorative_Throw_Pillow-2.jpg",
+    "assets/data/images/decorative/Decorative_Throw_Pillow-3.jpg"
+  ],
+  "stock": 50
+},
+{
+  "id": 106,
+  "name": "Decorative Candle Serenity",
+  "category": "decorative",
+  "price": 2000,
+  "discountPrice": 1800,
+  "isOnDiscount": true,
+  "description": "Aromatic candle that creates a serene and relaxing ambiance.",
+  "imageUrl": [
+    "assets/data/images/decorative/Decorative_Candle-1.jpg",
+    "assets/data/images/decorative/Decorative_Candle-2.jpg",
+    "assets/data/images/decorative/Decorative_Candle-3.jpg"
+  ],
+  "stock": 40
+},
+{
+  "id": 107,
+  "name": "Glass Terrarium Greenery",
+  "category": "decorative",
+  "price": 3500,
+  "discountPrice": 3200,
+  "isOnDiscount": true,
+  "description": "Elegant glass terrarium perfect for small indoor plants.",
+  "imageUrl": [
+    "assets/data/images/decorative/Glass_Terrarium-1.jpg",
+    "assets/data/images/decorative/Glass_Terrarium-2.jpg",
+    "assets/data/images/decorative/Glass_Terrarium-3.jpg"
+  ],
+  "stock": 20
+},
+{
+  "id": 108,
+  "name": "Metal Wall Clock Timeless",
+  "category": "decorative",
+  "price": 5000,
+  "discountPrice": 4500,
+  "isOnDiscount": true,
+  "description": "Stylish metal wall clock that adds a timeless touch to any room.",
+  "imageUrl": [
+    "assets/data/images/decorative/Metal_Wall-1.jpg",
+    "assets/data/images/decorative/Metal_Wall-2.jpg",
+    "assets/data/images/decorative/Metal_Wall-3.jpg"
+  ],
+  "stock": 15
+},
+{
+  "id": 109,
+  "name": "Porcelain Figurine Grace",
+  "category": "decorative",
+  "price": 6000,
+  "discountPrice": 5500,
+  "isOnDiscount": true,
+  "description": "Delicate porcelain figurine that adds a touch of grace to your decor.",
+  "imageUrl": [
+    "assets/data/images/decorative/Porcelain_Figurin-1.jpg",
+    "assets/data/images/decorative/Porcelain_Figurin-2.jpg",
+    "assets/data/images/decorative/Porcelain_Figurin-3.jpg"
+  ],
+  "stock": 8
+},
+{
+  "id": 110,
+  "name": "Decorative Mirror Reflections",
+  "category": "decorative",
+  "price": 7000,
+  "discountPrice": 6500,
+  "isOnDiscount": true,
+  "description": "Chic decorative mirror that enhances the light and space in your home.",
+  "imageUrl": [
+    "assets/data/images/decorative/Decorative_Mirror-1.jpg",
+    "assets/data/images/decorative/Decorative_Mirror-2.jpg",
+    "assets/data/images/decorative/Decorative_Mirror-3.jpg"
+  ],
+  "stock": 12
+},
+{
+  "id": 111,
+  "name": "Smart Thermostat Pro",
+  "category": "smart_home",
+  "price": 12000,
+  "discountPrice": 11000,
+  "isOnDiscount": true,
+  "description": "Efficiently manage your home's temperature with the Smart Thermostat Pro.",
+  "imageUrl": [
+    "assets/data/images/smart/Smart_Thermostat-1.jpg",
+    "assets/data/images/smart/Smart_Thermostat-2.jpg",
+    "assets/data/images/smart/Smart_Thermostat-3.jpg"
+  ],
+  "stock": 8
+},
+{
+  "id": 112,
+  "name": "Smart Doorbell Cam",
+  "category": "smart_home",
+  "price": 8000,
+  "discountPrice": 7500,
+  "isOnDiscount": true,
+  "description": "See who’s at your door from anywhere with the Smart Doorbell Cam.",
+  "imageUrl": [
+    "assets/data/images/smart/Smart_Doorbell-1.jpg",
+    "assets/data/images/smart/Smart_Doorbell-2.jpg",
+    "assets/data/images/smart/Smart_Doorbell-3.jpg"
+  ],
+  "stock": 15
+},
+{
+  "id": 113,
+  "name": "Voice Assistant Speaker",
+  "category": "smart_home",
+  "price": 5000,
+  "discountPrice": 4500,
+  "isOnDiscount": true,
+  "description": "Your personal assistant for music, news, and smart home control.",
+  "imageUrl": [
+    "assets/data/images/smart/Voice_Assistant-1.jpg",
+    "assets/data/images/smart/Voice_Assistant-2.jpg",
+    "assets/data/images/smart/Voice_Assistant-3.jpg"
+  ],
+  "stock": 20
+},
+{
+  "id": 114,
+  "name": "Smart Light Bulb Pack",
+  "category": "smart_home",
+  "price": 3000,
+  "discountPrice": 2500,
+  "isOnDiscount": true,
+  "description": "Customize your lighting with Smart Light Bulb Pack, compatible with all major voice assistants.",
+  "imageUrl": [
+    "assets/data/images/smart/Smart_Light-1.jpg",
+    "assets/data/images/smart/Smart_Light-2.jpg",
+    "assets/data/images/smart/Smart_Light-3.jpg"
+  ],
+  "stock": 25
+},
+{
+  "id": 115,
+  "name": "Smart Security Camera",
+  "category": "smart_home",
+  "price": 10000,
+  "discountPrice": 9500,
+  "isOnDiscount": true,
+  "description": "Monitor your home 24/7 with the high-definition Smart Security Camera.",
+  "imageUrl": [
+    "assets/data/images/smart/Security_Camera-1.jpg",
+    "assets/data/images/smart/Security_Camera-2.jpg",
+    "assets/data/images/smart/Security_Camera-3.jpg"
+  ],
+  "stock": 10
+},
+{
+  "id": 116,
+  "name": "Smart Plug Pack",
+  "category": "smart_home",
+  "price": 4000,
+  "discountPrice": 3500,
+  "isOnDiscount": true,
+  "description": "Control your appliances remotely with the Smart Plug Pack.",
+  "imageUrl": [
+    "assets/data/images/smart/Smart-Plug-1.jpg",
+    "assets/data/images/smart/Smart-Plug-2.jpg",
+    "assets/data/images/smart/Smart-Plug-3.jpg"
+  ],
+  "stock": 30
+},
+{
+  "id": 117,
+  "name": "Smart Lock Pro",
+  "category": "smart_home",
+  "price": 15000,
+  "discountPrice": 14000,
+  "isOnDiscount": true,
+  "description": "Enhance your home security with the Smart Lock Pro, featuring keyless entry.",
+  "imageUrl": [
+    "assets/data/images/smart/Smart_Lock-1.jpg",
+    "assets/data/images/smart/Smart_Lock-2.jpg",
+    "assets/data/images/smart/Smart_Lock-3.jpg"
+  ],
+  "stock": 5
+},
+{
+  "id": 118,
+  "name": "Smart Vacuum Cleaner",
+  "category": "smart_home",
+  "price": 20000,
+  "discountPrice": 19000,
+  "isOnDiscount": true,
+  "description": "Keep your home spotless with the Smart Vacuum Cleaner, controllable via app.",
+  "imageUrl": [
+    "assets/data/images/smart/Smart_Vacuum-1.jpg",
+    "assets/data/images/smart/Smart_Vacuum-2.jpg",
+    "assets/data/images/smart/Smart_Vacuum-3.jpg"
+  ],
+  "stock": 7
+},
+{
+  "id": 119,
+  "name": "Smart Home Hub",
+  "category": "smart_home",
+  "price": 7000,
+  "discountPrice": 6500,
+  "isOnDiscount": true,
+  "description": "Centralize control of all your smart devices with the Smart Home Hub.",
+  "imageUrl": [
+    "assets/data/images/smart/Smart_Home-1.jpg",
+    "assets/data/images/smart/Smart_Home-2jpg",
+    "assets/data/images/smart/Smart_Home-3.jpg"
+  ],
+  "stock": 18
+},
+{
+  "id": 120,
+  "name": "Smart Smoke Detector",
+  "category": "smart_home",
+  "price": 9000,
+  "discountPrice": 8500,
+  "isOnDiscount": true,
+  "description": "Protect your home with real-time alerts from the Smart Smoke Detector.",
+  "imageUrl": [
+    "assets/data/images/smart/Smart_Smoke-1.jpg",
+    "assets/data/images/smart/Smart_Smoke-2.jpg",
+    "assets/data/images/smart/Smart_Smoke-3.jpg"
+  ],
+  "stock": 12
+},
+{
+  "id": 121,
+  "name": "Smart Air Purifier",
+  "category": "smart_home",
+  "price": 18000,
+  "discountPrice": 17000,
+  "isOnDiscount": true,
+  "description": "Breathe clean air with the Smart Air Purifier, featuring advanced filtration.",
+  "imageUrl": [
+    "assets/data/images/smart/Smart_Air-1.jpg",
+    "assets/data/images/smart/Smart_Air-2.jpg",
+    "assets/data/images/smart/Smart_Air-3.jpg"
+  ],
+  "stock": 9
 }
+
 
     ]
   }
