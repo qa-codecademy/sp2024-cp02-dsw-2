@@ -9,37 +9,36 @@
 
 </head>
 <body>
-    <!-- <header>
-        <div class="container">
-            <h1>Dropshipping Store</h1>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="categories.html">Categories</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li> <a href="#" class="fa fa-shopping-cart"></a></li>
-                    <button class="login-btn" id="open-popup">Login</button>
-                </ul>
-            </nav>
-            <label for="nav_check" class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
-        </div>
-    </header> -->
+   
+    <!-- Pre Header Navbar -->
     <div id="pre-header">
-        <div class="logo">Decor Dazzle Shop</div>
+        <div class="logo">NAME</div>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#" class="fa fa-shopping-cart"></a></li>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="./index.html">Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <i class="fa-solid fa-list"></i>
+                    <a href='./categories.html'>Categories</a>
+                    <!-- <ul class="dropdown-content">
+                        <li><a href="#">Sofas</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Tables</a></li>
+                        <li><a href="#">Storage Solutions</a></li>
+                        <li><a href="#">Bedroom Furniture</a></li>
+                        <li><a href="#s">Outdoor Furniture</a></li>
+                    </ul> -->
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-address-book"></i>
+                    <a href="./contact.html">Contact Us</a>
+                </li>
+                <li><a href="#" class="fa fa-shopping-cart "></a></li>
                 <button class="login-btn" id="open-popup">Login</button>
             </ul>
         </nav>
@@ -89,6 +88,7 @@
         </div>
     </section>
 
+    <!-- Categories Section -->
     <section id="products">
         <div class="container">
             <h2>Category</h2>
@@ -145,22 +145,7 @@
         </div>
     </section>
 
-    <div class="main-container">
-        <div class="wrapper">
-            <section id="about">
-                <div class="container">
-                    <h2>About Us</h2>
-                    <p>We are dedicated to bringing you the best products at the best prices. Our mission is to make online shopping easy and accessible for everyone. If you have any comments or questions please leave a message below.</p>
-                    <div class="social-icons">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-
+ <!-- footer section -->
     <footer class="footer">
         <div class="footer-container">
             <div class="row">
@@ -203,7 +188,7 @@
             </div>
         </div>
     </div>
-    </footer>
+ </footer>
 
     <script src="main.js"></script>
 </body>
