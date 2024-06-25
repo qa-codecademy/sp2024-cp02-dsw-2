@@ -423,6 +423,49 @@ ul{
     transition: 0.7s;
 }
 
+footer {
+    margin-top: 20px;
+    bottom: 0;
+}
+
+#footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.6;
+  }
+ 
+  
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram{
+    background: red;
+    color: white;
+  }
+  
+
 
 .hamburger {
     display: none; 
