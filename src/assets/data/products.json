@@ -1,18 +1,18 @@
-{
-  "products": [
-    {
-      "id": 1,
-      "name": "Sofa Breat",
-      "category": "sofas",
-      "price": 20099,
-      "discountPrice": 2000,
-      "isOnDiscount": true,
-      "description": "",
-      "imageUrl": [
-        "assets/data/images/sofas/breat.jpg",
-        "assets/data/images/sofas/breat1.jpg",
-        "assets/data/images/sofas/breat2.jpg"
-      ],
+[
+  {
+    "id": 1,
+    "name": "Sofa Breat",
+    "category": "sofas",
+    "description": "The Sofa Breat is a perfect blend of comfort and style. With its plush cushions and modern design, it offers an inviting space to relax and unwind. This sofa is currently available at a discounted price",
+    "price": 2099.99,
+    "isOnDiscount": true,
+    "discountPrice": 2000,
+    "image": "assets/data/images/1.jpeg",
+    "detailsImages": [
+      "assets/data/images/sofas/sofa 1/1.jpeg",
+      "assets/data/images/sofas/sofa 1/2.jpeg",
+      "assets/data/images/sofas/sofa 1/3.jpeg"
+    ],
       "stock": 11
     },
     {
@@ -152,7 +152,7 @@
       "discountPrice": 2000,
       "isOnDiscount": true,
       "description": "",
-      "imageUrl": [
+      "detailsProducts": [
         "assets/data/images/sofas/plum.jpg",
         "assets/data/images/sofas/plum1.jpg",
         "assets/data/images/sofas/plum2.jpg"
@@ -1996,5 +1996,4 @@
 
 
     ]
-  }
-
+  

@@ -41,4 +41,3 @@ document.addEventListener('DOMContentLoaded', () => {
 //ako ne error vo consola 
 
 //e sega ovoj kod e vekje vo cart i order , taka da ako vi se dopagja koj go raboti moze da prodolzi ili da go izmeni
-
