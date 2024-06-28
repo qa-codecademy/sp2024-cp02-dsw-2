@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="category.css"> -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/src/styles/category.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Product Grid</title>
+    <title>Products</title>
 </head>
 <body>
 
     <div id="pre-header">
         <div class="logo">NAME</div>
         <input type="checkbox" id="nav_check" hidden>
+        <!-- <div> <input type="text" id="searchBar" placeholder="Search products...">
+            <button id="searchBtn">Search</button> -->
+           
         <nav>
             <ul>
                 <li>
@@ -39,7 +41,8 @@
         </label>
     </div>
 
-    <div class="container my-4" style="padding-top: 70px;">
+
+    <div class="container my-4">
         <div class="row justify-content-center" id="product-grid">
             
         </div>
@@ -68,11 +71,14 @@
                 <div class="footer-col">
                     <h4>Online Shop</h4>
                     <ul>
-                        <li><a href="#">Sofas</a></li>
-                        <li><a href="#">Lighting</a></li>
-                        <li><a href="#">Kitchen and Dining</a></li>
-                        <li><a href="#">Decorative Items</a></li>
-                        <li><a href="#">Smart Home Devices</a></li>
+                        <li><a href="/src/templates/products.html?category=sofas">Sofas</a></li>
+                        <li><a href="/src/templates/products.html?category=lighting">Lighting</a></li>
+                        <li><a href="/src/templates/products.html?category=kitchenAndDining">Kitchen and Dining</a></li>
+                        <li><a href="/src/templates/products.html?category=decorativeItem">Decorative Items</a></li>
+                        <li><a href="/src/templates/products.html?category=smarHomeDevices">Smart Home Devices</a></li>
+                        <li><a href="/src/templates/products.html?category=wallDecor">Wall Decor</a></li>
+                        <li><a href="/src/templates/products.html?category=chairs">Chairs</a></li>
+                        <li><a href="/src/templates/products.html?category=bedroom">Bedroom</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -89,7 +95,7 @@
     </div>
     </footer>
 
-    <script src="../src/models/category/category.js"></script>
+    <script src="/src/models/category/category.js"></script>
 
 </body>
 </html>
