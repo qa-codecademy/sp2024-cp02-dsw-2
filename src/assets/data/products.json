@@ -7,11 +7,12 @@
       "price": 20099,
       "discountPrice": 2000,
       "isOnDiscount": true,
+      "image": "../assets/data/images/sofas/breat.jpg",
       "description": "",
       "imageUrl": [
-        "assets/data/images/sofas/breat.jpg",
-        "assets/data/images/sofas/breat1.jpg",
-        "assets/data/images/sofas/breat2.jpg"
+        "../assets/data/images/sofas/breat.jpg",
+        "../assets/data/images/sofas/breat1.jpg",
+        "../assets/data/images/sofas/breat2.jpg"
       ],
       "stock": 11
     },
@@ -24,9 +25,9 @@
       "isOnDiscount": false,
       "description": "",
       "imageUrl": [
-        "assets/data/images/sofas/laguno.jpg",
-        "assets/data/images/sofas/laguno1.jpg",
-        "assets/data/images/sofas/laguno2.jpg"
+        "../assets/data/images/sofas/laguno.jpg",
+        "../assets/data/images/sofas/laguno1.jpg",
+        "../assets/data/images/sofas/laguno2.jpg"
       ],
       "stock": 21
     },
@@ -39,10 +40,10 @@
       "isOnDiscount": true,
       "description": "",
       "imageUrl": [
-        "assets/data/images/sofas/omega.jpg",
-        "assets/data/images/sofas/omega1.jpg",
-        "assets/data/images/sofas/omega2.jpg",
-        "assets/data/images/sofas/omega3.jpg"
+        "../assets/data/images/sofas/omega.jpg",
+        "../assets/data/images/sofas/omega1.jpg",
+        "../assets/data/images/sofas/omega2.jpg",
+        "../assets/data/images/sofas/omega3.jpg"
       ],
       "stock": 2
     },
@@ -55,9 +56,9 @@
       "isOnDiscount": false,
       "description": "",
       "imageUrl": [
-        "assets/data/images/sofas/montasi.jpg",
-        "assets/data/images/sofas/montasi1.jpg",
-        "assets/data/images/sofas/montasi2.jpg"
+        "../assets/data/images/sofas/montasi.jpg",
+        "../assets/data/images/sofas/montasi1.jpg",
+        "../assets/data/images/sofas/montasi2.jpg"
         
       ],
       "stock": 20
@@ -71,9 +72,9 @@
       "isOnDiscount": true,
       "description": "",
       "imageUrl": [
-        "assets/data/images/sofas/opera.jpg",
-        "assets/data/images/sofas/opera1.jpg",
-        "assets/data/images/sofas/opera2.jpg"
+        "../assets/data/images/sofas/opera.jpg",
+        "../assets/data/images/sofas/opera1.jpg",
+        "../assets/data/images/sofas/opera2.jpg"
         
       ],
       "stock": 10
@@ -87,9 +88,9 @@
       "isOnDiscount": true,
       "description": "",
       "imageUrl": [
-        "assets/data/images/sofas/rochelle.jpg",
-        "assets/data/images/sofas/rochelle1.jpg",
-        "assets/data/images/sofas/rochelle2.jpg"
+        "../assets/data/images/sofas/rochelle.jpg",
+        "../assets/data/images/sofas/rochelle1.jpg",
+        "../assets/data/images/sofas/rochelle2.jpg"
         
       ],
       "stock": 6
@@ -103,12 +104,12 @@
       "isOnDiscount": true,
       "description": "",
       "imageUrl": [
-        "assets/data/images/sofas/walter.jpg",
-        "assets/data/images/sofas/walter1.jpg",
-        "assets/data/images/sofas/walter2.jpg"
+        "../assets/data/images/sofas/walter.jpg",
+        "../assets/data/images/sofas/walter1.jpg",
+        "../assets/data/images/sofas/walter2.jpg"
         
       ],
-       
+      
       
       "stock": 32
     },
@@ -121,420 +122,373 @@
       "isOnDiscount": true,
       "description": "",
       "imageUrl": [
-        "assets/data/images/sofas/varna.jpg",
-        "assets/data/images/sofas/varna1.jpg",
-        "assets/data/images/sofas/varna2.jpg"
+        "../assets/data/images/sofas/varna.jpg",
+        "../assets/data/images/sofas/varna2.jpg",
+        "../assets/data/images/sofas/varna3.jpg"
         
       ],
       "stock":1
     },
     {
-      "id": 9,
-      "name": "Sofa Vini",
-      "category": "sofas",
-      "price": 20099,
-      "discountPrice": 2000,
-      "isOnDiscount": true,
-      "description": "",
-      "imageUrl": [
-        "assets/data/images/sofas/vini.jpg",
-        "assets/data/images/sofas/vini1.jpg",
-        "assets/data/images/sofas/vini2.jpg"
-        
-      ],
-      "stock": 5
-    },
-    {
-      "id": 10,
-      "name": "Sofa Plum",
-      "category": "sofas",
-      "price": 20099,
-      "discountPrice": 2000,
-      "isOnDiscount": true,
-      "description": "",
-      "imageUrl": [
-        "assets/data/images/sofas/plum.jpg",
-        "assets/data/images/sofas/plum1.jpg",
-        "assets/data/images/sofas/plum2.jpg"
-        
-      ],
-      "stock": 11
-    },
-    {
-      "id": 11,
-      "name": "Chair Laguno",
-      "category": "chairs",
-      "price": 2899,
-      "discountPrice": 899,
-      "isOnDiscount": true,
-      "description": "A stylish and comfortable chair with a modern design.",
-      "imageUrl": [
-        "assets/data/images/chairs/laguno.jpg",
-        "assets/data/images/chairs/laguno1.jpg",
-        "assets/data/images/chairs/laguno2.jpg"
-
-        
-        
-      ],
-      "stock": 12
-    },
-    {
-      "id": 12,
-      "name": "Chair Verona",
-      "category": "chairs",
-      "price": 2750,
-      "discountPrice": 750,
-      "isOnDiscount": true,
-      "description": "Elegant chair with a classic touch, perfect for any living room.",
-      "imageUrl":  [
-        "assets/data/images/chairs/verona.jpg",
-        "assets/data/images/chairs/verona1.jpg",
-        "assets/data/images/chairs/verona2.jpg"
-        
-        
-      ],
-      "stock": 12
-    },
-    {
-      "id": 13,
-      "name": "Chair Delfino",
-      "category": "chairs",
-      "price": 2699,
-      "discountPrice": 0,
-      "isOnDiscount": false,
-      "description": "Comfortable chair with a sleek design, ideal for relaxation.",
-      "imageUrl":  [
-        "assets/data/images/chairs/delfino.jpg",
-        "assets/data/images/chairs/delfino1.jpg",
-        "assets/data/images/chairs/delfino2.jpg"
-        
-        
-      ],
-      "stock": 10
-    },
-    {
-      "id": 14,
-      "name": "Chair Bellini",
-      "category": "chairs",
-      "price": 2599,
-      "discountPrice": 799,
-      "isOnDiscount": true,
-      "description": "Luxurious chair with premium materials and excellent craftsmanship.",
-      "imageUrl":  [
-        "assets/data/images/chairs/bellini.jpg",
-        "assets/data/images/chairs/bellini1.jpg",
-        "assets/data/images/chairs/bellini2.jpg"
-        
-        
-      ],
-      "stock": 23
-    },
-    {
-      "id": 15,
-      "name": "Chair Monterosso",
-      "category": "chairs",
-      "price": 2799,
-      "discountPrice": 0,
-      "isOnDiscount": false,
-      "description": "A robust and durable chair suitable for both indoor and outdoor use.",
-      "imageUrl":  [
-        "assets/data/images/chairs/monterosso.jpg",
-        "assets/data/images/chairs/monterosso1.jpg",
-        "assets/data/images/chairs/monterosso2.jpg"
-        
-        
-      ],
-      "stock": 22
-    },
-    {
-      "id": 16,
-      "name": "Chair Riccardo",
-      "category": "chairs",
-      "price": 2999,
-      "discountPrice": 0,
-      "isOnDiscount": false,
-      "description": "A perfect blend of style and comfort, ideal for any setting.",
-      "imageUrl":  [
-        "assets/data/images/chairs/riccardo.jpg",
-        "assets/data/images/chairs/riccardo1.jpg",
-        "assets/data/images/chairs/riccardo2.jpg"
-        
-        
-      ],
-      "stock": 50
-    },
-    {
-      "id": 17,
-      "name": "Chair Lucano",
-      "category": "chairs",
-      "price": 2499,
-      "discountPrice": 0,
-      "isOnDiscount": false,
-      "description": "A chic chair with a contemporary design, adding elegance to any space.",
-      "imageUrl":  [
-        "assets/data/images/chairs/lucano.jpg",
-        "assets/data/images/chairs/lucano1.jpg",
-        "assets/data/images/chairs/lucano2.jpg"
-        
-        
-      ],
-      "stock":11
-    },
-    {
-      "id": 18,
-      "name": "Chair Bellagio",
-      "category": "chairs",
-      "price": 2399,
-      "discountPrice": 599,
-      "isOnDiscount": true,
-      "description": "Modern chair with ergonomic design for maximum comfort.",
-      "imageUrl":  [
-        "assets/data/images/chairs/bellagio.jpg",
-        "assets/data/images/chairs/bellagio1.jpg",
-        "assets/data/images/chairs/bellagio2.jpg"
-        
-        
-      ],
-      "stock": 14
-    },
-    {
-      "id": 19,
-      "name": "Chair Sorrento",
-      "category": "chairs",
-      "price": 2650,
-      "discountPrice": 0,
-      "isOnDiscount": false,
-      "description": "Elegant chair with a minimalist design, perfect for any decor.",
-      "imageUrl":  [
-        "assets/data/images/chairs/sorrento.jpg",
-        "assets/data/images/chairs/sorrento1.jpg",
-        "assets/data/images/chairs/sorrento2.jpg"
-        
-        
-      ],
-      "stock": 12
-    },
-    {
-      "id": 20,
-      "name": "Chair Amalfi",
-      "category": "chairs",
-      "price": 2700,
-      "discountPrice": 700,
-      "isOnDiscount": true,
-      "description": "Stylish chair with a timeless design, ideal for modern interiors.",
-      "imageUrl":  [
-        "assets/data/images/chairs/amalfi.jpg",
-        "assets/data/images/chairs/amalfi1.jpg",
-        "assets/data/images/chairs/amalfi2.jpg"
-        
-        
-      ],
-      "stock": 33
-    },
-    {
-      "id": 21,
-      "name": "Dining Table Verona",
-      "category": "tables",
-      "price": 23000,
-      "discountPrice": 7000,
-      "isOnDiscount": false,
-      "description": "Spacious and elegant dining table, perfect for family gatherings.",
-      "imageUrl":  [
-        "assets/data/images/diningTables/verona.jpg",
-        "assets/data/images/diningTables/verona1.jpg",
-        "assets/data/images/diningTables/verona2.jpg"
-        
-        
-      ],
-      "stock": 44
-    },
-    {
-      "id": 22,
-      "name": "Dining Table Capri",
-      "category": "tables",
-      "price": 24000,
-      "discountPrice": 7500,
-      "isOnDiscount": true,
-      "description": "Stylish dining table with a classic design, ideal for any home.",
-      "imageUrl":  [
-        "assets/data/images/diningTables/capri.jpg",
-        "assets/data/images/diningTables/capri1.jpg",
-        "assets/data/images/diningTables/capri2.jpg"
-        
-        
-      ],
-      "stock": 12
-    },
-    {
-      "id": 23,
-      "name": "Dining Table Firenze",
-      "category": "tables",
-      "price": 22000,
-      "discountPrice": 6500,
-      "isOnDiscount": true,
-      "description": "Elegant dining table with a timeless design, perfect for any occasion.",
-      "imageUrl":  [
-        "assets/data/images/diningTables/firenze.jpg",
-        "assets/data/images/diningTables/firenze1.jpg",
-        "assets/data/images/diningTables/firenze2.jpg"
-        
-        
-      ],
-      "stock": 22
-    },
-    {
-      "id": 24,
-      "name": "Dining Table Torino",
-      "category": "tables",
-      "price": 21000,
-      "discountPrice": 6800,
-      "isOnDiscount": true,
-      "description": "Modern dining table with a sturdy frame, great for contemporary interiors.",
-      "imageUrl":  [
-        "assets/data/images/diningTables/torino.jpg",
-        "assets/data/images/diningTables/torino1.jpg",
-        "assets/data/images/diningTables/torino2.jpg"
-        
-        
-      ],
-      "stock": 10
-    },
-    {
-      "id": 25,
-      "name": "Dining Table Palermo",
-      "category": "tables",
-      "price": 21500,
-      "discountPrice": 7000,
-      "isOnDiscount": true,
-      "description": "Classic dining table offering a comfortable dining experience.",
-      "imageUrl":  [
-        "assets/data/images/diningTables/palermo.jpg",
-        "assets/data/images/diningTables/palermo1.jpg",
-        "assets/data/images/diningTables/palermo2.jpg"
-        
-        
-      ],
-      "stock": 5
-    },
-    {
-      "id": 26,
-      "name": "Dining Table Siena",
-      "category": "tables",
-      "price": 22500,
-      "discountPrice": 7500,
-      "isOnDiscount": true,
-      "description": "Beautiful dining table with a sophisticated design, perfect for any home.",
-      "imageUrl":  [
-        "assets/data/images/diningTables/siena.jpg",
-        "assets/data/images/diningTables/siena1.jpg",
-        "assets/data/images/diningTables/siena2.jpg"
-        
-        
-      ],
-      "stock": 7
-    },
-    {
-      "id": 27,
-      "name": "Dining Table Ravello",
-      "category": "tables",
-      "price": 23500,
-      "discountPrice": 7900,
-      "isOnDiscount": false,
-      "description": "Stylish and modern dining table, offering a comfortable design.",
-      "imageUrl":  [
-        "assets/data/images/diningTables/ravello.jpg",
-        "assets/data/images/diningTables/ravello1.jpg",
-        "assets/data/images/diningTables/ravello2.jpg"
-        
-        
-      ],
-      "stock": 14
-    },
-    {
-      "id": 28,
-      "name": "Kitchen Nova",
-      "category": "kitchens",
-      "price": 75000,
-      "discountPrice": 10000,
-      "isOnDiscount": true,
-      "description": "Modern kitchen with sleek cabinets and state-of-the-art appliances.",
-      "imageUrl":  [
-        "assets/data/images/kitchens/nova.jpg",
-        "assets/data/images/kitchens/nova1.jpg",
-        "assets/data/images/kitchens/nova2.jpg"
-        
-        
-      ],
-      "stock": 32
-    },
-    {
-      "id": 29,
-      "name": "Kitchen Elegance",
-      "category": "kitchens",
-      "price": 78000,
-      "discountPrice": 12000,
-      "isOnDiscount": true,
-      "description": "Elegant kitchen with high-end finishes and ample storage.",
-      "imageUrl": [
-        "assets/data/images/kitchens/elegance.jpg",
-        "assets/data/images/kitchens/elegance1.jpg",
-        "assets/data/images/kitchens/elegance2.jpg"
-        
-        
-      ],
-      "stock":3
-       },
-    {
-      "id": 30,
-      "name": "Kitchen Harmony",
-      "category": "kitchens",
-      "price": 72000,
-      "discountPrice": 9000,
-      "isOnDiscount": true,
-      "description": "Spacious kitchen with a harmonious blend of modern and traditional styles.",
-      "imageUrl": [
-        "assets/data/images/kitchens/harmony.jpg",
-        "assets/data/images/kitchens/harmony1.jpg",
-        "assets/data/images/kitchens/harmony2.jpg"
-        
-        
-      ],
-      "stock": 12
-    },
-    {
-      "id": 31,
-      "name": "Kitchen Zenith",
-      "category": "kitchens",
-      "price": 79000,
-      "discountPrice": 15000,
-      "isOnDiscount": true,
-      "description": "Top-of-the-line kitchen with premium materials and cutting-edge technology.",
-      "imageUrl": [
-        "assets/data/images/kitchens/zenith.jpg",
-        "assets/data/images/kitchens/zenith1.jpg",
-        "assets/data/images/kitchens/zenith2.jpg"
-        
-        
-      ],
-      "stock": 15
-    },
-    {
-      "id": 32,
-      "name": "Kitchen Fusion",
-      "category": "kitchens",
-      "price": 73000,
-      "discountPrice": 8000,
-      "isOnDiscount": true,
-      "description": "Innovative kitchen design that blends functionality with style.",
-      "imageUrl": [
-        "assets/data/images/kitchens/fusion.jpg",
-        "assets/data/images/kitchens/fusion1.jpg",
-        "assets/data/images/kitchens/fusion2.jpg"
-        
-        
-      ],
-      "stock": 3
-    },
+        "id": 9,
+          "name": "Sofa Vini",
+          "category": "sofas",
+          "price": 20099,
+          "discountPrice": 2000,
+          "isOnDiscount": true,
+          "description": "",
+          "imageUrl": [
+              "../assets/data/images/sofas/varna.jpg",
+              "../assets/data/images/sofas/varna2.jpg",
+              "../assets/data/images/sofas/varna3.jpg"
+          ],
+          "stock": 5
+      },
+      {
+          "id": 10,
+          "name": "Sofa Plum",
+          "category": "sofas",
+          "price": 20099,
+          "discountPrice": 2000,
+          "isOnDiscount": true,
+          "description": "",
+          "imageUrl": [
+              "../assets/data/images/sofas/plum.jpg",
+              "../assets/data/images/sofas/plum1.jpg",
+              "../assets/data/images/sofas/plum2.jpg"
+          ],
+          "stock": 11
+      },
+      {
+          "id": 11,
+          "name": "Chair Laguno",
+          "category": "chairs",
+          "price": 2899,
+          "discountPrice": 899,
+          "isOnDiscount": true,
+          "description": "A stylish and comfortable chair with a modern design.",
+          "imageUrl": [
+              "../assets/data/images/chairs/laguno.jpg",
+              "../assets/data/images/chairs/laguno1.jpg",
+              "../assets/data/images/chairs/laguno2.jpg"
+          ],
+          "stock": 12
+      },
+      {
+          "id": 12,
+          "name": "Chair Verona",
+          "category": "chairs",
+          "price": 2750,
+          "discountPrice": 750,
+          "isOnDiscount": true,
+          "description": "Elegant chair with a classic touch, perfect for any living room.",
+          "imageUrl": [
+              "../assets/data/images/chairs/verona.jpg",
+              "../assets/data/images/chairs/verona1.jpg",
+              "../assets/data/images/chairs/verona2.jpg"
+          ],
+          "stock": 12
+      },
+      {
+          "id": 13,
+          "name": "Chair Delfino",
+          "category": "chairs",
+          "price": 2699,
+          "discountPrice": 0,
+          "isOnDiscount": false,
+          "description": "Comfortable chair with a sleek design, ideal for relaxation.",
+          "imageUrl": [
+              "../assets/data/images/chairs/delfino.jpg",
+              "../assets/data/images/chairs/delfino1.jpg",
+              "../assets/data/images/chairs/delfino2.jpg"
+          ],
+          "stock": 10
+      },
+      {
+          "id": 14,
+          "name": "Chair Bellini",
+          "category": "chairs",
+          "price": 2599,
+          "discountPrice": 799,
+          "isOnDiscount": true,
+          "description": "Luxurious chair with premium materials and excellent craftsmanship.",
+          "imageUrl": [
+              "../assets/data/images/chairs/bellini.jpg",
+              "../assets/data/images/chairs/bellini1.jpg",
+              "../assets/data/images/chairs/bellini2.jpg"
+          ],
+          "stock": 23
+      },
+      {
+          "id": 15,
+          "name": "Chair Monterosso",
+          "category": "chairs",
+          "price": 2799,
+          "discountPrice": 0,
+          "isOnDiscount": false,
+          "description": "A robust and durable chair suitable for both indoor and outdoor use.",
+          "imageUrl": [
+              "../assets/data/images/chairs/monteresso.jpg",
+              "../assets/data/images/chairs/monteresso1.jpg",
+              "../assets/data/images/chairs/monteresso2.jpg"
+          ],
+          "stock": 22
+      },
+      {
+          "id": 16,
+          "name": "Chair Riccardo",
+          "category": "chairs",
+          "price": 2999,
+          "discountPrice": 0,
+          "isOnDiscount": false,
+          "description": "A perfect blend of style and comfort, ideal for any setting.",
+          "imageUrl": [
+              "../assets/data/images/chairs/riccardo.jpg",
+              "../assets/data/images/chairs/riccardo1.jpg",
+              "../assets/data/images/chairs/riccardo2.jpg"
+          ],
+          "stock": 50
+      },
+      {
+          "id": 17,
+          "name": "Chair Lucano",
+          "category": "chairs",
+          "price": 2499,
+          "discountPrice": 0,
+          "isOnDiscount": false,
+          "description": "A chic chair with a contemporary design, adding elegance to any space.",
+          "imageUrl": [
+              "../assets/data/images/chairs/lucano.jpg",
+              "../assets/data/images/chairs/lucano1.jpg",
+              "../assets/data/images/chairs/lucano2.jpg"
+          ],
+          "stock": 11
+      },
+      {
+          "id": 18,
+          "name": "Chair Bellagio",
+          "category": "chairs",
+          "price": 2399,
+          "discountPrice": 599,
+          "isOnDiscount": true,
+          "description": "Modern chair with ergonomic design for maximum comfort.",
+          "imageUrl": [
+              "../assets/data/images/chairs/bellagio.jpg",
+              "../assets/data/images/chairs/bellagio1.jpg",
+              "../assets/data/images/chairs/bellagio2.jpg"
+          ],
+          "stock": 14
+      },
+      {
+          "id": 19,
+          "name": "Chair Sorrento",
+          "category": "chairs",
+          "price": 2650,
+          "discountPrice": 0,
+          "isOnDiscount": false,
+          "description": "Elegant chair with a minimalist design, perfect for any decor.",
+          "imageUrl": [
+              "../assets/data/images/chairs/sorrento.jpg",
+              "../assets/data/images/chairs/sorrento1.jpg",
+              "../assets/data/images/chairs/sorrento2.jpg"
+          ],
+          "stock": 12
+      },
+      {
+          "id": 20,
+          "name": "Chair Amalfi",
+          "category": "chairs",
+          "price": 2700,
+          "discountPrice": 700,
+          "isOnDiscount": true,
+          "description": "Stylish chair with a timeless design, ideal for modern interiors.",
+          "imageUrl": [
+              "../assets/data/images/chairs/amalfi.jpg",
+              "../assets/data/images/chairs/amalfi1.jpg",
+              "../assets/data/images/chairs/amalfi2.jpg"
+          ],
+          "stock": 33
+      },
+      {
+          "id": 21,
+          "name": "Dining Table Verona",
+          "category": "tables",
+          "price": 23000,
+          "discountPrice": 7000,
+          "isOnDiscount": false,
+          "description": "Spacious and elegant dining table, perfect for family gatherings.",
+          "imageUrl": [
+              "../assets/data/images/diningTables/verona.jpg",
+              "../assets/data/images/diningTables/verona1.jpg",
+              "../assets/data/images/diningTables/verona2.jpg"
+          ],
+          "stock": 44
+      },
+      {
+          "id": 22,
+          "name": "Dining Table Capri",
+          "category": "tables",
+          "price": 24000,
+          "discountPrice": 7500,
+          "isOnDiscount": true,
+          "description": "Stylish dining table with a classic design, ideal for any home.",
+          "imageUrl": [
+              "../assets/data/images/diningTables/capri.jpg",
+              "../assets/data/images/diningTables/capri1.jpg",
+              "../assets/data/images/diningTables/capri2.jpg"
+          ],
+          "stock": 12
+      },
+      {
+          "id": 23,
+          "name": "Dining Table Firenze",
+          "category": "tables",
+          "price": 22000,
+          "discountPrice": 6500,
+          "isOnDiscount": true,
+          "description": "Elegant dining table with a timeless design, perfect for any occasion.",
+          "imageUrl": [
+              "../assets/data/images/diningTables/firenze.jpg",
+              "../assets/data/images/diningTables/firenze1.jpg",
+              "../assets/data/images/diningTables/firenze2.jpg"
+          ],
+          "stock": 22
+      },
+      {
+          "id": 24,
+          "name": "Dining Table Torino",
+          "category": "tables",
+          "price": 21000,
+          "discountPrice": 6800,
+          "isOnDiscount": true,
+          "description": "Modern dining table with a sturdy frame, great for contemporary interiors.",
+          "imageUrl": [
+              "../assets/data/images/diningTables/torino.jpg",
+              "../assets/data/images/diningTables/torino1.jpg",
+              "../assets/data/images/diningTables/torino2.jpg"
+          ],
+          "stock": 10
+      },
+      {
+          "id": 25,
+          "name": "Dining Table Palermo",
+          "category": "tables",
+          "price": 21500,
+          "discountPrice": 7000,
+          "isOnDiscount": true,
+          "description": "Classic dining table offering a comfortable dining experience.",
+          "imageUrl": [
+              "../assets/data/images/diningTables/palermo.jpg",
+              "../assets/data/images/diningTables/palermo1.jpg",
+              "../assets/data/images/diningTables/palermo2.jpg"
+          ],
+          "stock": 5
+      },
+      {
+          "id": 26,
+          "name": "Dining Table Siena",
+          "category": "tables",
+          "price": 22500,
+          "discountPrice": 7500,
+          "isOnDiscount": true,
+          "description": "Beautiful dining table with a sophisticated design, perfect for any home.",
+          "imageUrl": [
+              "../assets/data/images/diningTables/siena.jpg",
+              "../assets/data/images/diningTables/siena1.jpg",
+              "../assets/data/images/diningTables/siena2.jpg"
+          ],
+          "stock": 7
+      },
+      {
+          "id": 27,
+          "name": "Dining Table Ravello",
+          "category": "tables",
+          "price": 23500,
+          "discountPrice": 7900,
+          "isOnDiscount": false,
+          "description": "Stylish and modern dining table, offering a comfortable design.",
+          "imageUrl": [
+              "../assets/data/images/diningTables/ravello.jpg",
+              "../assets/data/images/diningTables/ravello1.jpg",
+              "../assets/data/images/diningTables/ravello2.jpg"
+          ],
+          "stock": 14
+      },
+      {
+          "id": 28,
+          "name": "Kitchen Nova",
+          "category": "kitchens",
+          "price": 75000,
+          "discountPrice": 10000,
+          "isOnDiscount": true,
+          "description": "Modern kitchen with sleek cabinets and state-of-the-art appliances.",
+          "imageUrl": [
+              "../assets/data/images/kitchens/nova.jpg",
+              "../assets/data/images/kitchens/nova1.jpg",
+              "../assets/data/images/kitchens/nova2.jpg"
+          ],
+          "stock": 32
+      },
+      {
+          "id": 29,
+          "name": "Kitchen Elegance",
+          "category": "kitchens",
+          "price": 78000,
+          "discountPrice": 12000,
+          "isOnDiscount": true,
+          "description": "Elegant kitchen with high-end finishes and ample storage.",
+          "imageUrl": [
+              "../assets/data/images/kitchens/elegance.jpg",
+              "../assets/data/images/kitchens/elegance1.jpg",
+              "../assets/data/images/kitchens/elegance2.jpg"
+          ],
+          "stock": 3
+      },
+      {
+          "id": 30,
+          "name": "Kitchen Harmony",
+          "category": "kitchens",
+          "price": 72000,
+          "discountPrice": 9000,
+          "isOnDiscount": true,
+          "description": "Spacious kitchen with a harmonious blend of modern and traditional styles.",
+          "imageUrl": [
+              "../assets/data/images/kitchens/harmony.jpg",
+              "../assets/data/images/kitchens/harmony1.jpg",
+              "../assets/data/images/kitchens/harmony2.jpg"
+          ],
+          "stock": 12
+      },
+      {
+          "id": 31,
+          "name": "Kitchen Zenith",
+          "category": "kitchens",
+          "price": 79000,
+          "discountPrice": 15000,
+          "isOnDiscount": true,
+          "description": "Top-of-the-line kitchen with premium materials and cutting-edge technology.",
+          "imageUrl": [
+              "../assets/data/images/kitchens/zenith.jpg",
+              "../assets/data/images/kitchens/zenith1.jpg",
+              "../assets/data/images/kitchens/zenith2.jpg"
+          ],
+          "stock": 15
+      },
+      {
+          "id": 32,
+          "name": "Kitchen Fusion",
+          "category": "kitchens",
+          "price": 73000,
+          "discountPrice": 8000,
+          "isOnDiscount": true,
+          "description": "Innovative kitchen design that blends functionality with style.",
+          "imageUrl": [
+              "../assets/data/images/kitchens/fusion.jpg",
+              "../assets/data/images/kitchens/fusion1.jpg",
+              "../assets/data/images/kitchens/fusion2.jpg"
+          ],
+          "stock": 3
+      },
     {
       "id": 33,
       "name": "Kitchen Prestige",
@@ -544,9 +498,9 @@
       "isOnDiscount": true,
       "description": "Prestigious kitchen with luxury finishes and advanced appliances.",
       "imageUrl": [
-        "assets/data/images/kitchens/prestige.jpg",
-        "assets/data/images/kitchens/prestige1.jpg",
-        "assets/data/images/kitchens/prestige2.jpg"
+        "../assets/data/images/kitchens/prestige.jpg",
+        "../assets/data/images/kitchens/prestige1.jpg",
+        "../assets/data/images/kitchens/prestige2.jpg"
         
         
       ],
@@ -561,9 +515,9 @@
       "isOnDiscount": true,
       "description": "Bright and airy kitchen with an inviting ambiance and practical layout.",
       "imageUrl": [
-        "assets/data/images/kitchens/aura.jpg",
-        "assets/data/images/kitchens/aura1.jpg",
-        "assets/data/images/kitchens/aura2.jpg"
+        "../assets/data/images/kitchens/aura.jpg",
+        "../assets/data/images/kitchens/aura1.jpg",
+        "../assets/data/images/kitchens/aura2.jpg"
         
         
       ],
@@ -578,9 +532,9 @@
       "isOnDiscount": true,
       "description": "Elegant and sturdy bar stool with a natural oak finish, providing comfort and style.",
       "imageUrl": [
-        "assets/data/images/barStool/alpineoak.jpg",
-        "assets/data/images/barStool/alpineoak1.jpg",
-        "assets/data/images/barStool/alpineoak2.jpg"
+        "../assets/data/images/barStool/alpine_oak.jpg",
+        "../assets/data/images/barStool/alpine_oak1.jpg",
+        "../assets/data/images/barStool/alpine_oak2.jpg"
         
         
       ],
@@ -595,9 +549,9 @@
       "isOnDiscount": true,
       "description": "Sleek and modern bar stool with a metal frame and comfortable seating, perfect for any contemporary space.",
       "imageUrl": [
-        "assets/data/images/barStool/urbanchic.jpg",
-        "assets/data/images/barStool/urbanchic1.jpg",
-        "assets/data/images/barStool/urbanchic2.jpg"
+        "../assets/data/images/barStool/urban_chic.jpg",
+        "../assets/data/images/barStool/urban_chic1.jpg",
+        "../assets/data/images/barStool/urban_chic2.jpg"
         
         
       ],
@@ -612,9 +566,9 @@
       "isOnDiscount": true,
       "description": "Light and airy bar stool with a coastal design, featuring a white-washed finish and woven seat.",
       "imageUrl": [
-        "assets/data/images/barStool/coastalbreeze.jpg",
-        "assets/data/images/barStool/coastalbreeze1.jpg",
-        "assets/data/images/barStool/coastalbreeze2.jpg"
+        "../assets/data/images/barStool/coastal_breeze.jpg",
+        "../assets/data/images/barStool/coastal_breeze1.jpg",
+        "../assets/data/images/barStool/coastal_breeze.2jpg"
         
         
       ],
@@ -629,9 +583,9 @@
       "isOnDiscount": true,
       "description": "Classic bar stool with vintage charm, featuring a distressed wood finish and cushioned seat for added comfort.",
       "imageUrl": [
-        "assets/data/images/barStool/vintagecharm.jpg",
-        "assets/data/images/barStool/vintagecharm1.jpg",
-        "assets/data/images/barStool/vintagecharm2.jpg"
+        "../assets/data/images/barStool/vintage_charm.jpg",
+        "../assets/data/images/barStool/vintage_charm1.jpg",
+        "../assets/data/images/barStool/vintage_charm2.jpg"
         
         
       ],
@@ -646,9 +600,9 @@
       "isOnDiscount": true,
       "description": "Contemporary bar stool with a luxurious faux leather seat and sleek chrome base.",
       "imageUrl": [
-        "assets/data/images/barStool/modernluxe.jpg",
-        "assets/data/images/barStool/modernluxe1.jpg",
-        "assets/data/images/barStool/modernluxe2.jpg"
+        "../assets/data/images/barStool/modern_lux.jpg",
+        "../assets/data/images/barStool/modern_lux1.jpg",
+        "../assets/data/images/barStool/modern_lux2.jpg"
         
         
       ],
@@ -663,9 +617,9 @@
       "isOnDiscount": true,
       "description": "Luxurious bed with a modern design, perfect for a stylish bedroom.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/aurora.jpg",
-        "assets/data/images/bedroomBed/aurora1.jpg",
-        "assets/data/images/bedroomBed/aurora2.jpg"
+        "../assets/data/images/bedroom/Bed_Aurora1.jpg",
+        "../assets/data/images/bedroom/Bed_Aurora2.jpg",
+        "../assets/data/images/bedroom/Bed_Aurora3.jpg"
         
         
       ],
@@ -680,9 +634,9 @@
       "isOnDiscount": true,
       "description": "Elegant and comfortable bed with a timeless design, providing a serene sleep experience.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/serenity.jpg",
-        "assets/data/images/bedroomBed/serenity1.jpg",
-        "assets/data/images/bedroomBed/serenity2.jpg"
+        "../assets/data/images/bedroom/Bed_Serenity1.jpg",
+        "../assets/data/images/bedroom/Bed_Serenity2.jpg",
+        "../assets/data/images/bedroom/Bed_Serenity3.jpg"
         
         
       ],
@@ -697,9 +651,9 @@
       "isOnDiscount": true,
       "description": "Beautiful bed with a harmonious blend of style and comfort, ideal for any bedroom.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/harmony.jpg",
-        "assets/data/images/bedroomBed/harmony1.jpg",
-        "assets/data/images/bedroomBed/harmony2.jpg"
+        "../assets/data/images/bedroom/Bed_Harmony (1).jpg",
+        "../assets/data/images/bedroom/Bed_Harmony (2).jpg",
+        "../assets/data/images/bedroom/Bed_Harmony (3).jpg"
         
         
       ],
@@ -714,9 +668,9 @@
       "isOnDiscount": true,
       "description": "Comfortable and sturdy bed with a minimalist design, offering a tranquil sleep environment.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/tranquility.jpg",
-        "assets/data/images/bedroomBed/tranquility1.jpg",
-        "assets/data/images/bedroomBed/tranquility2.jpg"
+        "../assets/data/images/bedroom/Bed_Tranquility (1).jpg",
+        "../assets/data/images/bedroom/Bed_Tranquility (2).jpg",
+        "../assets/data/images/bedroom/Bed_Tranquility (3).jpg"
         
         
       ],
@@ -731,9 +685,9 @@
       "isOnDiscount": true,
       "description": "Modern bed with an elegant design, providing a perfect oasis for relaxation.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/oasis.jpg",
-        "assets/data/images/bedroomBed/oasis1.jpg",
-        "assets/data/images/bedroomBed/oasis2.jpg"
+        "../assets/data/images/bedroom/Bed_Oasis (1).jpg",
+        "../assets/data/images/bedroom/Bed_Oasis (2).jpg",
+        "../assets/data/images/bedroom/Bed_Oasis (3).jpg"
         
         
       ],
@@ -748,9 +702,9 @@
       "isOnDiscount": true,
       "description": "Stylish bed with a luxurious feel, offering a blissful sleep experience.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/elysium.jpg",
-        "assets/data/images/bedroomBed/elysium1.jpg",
-        "assets/data/images/bedroomBed/elysium2.jpg"
+        "../assets/data/images/bedroom/Bed_Elysium (1).jpg",
+        "../assets/data/images/bedroom/Bed_Elysium (2).jpg",
+        "../assets/data/images/bedroom/Bed_Elysium (3).jpg"
         
         
       ],
@@ -765,9 +719,9 @@
       "isOnDiscount": true,
       "description": "Elegant bed with a classic design, providing comfort and style to any bedroom.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/celeste.jpg",
-        "assets/data/images/bedroomBed/celeste1.jpg",
-        "assets/data/images/bedroomBed/celeste2.jpg"
+        "../assets/data/images/bedroom/Bed_Celeste (1).jpg",
+        "../assets/data/images/bedroom/Bed_Celeste (2).jpg",
+        "../assets/data/images/bedroom/Bed_Celeste (3).jpg"
         
         
       ],
@@ -782,9 +736,9 @@
       "isOnDiscount": true,
       "description": "Luxurious bed with a contemporary design, perfect for creating a bedroom paradise.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/paradise.jpg",
-        "assets/data/images/bedroomBed/paradise1.jpg",
-        "assets/data/images/bedroomBed/paradise2.jpg"
+        "../assets/data/images/bedroom/Bed_Paradise (1).jpg",
+        "../assets/data/images/bedroom/Bed_Paradise (2).jpg",
+        "../assets/data/images/bedroom/Bed_Paradise (3).jpg"
         
         
       ],
@@ -799,9 +753,9 @@
       "isOnDiscount": true,
       "description": "Comfortable and stylish bed with a modern design, providing a nirvana-like sleep experience.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/nirvana.jpg",
-        "assets/data/images/bedroomBed/nirvana1.jpg",
-        "assets/data/images/bedroomBed/nirvana2.jpg"
+        "../assets/data/images/bedroom/Bed_Nirvana (1).jpg",
+        "../assets/data/images/bedroom/Bed_Nirvana (2).jpg",
+        "../assets/data/images/bedroom/Bed_Nirvana (3).jpg"
         
         
       ],
@@ -816,562 +770,18 @@
       "isOnDiscount": true,
       "description": "Elegant and comfortable bed with a sleek design, offering a blissful night’s sleep.",
       "imageUrl": [
-        "assets/data/images/bedroomBed/bliss.jpg",
-        "assets/data/images/bedroomBed/bliss1.jpg",
-        "assets/data/images/bedroomBed/bliss2.jpg"
+        "../assets/data/images/bedroom/Bed_Bliss (1).jpg",
+        "../assets/data/images/bedroom/Bed_Bliss (2).jpg",
+        "../assets/data/images/bedroom/Bed_Bliss (3).jpg"
         
         
       ],
       "stock": 13
     },
-    {
-      "id": 51,
-      "name": "Closet Harmony",
-      "category": "bedroom",
-      "price": 21000,
-      "discountPrice": 2500,
-      "isOnDiscount": true,
-      "description": "Spacious and stylish closet with ample storage, perfect for organizing your wardrobe.",
-      "imageUrl": [
-        "assets/data/images/closet/harmony.jpg",
-        "assets/data/images/closet/harmony1.jpg",
-        "assets/data/images/closet/harmony2.jpg"
-        
-        
-      ],
-      "stock": 12
-    },
-    {
-      "id": 52,
-      "name": "Closet Serenity",
-      "category": "bedroom",
-      "price": 29000,
-      "discountPrice": 3500,
-      "isOnDiscount": true,
-      "description": "Elegant closet with a sleek design, providing both style and functionality.",
-      "imageUrl":  [
-        "assets/data/images/closet/serenity.jpg",
-        "assets/data/images/closet/serenity1.jpg",
-        "assets/data/images/closet/serenity2.jpg"
-        
-        
-      ],
-      "stock": 11
-    },
-    {
-      "id": 53,
-      "name": "Closet Tranquility",
-      "category": "bedroom",
-      "price": 25000,
-      "discountPrice": 3000,
-      "isOnDiscount": true,
-      "description": "Modern closet with a minimalist design, offering a tranquil and organized space.",
-      "imageUrl":  [
-        "assets/data/images/closet/tranquility.jpg",
-        "assets/data/images/closet/tranquility1.jpg",
-        "assets/data/images/closet/tranquility2.jpg"
-        
-        
-      ],
-      "stock": 23
-    },
-    {
-      "id": 54,
-      "name": "Closet Oasis",
-      "category": "bedroom",
-      "price": 23000,
-      "discountPrice": 2800,
-      "isOnDiscount": true,
-      "description": "Functional closet with an elegant finish, providing a perfect oasis for your clothing.",
-      "imageUrl":  [
-        "assets/data/images/closet/oasis.jpg",
-        "assets/data/images/closet/oasis1.jpg",
-        "assets/data/images/closet/oasis2.jpg"
-        
-        
-      ],
-      "stock": 12
-    },
-    {
-      "id": 55,
-      "name": "Closet Elysium",
-      "category": "bedroom",
-      "price": 27000,
-      "discountPrice": 3200,
-      "isOnDiscount": true,
-      "description": "Luxurious closet with a sophisticated design, offering ample space for all your storage needs.",
-      "imageUrl":  [
-        "assets/data/images/closet/elysium.jpg",
-        "assets/data/images/closet/elysium1.jpg",
-        "assets/data/images/closet/elysium2.jpg"
-        
-        
-      ],
-      "stock": 10
-    },
-    {
-      "id": 56,
-      "name": "Closet Celeste",
-      "category": "bedroom",
-      "price": 20000,
-      "discountPrice": 2000,
-      "isOnDiscount": true,
-      "description": "Elegant closet with a classic design, providing both style and practicality.",
-      "imageUrl":  [
-        "assets/data/images/closet/celeste.jpg",
-        "assets/data/images/closet/celeste1.jpg",
-        "assets/data/images/closet/celeste2.jpg"
-        
-        
-      ],
-      "stock": 12
-    },
-    {
-      "id": 57,
-      "name": "Closet Paradise",
-      "category": "bedroom",
-      "price": 30000,
-      "discountPrice": 4000,
-      "isOnDiscount": true,
-      "description": "Luxurious closet with a contemporary design, perfect for organizing your wardrobe in style.",
-      "imageUrl":  [
-        "assets/data/images/closet/paradise.jpg",
-        "assets/data/images/closet/paradise1.jpg",
-        "assets/data/images/closet/paradise2.jpg"
-        
-        
-      ],
-      "stock": 21
-    },
-    {
-      "id": 58,
-      "name": "Closet Nirvana",
-      "category": "bedroom",
-      "price": 24000,
-      "discountPrice": 2700,
-      "isOnDiscount": true,
-      "description": "Modern closet with ample storage space, providing a nirvana-like experience for your organization needs.",
-      "imageUrl":  [
-        "assets/data/images/closet/nirvana.jpg",
-        "assets/data/images/closet/nirvana1.jpg",
-        "assets/data/images/closet/nirvana2.jpg"
-        
-        
-      ],
-      "stock":18
-    },
-    {
-      "id": 59,
-      "name": "Closet Bliss",
-      "category": "bedroom",
-      "price": 28000,
-      "discountPrice": 3500,
-      "isOnDiscount": false,
-      "description": "Elegant closet with a sleek design, offering a blissful and organized storage solution.",
-      "imageUrl":  [
-        "assets/data/images/closet/bliss.jpg",
-        "assets/data/images/closet/bliss1.jpg",
-        "assets/data/images/closet/bliss2.jpg"
-        
-        
-      ],
-      "stock": 19
-    },
-    {
-      "id": 60,
-      "name": "Closet Aura",
-      "category": "bedroom",
-      "price": 22000,
-      "discountPrice": 2600,
-      "isOnDiscount": false,
-      "description": "Stylish and functional closet with a bright and airy design, perfect for any bedroom.",
-      "imageUrl":  [
-        "assets/data/images/closet/aura.jpg",
-        "assets/data/images/closet/aura1.jpg",
-        "assets/data/images/closet/aura2.jpg"
-        
-        
-      ],
-      "stock": 10
-    },
-
-  {
-    "id": 61,
-    "name": "Mattress ComfortPlus",
-    "category": "bedroom",
-    "price": 15000,
-    "discountPrice": 1090,
-    "isOnDiscount": false,
-    "description": "High-quality mattress offering exceptional comfort and support for a restful sleep.",
-    "imageUrl":  [
-      "assets/data/images/mattress/comfortplus.jpg",
-      "assets/data/images/mattress/comfortplus1.jpg",
-      "assets/data/images/mattress/comfortplus2.jpg"
-      
-      
-    ],
-    "stock": 14
-  },
-  {
-    "id": 62,
-    "name": "Mattress DreamEase",
-    "category": "bedroom",
-    "price": 18000,
-    "discountPrice": 1000,
-    "isOnDiscount": true,
-    "description": "Luxurious mattress designed to provide the ultimate sleeping experience with superior comfort.",
-    "imageUrl":  [
-      "assets/data/images/mattress/dreamease.jpg",
-      "assets/data/images/mattress/dreamease1.jpg",
-      "assets/data/images/mattress/dreamease2.jpg"
-      
-      
-    ],
-    "stock": 10
-  },
-  {
-    "id": 63,
-    "name": "Mattress SleepWell",
-    "category": "bedroom",
-    "price": 17000,
-    "discountPrice": 1500,
-    "isOnDiscount": false,
-    "description": "Premium mattress ensuring a good night's sleep with excellent support and durability.",
-    "imageUrl":  [
-      "assets/data/images/mattress/sleepwell.jpg",
-      "assets/data/images/mattress/sleepwell1.jpg",
-      "assets/data/images/mattress/sleepwell2.jpg"
-      
-      
-    ],
-    "stock": 2
-  },
-  {
-    "id": 64,
-    "name": "Mattress CozyRest",
-    "category": "bedroom",
-    "price": 16000,
-    "discountPrice": 1200,
-    "isOnDiscount": false,
-    "description": "Comfortable mattress with a soft feel, providing a cozy and restful sleep experience.",
-    "imageUrl":  [
-      "assets/data/images/mattress/cozyrest.jpg",
-      "assets/data/images/mattress/cozyrest1.jpg",
-      "assets/data/images/mattress/cozyrest2.jpg"
-      
-      
-    ],
-    "stock": 5
-  },
-  {
-    "id": 65,
-    "name": "Mattress SerenitySleep",
-    "category": "bedroom",
-    "price": 14000,
-    "discountPrice": 2800,
-    "isOnDiscount": false,
-    "description": "Serene and comfortable mattress offering great support and a peaceful night's sleep.",
-    "imageUrl": [
-      "assets/data/images/mattress/serenitysleep.jpg",
-      "assets/data/images/mattress/serenitysleep1.jpg",
-      "assets/data/images/mattress/serenitysleep2.jpg"
-      
-      
-    ],
-    "stock": 8
-  },
-  {
-    "id": 66,
-    "name": "Mattress DreamNest",
-    "category": "bedroom",
-    "price": 13000,
-    "discountPrice": 2500,
-    "isOnDiscount": false,
-    "description": "Innovative mattress with advanced support technology for a dream-like sleep experience.",
-    "imageUrl": [
-      "assets/data/images/mattress/dreamnest.jpg",
-      "assets/data/images/mattress/dreamnest1.jpg",
-      "assets/data/images/mattress/dreamnest2.jpg"
-      
-      
-    ],
-    "stock": 9
-  },
-  {
-    "id": 67,
-    "name": "Mattress CloudNine",
-    "category": "bedroom",
-    "price": 19000,
-    "discountPrice": 500,
-    "isOnDiscount": true,
-    "description": "Plush mattress offering exceptional comfort, making you feel like you're on cloud nine.",
-    "imageUrl": [
-      "assets/data/images/mattress/cloudnine.jpg",
-      "assets/data/images/mattress/cloudnine1.jpg",
-      "assets/data/images/mattress/cloudnine2.jpg"
-      
-      
-    ],
-    "stock": 0
-  },
-  {
-    "id": 68,
-    "name": "Mattress PeacefulNight",
-    "category": "bedroom",
-    "price": 12000,
-    "discountPrice": 2400,
-    "isOnDiscount": false,
-    "description": "Durable mattress designed for optimal support and a peaceful night's sleep.",
-    "imageUrl": [
-      "assets/data/images/mattress/peacefulnight.jpg",
-      "assets/data/images/mattress/peacefulnight1.jpg",
-      "assets/data/images/mattress/peacefulnight2.jpg"
-      
-      
-    ],
-    "stock": 2
-  },
-  {
-    "id": 69,
-    "name": "Mattress BlissRest",
-    "category": "bedroom",
-    "price": 20000,
-    "discountPrice": 5000,
-    "isOnDiscount": false,
-    "description": "High-end mattress offering a blissful sleep experience with superior comfort and support.",
-    "imageUrl": [
-      "assets/data/images/mattress/blissrest.jpg",
-      "assets/data/images/mattress/blissrest1.jpg",
-      "assets/data/images/mattress/blissrest2.jpg"
-      
-      
-    ],
-    "stock": 14
-  },
-  {
-    "id": 70,
-    "name": "Mattress HeavenlySleep",
-    "category": "bedroom",
-    "price": 11000,
-    "discountPrice": 2200,
-    "isOnDiscount": false,
-    "description": "Comfortable mattress providing a heavenly sleep experience with excellent support.",
-    "imageUrl": [
-      "assets/data/images/mattress/heavenlysleep.jpg",
-      "assets/data/images/mattress/heavenlysleep1.jpg",
-      "assets/data/images/mattress/heavenlysleep2.jpg"
-      
-      
-    ],
-    "stock": 9
-  },
-  {
-    "id": 71,
-    "name": "Table Lamp LuminousGlow",
-    "category": "lighting",
-    "price": 2500,
-    "discountPrice": 400,
-    "isOnDiscount": false,
-    "description": "Elegant table lamp that adds a warm and luminous glow to any room.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/luminousglow.jpg",
-      "assets/data/images/tableLamps/luminousglow1.jpg",
-      "assets/data/images/tableLamps/luminousglow2.jpg"
-      
-      
-    ],
-    "stock":0
-  },
-  {
-    "id": 72,
-    "name": "Table Lamp RadiantLight",
-    "category": "lighting",
-    "price": 3000,
-    "discountPrice": 500,
-    "isOnDiscount": true,
-    "description": "Stylish table lamp designed to provide radiant light and enhance your decor.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/radiantlight.jpg",
-      "assets/data/images/tableLamps/radiantlight1.jpg",
-      "assets/data/images/tableLamps/radiantlight2.jpg"
-      
-      
-    ],
-    "stock": 0
-  },
-  {
-    "id": 73,
-    "name": "Table Lamp SerenityGlow",
-    "category": "lighting",
-    "price": 2200,
-    "discountPrice": 300,
-    "isOnDiscount": false,
-    "description": "Calm and serene table lamp, perfect for creating a relaxing ambiance.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/serenityglow.jpg",
-      "assets/data/images/tableLamps/serenityglow1.jpg",
-      "assets/data/images/tableLamps/serenityglow2.jpg"
-      
-      
-    ],
-    "stock": 14
-  },
-  {
-    "id": 74,
-    "name": "Table Lamp CozyShine",
-    "category": "lighting",
-    "price": 3500,
-    "discountPrice": 700,
-    "isOnDiscount": false,
-    "description": "Cozy table lamp that brings a soft and inviting shine to your living space.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/cozyshine.jpg",
-      "assets/data/images/tableLamps/cozyshine1.jpg",
-      "assets/data/images/tableLamps/cozyshine2.jpg"
-      
-      
-    ],
-    "stock": 18
-  },
-  {
-    "id": 75,
-    "name": "Table Lamp ModernBeam",
-    "category": "lighting",
-    "price": 2800,
-    "discountPrice": 500,
-    "isOnDiscount": true,
-    "description": "Sleek and modern table lamp with a powerful beam of light, ideal for reading.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/modernbeam.jpg",
-      "assets/data/images/tableLamps/modernbeam1.jpg",
-      "assets/data/images/tableLamps/modernbeam2.jpg"
-      
-      
-    ],
-    "stock": 3
-  },
-  {
-    "id": 76,
-    "name": "Table Lamp ClassicGlow",
-    "category": "lighting",
-    "price": 3200,
-    "discountPrice": 600,
-    "isOnDiscount": false,
-    "description": "Classic table lamp that adds a timeless glow to any room.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/classicglow.jpg",
-      "assets/data/images/tableLamps/classicglow1.jpg",
-      "assets/data/images/tableLamps/classicglow2.jpg"
-      
-      
-    ],
-    "stock": 7
-  },
-  {
-    "id": 77,
-    "name": "Table Lamp SoftRadiance",
-    "category": "lighting",
-    "price": 2400,
-    "discountPrice": 350,
-    "isOnDiscount": true,
-    "description": "Soft radiance table lamp, perfect for creating a gentle and relaxing light.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/softradiance.jpg",
-      "assets/data/images/tableLamps/softradiance1.jpg",
-      "assets/data/images/tableLamps/softradiance2.jpg"
-      
-      
-    ],
-    "stock": 4
-  },
-  {
-    "id": 78,
-    "name": "Table Lamp ElegantLustre",
-    "category": "lighting",
-    "price": 4000,
-    "discountPrice": 800,
-    "isOnDiscount": false,
-    "description": "Elegant table lamp with a lustrous finish, adding sophistication to any decor.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/elegantlustre.jpg",
-      "assets/data/images/tableLamps/elegantlustre1.jpg",
-      "assets/data/images/tableLamps/elegantlustre2.jpg"
-      
-      
-    ],
-    "stock": 6
-  },
-  {
-    "id": 79,
-    "name": "Table Lamp BrightAura",
-    "category": "lighting",
-    "price": 2700,
-    "discountPrice": 450,
-    "isOnDiscount": false,
-    "description": "Bright table lamp that enhances the ambiance with its vivid light.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/brightaura.jpg",
-      "assets/data/images/tableLamps/brightaura1.jpg",
-      "assets/data/images/tableLamps/brightaura2.jpg"
-      
-      
-    ],
-    "stock": 7
-  },
-  {
-    "id": 80,
-    "name": "Table Lamp AmbientGlow",
-    "category": "lighting",
-    "price": 2100,
-    "discountPrice": 300,
-    "isOnDiscount": false,
-    "description": "Ambient table lamp that creates a warm and inviting atmosphere.",
-    "imageUrl": [
-      "assets/data/images/tableLamps/ambientglow.jpg",
-      "assets/data/images/tableLamps/ambientglow1.jpg",
-      "assets/data/images/tableLamps/ambientglow2.jpg"
-      
-      
-    ],
-    "stock": 8
-  }, 
+    
   
   {
-    "id": 81,
-    "name": "Wall Lamp Elegant",
-    "category": "lighting",
-    "price": 9000,
-    "discountPrice": 1000,
-    "isOnDiscount": false,
-    "description": "Sophisticated wall lamp that adds a touch of elegance to any room.",
-    "imageUrl": [
-      "assets/data/images/wallLamps/elegant.jpg",
-      "assets/data/images/wallLamps/elegant1.jpg",
-      "assets/data/images/wallLamps/elegant2.jpg"
-      
-      
-    ],
-    "stock": 3
-  },
-  {
-    "id": 82,
-    "name": "Wall Lamp Radiant",
-    "category": "lighting",
-    "price": 11000,
-    "discountPrice": 1500,
-    "isOnDiscount": true,
-    "description": "Stylish wall lamp providing radiant light to brighten up your space.",
-    "imageUrl": [
-      "assets/data/images/wallLamps/radiant.jpg",
-      "assets/data/images/wallLamps/radiant1.jpg",
-      "assets/data/images/wallLamps/radiant2.jpg"
-      
-      
-    ],
-    "stock": 14
-  },
-  {
-    "id": 83,
+    "id": 51,
     "name": "Wall Lamp Serenity",
     "category": "lighting",
     "price": 8000,
@@ -1379,16 +789,16 @@
     "isOnDiscount": false,
     "description": "Serene wall lamp, perfect for creating a peaceful ambiance in any room.",
     "imageUrl": [
-      "assets/data/images/wallLamps/serenity.jpg",
-      "assets/data/images/wallLamps/serenity1.jpg",
-      "assets/data/images/wallLamps/serenity2.jpg"
+      "../assets/data/images/lighting/Wall_Lamp (1).jpg",
+      "../assets/data/images/lighting/Wall_Lamp (2).jpg",
+      "../assets/data/images/lighting/Wall_Lamp (3).jpg"
       
       
     ],
     "stock": 23
   },
   {
-    "id": 84,
+    "id": 52,
     "name": "Wall Lamp Cozy",
     "category": "lighting",
     "price": 14000,
@@ -1396,16 +806,16 @@
     "isOnDiscount": false,
     "description": "Cozy wall lamp that emits a warm and inviting glow.",
     "imageUrl": [
-      "assets/data/images/wallLamps/cozy.jpg",
-      "assets/data/images/wallLamps/cozy1.jpg",
-      "assets/data/images/wallLamps/cozy2.jpg"
+      "../assets/data/images/lighting/Wall_Cozy (1).jpg",
+      "../assets/data/images/lighting/Wall_Cozy (2).jpg",
+      "../assets/data/images/lighting/Wall_Cozy (3).jpg"
       
       
     ],
     "stock": 5
   },
   {
-    "id": 85,
+    "id": 53,
     "name": "Wall Lamp Modern",
     "category": "lighting",
     "price": 13000,
@@ -1413,273 +823,137 @@
     "isOnDiscount": false,
     "description": "Modern wall lamp with a sleek design, ideal for contemporary spaces.",
     "imageUrl": [
-      "assets/data/images/wallLamps/modern.jpg",
-      "assets/data/images/wallLamps/modern1.jpg",
-      "assets/data/images/wallLamps/modern2.jpg"
+      "../assets/data/images/lighting/Wall_Modern (1).jpg",
+      "../assets/data/images/lighting/Wall_Modern (2).jpg",
+      "../assets/data/images/lighting/Wall_Modern (3).jpg"
       
       
     ],
     "stock": 0
   },
+  
   {
-    "id": 86,
-    "name": "Wall Lamp Classic",
-    "category": "lighting",
-    "price": 12000,
-    "discountPrice": 1500,
-    "isOnDiscount": false,
-    "description": "Classic wall lamp that adds a timeless touch to any decor.",
-    "imageUrl": [
-      "assets/data/images/wallLamps/classic.jpg",
-      "assets/data/images/wallLamps/classic1.jpg",
-      "assets/data/images/wallLamps/classic2.jpg"
-      
-      
-    ],
-    "stock": 0
-  },
-  {
-    "id": 87,
-    "name": "Wall Lamp Soft",
-    "category": "lighting",
-    "price": 10000,
-    "discountPrice": 1200,
-    "isOnDiscount": false,
-    "description": "Soft wall lamp, perfect for creating a gentle and relaxing light.",
-    "imageUrl": [
-      "assets/data/images/wallLamps/soft.jpg",
-      "assets/data/images/wallLamps/soft1.jpg",
-      "assets/data/images/wallLamps/soft2.jpg"
-      
-      
-    ],
-    "stock": 14
-  },
-  {
-    "id": 88,
-    "name": "Wall Lamp ElegantLustre",
-    "category": "lighting",
-    "price": 15000,
-    "discountPrice": 2000,
-    "isOnDiscount": false,
-    "description": "Elegant wall lamp with a lustrous finish, adding sophistication to any decor.",
-    "imageUrl": [
-      "assets/data/images/wallLamps/elegantLustre.jpg",
-      "assets/data/images/wallLamps/elegantLustre1.jpg",
-      "assets/data/images/wallLamps/elegantLustre2.jpg"
-      
-      
-    ],
-    "stock": 3
-  },
-  {
-    "id": 89,
-    "name": "Wall Lamp Bright",
-    "category": "lighting",
-    "price": 11000,
-    "discountPrice": 1300,
-    "isOnDiscount": false,
-    "description": "Bright wall lamp that enhances the ambiance with its vivid light.",
-    "imageUrl": [
-      "assets/data/images/wallLamps/bright.jpg",
-      "assets/data/images/wallLamps/bright1.jpg",
-      "assets/data/images/wallLamps/bright2.jpg"
-      
-      
-    ],
-    "stock": 0
-  },
-  {
-    "id": 90,
-    "name": "Wall Lamp Ambient",
-    "category": "lighting",
-    "price": 9000,
-    "discountPrice": 1000,
-    "isOnDiscount": false,
-    "description": "Ambient wall lamp that creates a warm and inviting atmosphere.",
-    "imageUrl": [
-      "assets/data/images/wallLamps/ambient.jpg",
-      "assets/data/images/wallLamps/ambient1.jpg",
-      "assets/data/images/wallLamps/ambient2.jpg"
-      
-      
-    ],
-    "stock": 11
-  },
-  {
-  "id": 91,
-  "name": "Floor Lamp Elegance",
-  "category": "lighting",
-  "price": 5000,
-  "discountPrice": 800,
-  "isOnDiscount": false,
-  "description": "Elegant floor lamp that adds a touch of sophistication to your living space.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/elegance.jpg",
-    "assets/data/images/floorLamps/elegance1.jpg",
-    "assets/data/images/floorLamps/elegance2.jpg"
-    
-    
-  ],
-  "stock": 20
-},
+        "id": 54,
+        "name": "Ceiling Lamp Crystal",
+        "category": "lighting",
+        "price": 25000,
+        "discountPrice": 3000,
+        "isOnDiscount": true,
+        "description": "Elegant crystal ceiling lamp with a luxurious design.",
+        "imageUrl": [
+            "../assets/data/images/lighting/Ceiling_Lamp (1).jpg",
+            "../assets/data/images/lighting/Ceiling_Lamp (2).jpg",
+            "../assets/data/images/lighting/Ceiling_Lamp (3).jpg"
+        ],
+        "stock": 15
+    },
+    {
+        "id": 55,
+        "name": "Floor Lamp Arc",
+        "category": "lighting",
+        "price": 18000,
+        "discountPrice": 2500,
+        "isOnDiscount": true,
+        "description": "Modern arc floor lamp with adjustable height and sleek finish.",
+        "imageUrl": [
+            "../assets/data/images/lighting/Floor_Arc (1).jpg",
+            "../assets/data/images/lighting/Floor_Arc (2).jpg",
+            "../assets/data/images/lighting/Floor_Arc (3).jpg"
+        ],
+        "stock": 10
+    },
+    {
+        "id": 56,
+        "name": "Table Lamp Tiffany",
+        "category": "lighting",
+        "price": 12000,
+        "discountPrice": 1500,
+        "isOnDiscount": true,
+        "description": "Classic Tiffany style table lamp with stained glass shade.",
+        "imageUrl": [
+            "../assets/data/images/lighting/Table_Tiffany (1).jpg",
+            "../assets/data/images/lighting/Table_Tiffany (2).jpg",
+            "../assets/data/images/lighting/Table_Tiffany (3).jpg"
+        ],
+        "stock": 20
+    },
+    {
+        "id": 57,
+        "name": "Chandelier Venice",
+        "category": "lighting",
+        "price": 35000,
+        "discountPrice": 5000,
+        "isOnDiscount": true,
+        "description": "Exquisite Venetian chandelier with intricate glasswork and ornate design.",
+        "imageUrl": [
+            "../assets/data/images/lighting/Chandelier_Venice (1).jpg",
+            "../assets/data/images/lighting/Chandelier_Venice (2).jpg",
+            "../assets/data/images/lighting/Chandelier_Venice (2).jpg"
+        ],
+        "stock": 5
+    },
+    {
+        "id": 58,
+        "name": "Pendant Light Sphere",
+        "category": "lighting",
+        "price": 20000,
+        "discountPrice": 2500,
+        "isOnDiscount": true,
+        "description": "Modern pendant light fixture with a spherical glass shade.",
+        "imageUrl": [
+            "../assets/data/images/lighting/Pendant_Sphere (1).jpg",
+            "../assets/data/images/lighting/Pendant_Sphere (2).jpg",
+            "../assets/data/images/lighting/Pendant_Sphere (3).jpg"
+        ],
+        "stock": 8
+    },
+    {
+        "id": 59,
+        "name": "Track Lighting Kit",
+        "category": "lighting",
+        "price": 28000,
+        "discountPrice": 4000,
+        "isOnDiscount": true,
+        "description": "Versatile track lighting kit with adjustable heads for customizable illumination.",
+        "imageUrl": [
+            "../assets/data/images/lighting/Track_Lighting (1).jpg",
+            "../assets/data/images/lighting/Track_Lighting (2).jpg",
+            "../assets/data/images/lighting/Track_Lighting (3).jpg"
+        ],
+        "stock": 12
+    },
+    {
+        "id": 60,
+        "name": "Desk Lamp LED",
+        "category": "lighting",
+        "price": 15000,
+        "discountPrice": 2000,
+        "isOnDiscount": true,
+        "description": "Energy-efficient LED desk lamp with adjustable brightness settings.",
+        "imageUrl": [
+            "../assets/data/images/lighting/Desk_Lamp (1).jpg",
+            "../assets/data/images/lighting/Desk_Lamp (2).jpg",
+            "../assets/data/images/lighting/Desk_Lamp (3).jpg"
+        ],
+        "stock": 18
+    },
+    {
+        "id":61,
+        "name": "Spotlight Outdoor",
+        "category": "lighting",
+        "price": 30000,
+        "discountPrice": 3500,
+        "isOnDiscount": true,
+        "description": "Durable outdoor spotlight with weather-resistant housing.",
+        "imageUrl": [
+            "../assets/data/images/lighting/Spotlight_Outdoor (1).jpg",
+            "../assets/data/images/lighting/Spotlight_Outdoor (2).jpg",
+            "../assets/data/images/lighting/Spotlight_Outdoor (3).jpg"
+        ],
+        "stock": 6
+    },
 {
-  "id": 92,
-  "name": "Floor Lamp Radiance",
-  "category": "lighting",
-  "price": 6000,
-  "discountPrice": 1000,
-  "isOnDiscount": false,
-  "description": "Stylish floor lamp providing bright and radiant light for any room.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/radiance.jpg",
-    "assets/data/images/floorLamps/radiance1.jpg",
-    "assets/data/images/floorLamps/radiance2.jpg"
-    
-    
-  ],
-  "stock": 19
-},
-{
-  "id": 93,
-  "name": "Floor Lamp Serenity",
-  "category": "lighting",
-  "price": 3000,
-  "discountPrice": 500,
-  "isOnDiscount": false,
-  "description": "Serene floor lamp perfect for creating a peaceful and calming ambiance.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/serenity.jpg",
-    "assets/data/images/floorLamps/serenity1.jpg",
-    "assets/data/images/floorLamps/serenity2.jpg"
-    
-    
-  ],
-  "stock": 24
-},
-{
-  "id": 94,
-  "name": "Floor Lamp CozyLight",
-  "category": "lighting",
-  "price": 7000,
-  "discountPrice": 1200,
-  "isOnDiscount": false,
-  "description": "Cozy floor lamp that emits a warm and inviting glow to any room.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/cozylight.jpg",
-    "assets/data/images/floorLamps/cozylight1.jpg",
-    "assets/data/images/floorLamps/cozylight2.jpg"
-    
-    
-  ],
-  "stock": 16
-},
-{
-  "id": 95,
-  "name": "Floor Lamp ModernGlow",
-  "category": "lighting",
-  "price": 6500,
-  "discountPrice": 1000,
-  "isOnDiscount": true,
-  "description": "Modern floor lamp with a sleek design, perfect for contemporary interiors.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/modernglow.jpg",
-    "assets/data/images/floorLamps/modernglow1.jpg",
-    "assets/data/images/floorLamps/modernglow2.jpg"
-    
-    
-  ],
-  "stock":0
-},
-{
-  "id": 96,
-  "name": "Floor Lamp ClassicShine",
-  "category": "floorLamps",
-  "price": 4500,
-  "discountPrice": 700,
-  "isOnDiscount": false,
-  "description": "Classic floor lamp that adds a timeless shine to your home decor.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/classicshine.jpg",
-    "assets/data/images/floorLamps/classicshine1.jpg",
-    "assets/data/images/floorLamps/classicshine2.jpg"
-    
-    
-  ],
-  "stock": 5
-},
-{
-  "id": 97,
-  "name": "Floor Lamp SoftLight",
-  "category": "lighting",
-  "price": 3500,
-  "discountPrice": 600,
-  "isOnDiscount": false,
-  "description": "Soft floor lamp, ideal for creating a gentle and relaxing light environment.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/softlight.jpg",
-    "assets/data/images/floorLamps/softlight1.jpg",
-    "assets/data/images/floorLamps/softlight2.jpg"
-    
-    
-  ],
-  "stock": 9
-},
-{
-  "id": 98,
-  "name": "Floor Lamp ElegantLustre",
-  "category": "lighting",
-  "price": 5500,
-  "discountPrice": 900,
-  "isOnDiscount": true,
-  "description": "Elegant floor lamp with a lustrous finish, adding sophistication to any room.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/elegantlustre.jpg",
-    "assets/data/images/floorLamps/elegantlustre1.jpg",
-    "assets/data/images/floorLamps/elegantlustre2.jpg"
-    
-    
-  ],
-  "stock": 41
-},
-{
-  "id": 99,
-  "name": "Floor Lamp BrightBeam",
-  "category": "lighting",
-  "price": 4800,
-  "discountPrice": 700,
-  "isOnDiscount": false,
-  "description": "Bright floor lamp that enhances the ambiance with its vivid light.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/brightbeam.jpg",
-    "assets/data/images/floorLamps/brightbeam1.jpg",
-    "assets/data/images/floorLamps/brightbeam2.jpg"
-    
-    
-  ],
-  "stock": 23
-},
-{
-  "id": 100,
-  "name": "Floor Lamp AmbientGlow",
-  "category": "lighting",
-  "price": 5200,
-  "discountPrice": 800,
-  "isOnDiscount": false,
-  "description": "Ambient floor lamp that creates a warm and inviting atmosphere.",
-  "imageUrl": [
-    "assets/data/images/floorLamps/ambientglow.jpg",
-    "assets/data/images/floorLamps/ambientglow1.jpg",
-    "assets/data/images/floorLamps/ambientglow2.jpg"
-    
-    
-  ],
-  "stock": 14
-},
-
-
-{
-  "id": 101,
+  "id": 62,
   "name": "Modern Vase Elegance",
   "category": "decorative",
   "price": 3000,
@@ -1687,14 +961,14 @@
   "isOnDiscount": true,
   "description": "A sleek and modern vase perfect for any stylish interior.",
   "imageUrl": [
-    "assets/data/images/decorative/Modern_Vase-1.jpg",
-    "assets/data/images/decorative/Modern_Vase-2.jpg",
-    "assets/data/images/decorative/Modern_Vase-3.jpg"
+    "../assets/data/images/decorative/Modern_Vase-1.jpg",
+    "../assets/data/images/decorative/Modern_Vase-2.jpg",
+    "../assets/data/images/decorative/Modern_Vase-3.jpg"
   ],
   "stock": 25
 },
 {
-  "id": 102,
+  "id": 63,
   "name": "Wall Art Abstract",
   "category": "decorative",
   "price": 4500,
@@ -1702,14 +976,14 @@
   "isOnDiscount": true,
   "description": "Abstract wall art piece to add a touch of sophistication to your home.",
   "imageUrl": [
-    "assets/data/images/decorative/Wall_Art-1.jpg",
-    "assets/data/images/wallArt/Wall_Art-2.jpg",
-    "assets/data/images/wallArt/Wall_Art-3.jpg"
+    "../assets/data/images/decorative/Wall_Art -1.jpg",
+    "../assets/data/images/wallArt/Wall_Art-2.jpg",
+    "../assets/data/images/wallArt/Wall_Art-3.jpg"
   ],
   "stock": 10
 },
 {
-  "id": 103,
+  "id": 64,
   "name": "Ceramic Bowl Artisan",
   "category": "decorative",
   "price": 1200,
@@ -1717,14 +991,14 @@
   "isOnDiscount": true,
   "description": "Handcrafted ceramic bowl with unique artisan designs.",
   "imageUrl": [
-    "assets/data/images/decorative/Ceramic_Bowl-1.jpg",
-    "assets/data/images/decorative/Ceramic_Bowl-2.jpg",
-    "assets/data/images/decorative/Ceramic_Bowl-3.jpg"
+    "../assets/data/images/decorative/Ceramic_Bowl-1.jpg",
+    "../assets/data/images/decorative/Ceramic_Bowl-2.jpg",
+    "../assets/data/images/decorative/Ceramic_Bowl-3.jpg"
   ],
   "stock": 30
 },
 {
-  "id": 104,
+  "id": 65,
   "name": "Wooden Sculpture Harmony",
   "category": "decorative",
   "price": 8000,
@@ -1732,14 +1006,14 @@
   "isOnDiscount": true,
   "description": "Beautifully carved wooden sculpture that embodies harmony and grace.",
   "imageUrl": [
-    "assets/data/images/decorative/Wooden_Sclptur-1.jpg",
-    "assets/data/images/decorative/Wooden_Sclptur-2.jpg",
-    "assets/data/images/decorative/Wooden_Sclptur-3.jpg"
+    "../assets/data/images/decorative/Wooden_Sculpture-1.jpg",
+    "../assets/data/images/decorative/Wooden_Sculpture-2.jpg",
+    "../assets/data/images/decorative/Wooden_Sculpture-3.jpg"
   ],
   "stock": 5
 },
 {
-  "id": 105,
+  "id": 66,
   "name": "Decorative Throw Pillow Comfort",
   "category": "decorative",
   "price": 1500,
@@ -1747,14 +1021,14 @@
   "isOnDiscount": true,
   "description": "Soft and cozy throw pillow to enhance the comfort of your space.",
   "imageUrl": [
-    "assets/data/images/decorative/Decorative_Throw_Pillow-1.jpg",
-    "assets/data/images/decorative/Decorative_Throw_Pillow-2.jpg",
-    "assets/data/images/decorative/Decorative_Throw_Pillow-3.jpg"
+    "../assets/data/images/decorative/Decorative_Throw_Pillow-1.jpg",
+    "../assets/data/images/decorative/Decorative_Throw_Pillow-2.jpg",
+    "../assets/data/images/decorative/Decorative_Throw_Pillow-3.jpg"
   ],
   "stock": 50
 },
 {
-  "id": 106,
+  "id": 67,
   "name": "Decorative Candle Serenity",
   "category": "decorative",
   "price": 2000,
@@ -1762,14 +1036,14 @@
   "isOnDiscount": true,
   "description": "Aromatic candle that creates a serene and relaxing ambiance.",
   "imageUrl": [
-    "assets/data/images/decorative/Decorative_Candle-1.jpg",
-    "assets/data/images/decorative/Decorative_Candle-2.jpg",
-    "assets/data/images/decorative/Decorative_Candle-3.jpg"
+    "../assets/data/images/decorative/Decorative_Candle-1.jpg",
+    "../assets/data/images/decorative/Decorative_Candle-2.jpg",
+    "../assets/data/images/decorative/Decorative_Candle-3.jpg"
   ],
   "stock": 40
 },
 {
-  "id": 107,
+  "id": 68,
   "name": "Glass Terrarium Greenery",
   "category": "decorative",
   "price": 3500,
@@ -1777,14 +1051,14 @@
   "isOnDiscount": true,
   "description": "Elegant glass terrarium perfect for small indoor plants.",
   "imageUrl": [
-    "assets/data/images/decorative/Glass_Terrarium-1.jpg",
-    "assets/data/images/decorative/Glass_Terrarium-2.jpg",
-    "assets/data/images/decorative/Glass_Terrarium-3.jpg"
+    "../assets/data/images/decorative/Glass_Terrarium-1.jpg",
+    "../assets/data/images/decorative/Glass_Terrarium-2.jpg",
+    "../assets/data/images/decorative/Glass_Terrarium-3.jpg"
   ],
   "stock": 20
 },
 {
-  "id": 108,
+  "id": 69,
   "name": "Metal Wall Clock Timeless",
   "category": "decorative",
   "price": 5000,
@@ -1792,14 +1066,14 @@
   "isOnDiscount": true,
   "description": "Stylish metal wall clock that adds a timeless touch to any room.",
   "imageUrl": [
-    "assets/data/images/decorative/Metal_Wall-1.jpg",
-    "assets/data/images/decorative/Metal_Wall-2.jpg",
-    "assets/data/images/decorative/Metal_Wall-3.jpg"
+    "../assets/data/images/decorative/Metal_Wall-1 .jpg",
+    "../assets/data/images/decorative/Metal_Wall-2.jpg",
+    "../assets/data/images/decorative/Metal_Wall-3.jpg"
   ],
   "stock": 15
 },
 {
-  "id": 109,
+  "id": 70,
   "name": "Porcelain Figurine Grace",
   "category": "decorative",
   "price": 6000,
@@ -1807,14 +1081,14 @@
   "isOnDiscount": true,
   "description": "Delicate porcelain figurine that adds a touch of grace to your decor.",
   "imageUrl": [
-    "assets/data/images/decorative/Porcelain_Figurin-1.jpg",
-    "assets/data/images/decorative/Porcelain_Figurin-2.jpg",
-    "assets/data/images/decorative/Porcelain_Figurin-3.jpg"
+    "../assets/data/images/decorative/Porcelain_Figurin-1.jpg",
+    "../assets/data/images/decorative/Porcelain_Figurin-2.jpg",
+    "../assets/data/images/decorative/Porcelain_Figurin-3.jpg"
   ],
   "stock": 8
 },
 {
-  "id": 110,
+  "id": 71,
   "name": "Decorative Mirror Reflections",
   "category": "decorative",
   "price": 7000,
@@ -1822,14 +1096,14 @@
   "isOnDiscount": true,
   "description": "Chic decorative mirror that enhances the light and space in your home.",
   "imageUrl": [
-    "assets/data/images/decorative/Decorative_Mirror-1.jpg",
-    "assets/data/images/decorative/Decorative_Mirror-2.jpg",
-    "assets/data/images/decorative/Decorative_Mirror-3.jpg"
+    "../assets/data/images/decorative/Decorative_Mirror-1.jpg",
+    "../assets/data/images/decorative/Decorative_Mirror-2.jpg",
+    "../assets/data/images/decorative/Decorative_Mirror-3.jpg"
   ],
   "stock": 12
 },
 {
-  "id": 111,
+  "id": 72,
   "name": "Smart Thermostat Pro",
   "category": "smart_home",
   "price": 12000,
@@ -1837,14 +1111,14 @@
   "isOnDiscount": true,
   "description": "Efficiently manage your home's temperature with the Smart Thermostat Pro.",
   "imageUrl": [
-    "assets/data/images/smart/Smart_Thermostat-1.jpg",
-    "assets/data/images/smart/Smart_Thermostat-2.jpg",
-    "assets/data/images/smart/Smart_Thermostat-3.jpg"
+    "../assets/data/images/smart/Smart_Thermostat -1.jpg",
+    "../assets/data/images/smart/Smart_Thermostat -2.jpg",
+    "../assets/data/images/smart/Smart_Thermostat -3.jpg"
   ],
   "stock": 8
 },
 {
-  "id": 112,
+  "id": 73,
   "name": "Smart Doorbell Cam",
   "category": "smart_home",
   "price": 8000,
@@ -1852,14 +1126,14 @@
   "isOnDiscount": true,
   "description": "See who’s at your door from anywhere with the Smart Doorbell Cam.",
   "imageUrl": [
-    "assets/data/images/smart/Smart_Doorbell-1.jpg",
-    "assets/data/images/smart/Smart_Doorbell-2.jpg",
-    "assets/data/images/smart/Smart_Doorbell-3.jpg"
+    "../assets/data/images/smart/Smart_Doorbell-1.jpg",
+    "../assets/data/images/smart/Smart_Doorbell-2.jpg",
+    "../assets/data/images/smart/Smart_Doorbell-3.jpg"
   ],
   "stock": 15
 },
 {
-  "id": 113,
+  "id": 74,
   "name": "Voice Assistant Speaker",
   "category": "smart_home",
   "price": 5000,
@@ -1867,14 +1141,14 @@
   "isOnDiscount": true,
   "description": "Your personal assistant for music, news, and smart home control.",
   "imageUrl": [
-    "assets/data/images/smart/Voice_Assistant-1.jpg",
-    "assets/data/images/smart/Voice_Assistant-2.jpg",
-    "assets/data/images/smart/Voice_Assistant-3.jpg"
+    "../assets/data/images/smart/Voice_Assistant-1.jpg",
+    "../assets/data/images/smart/Voice_Assistant-2.jpg",
+    "../assets/data/images/smart/Voice_Assistant-3.jpg"
   ],
   "stock": 20
 },
 {
-  "id": 114,
+  "id": 75,
   "name": "Smart Light Bulb Pack",
   "category": "smart_home",
   "price": 3000,
@@ -1882,14 +1156,14 @@
   "isOnDiscount": true,
   "description": "Customize your lighting with Smart Light Bulb Pack, compatible with all major voice assistants.",
   "imageUrl": [
-    "assets/data/images/smart/Smart_Light-1.jpg",
-    "assets/data/images/smart/Smart_Light-2.jpg",
-    "assets/data/images/smart/Smart_Light-3.jpg"
+    "../assets/data/images/smart/Smart_Light-1.jpg",
+    "../assets/data/images/smart/Smart_Light-2.jpg",
+    "../assets/data/images/smart/Smart_Light-3.jpg"
   ],
   "stock": 25
 },
 {
-  "id": 115,
+  "id": 76,
   "name": "Smart Security Camera",
   "category": "smart_home",
   "price": 10000,
@@ -1897,14 +1171,14 @@
   "isOnDiscount": true,
   "description": "Monitor your home 24/7 with the high-definition Smart Security Camera.",
   "imageUrl": [
-    "assets/data/images/smart/Security_Camera-1.jpg",
-    "assets/data/images/smart/Security_Camera-2.jpg",
-    "assets/data/images/smart/Security_Camera-3.jpg"
+    "../assets/data/images/smart/Security_Camera-1.jpg",
+    "../assets/data/images/smart/Security_Camera-2.jpg",
+    "../assets/data/images/smart/Security_Camera-3.jpg"
   ],
   "stock": 10
 },
 {
-  "id": 116,
+  "id": 77,
   "name": "Smart Plug Pack",
   "category": "smart_home",
   "price": 4000,
@@ -1912,14 +1186,14 @@
   "isOnDiscount": true,
   "description": "Control your appliances remotely with the Smart Plug Pack.",
   "imageUrl": [
-    "assets/data/images/smart/Smart-Plug-1.jpg",
-    "assets/data/images/smart/Smart-Plug-2.jpg",
-    "assets/data/images/smart/Smart-Plug-3.jpg"
+    "../assets/data/images/smart/Smart_Plug-3.jpg",
+    "../assets/data/images/smart/Smart_Plug-2.jpg",
+    "../assets/data/images/smart/Smart_Plug-1.jpg"
   ],
   "stock": 30
 },
 {
-  "id": 117,
+  "id": 78,
   "name": "Smart Lock Pro",
   "category": "smart_home",
   "price": 15000,
@@ -1927,14 +1201,14 @@
   "isOnDiscount": true,
   "description": "Enhance your home security with the Smart Lock Pro, featuring keyless entry.",
   "imageUrl": [
-    "assets/data/images/smart/Smart_Lock-1.jpg",
-    "assets/data/images/smart/Smart_Lock-2.jpg",
-    "assets/data/images/smart/Smart_Lock-3.jpg"
+    "../assets/data/images/smart/Smart_Lock-1.jpg",
+    "../assets/data/images/smart/Smart_Lock-2.jpg",
+    "../assets/data/images/smart/Smart_Lock-3.jpg"
   ],
   "stock": 5
 },
 {
-  "id": 118,
+  "id": 79,
   "name": "Smart Vacuum Cleaner",
   "category": "smart_home",
   "price": 20000,
@@ -1942,14 +1216,14 @@
   "isOnDiscount": true,
   "description": "Keep your home spotless with the Smart Vacuum Cleaner, controllable via app.",
   "imageUrl": [
-    "assets/data/images/smart/Smart_Vacuum-1.jpg",
-    "assets/data/images/smart/Smart_Vacuum-2.jpg",
-    "assets/data/images/smart/Smart_Vacuum-3.jpg"
+    "../assets/data/images/smart/Smart_Vacuum-1.jpg",
+    "../assets/data/images/smart/Smart_Vacuum-2.jpg",
+    "../assets/data/images/smart/Smart_Vacuum-3.jpg"
   ],
   "stock": 7
 },
 {
-  "id": 119,
+  "id": 80,
   "name": "Smart Home Hub",
   "category": "smart_home",
   "price": 7000,
@@ -1957,14 +1231,14 @@
   "isOnDiscount": true,
   "description": "Centralize control of all your smart devices with the Smart Home Hub.",
   "imageUrl": [
-    "assets/data/images/smart/Smart_Home-1.jpg",
-    "assets/data/images/smart/Smart_Home-2jpg",
-    "assets/data/images/smart/Smart_Home-3.jpg"
+    "../assets/data/images/smart/Smart_Home-1.jpg",
+    "../assets/data/images/smart/Smart_Home-2jpg",
+    "../assets/data/images/smart/Smart_Home-3.jpg"
   ],
   "stock": 18
 },
 {
-  "id": 120,
+  "id": 81,
   "name": "Smart Smoke Detector",
   "category": "smart_home",
   "price": 9000,
@@ -1972,14 +1246,14 @@
   "isOnDiscount": true,
   "description": "Protect your home with real-time alerts from the Smart Smoke Detector.",
   "imageUrl": [
-    "assets/data/images/smart/Smart_Smoke-1.jpg",
-    "assets/data/images/smart/Smart_Smoke-2.jpg",
-    "assets/data/images/smart/Smart_Smoke-3.jpg"
+    "../assets/data/images/smart/Smart_Smoke-1.jpg",
+    "../assets/data/images/smart/Smart_Smoke-2.jpg",
+    "../assets/data/images/smart/Smart_Smoke-3.jpg"
   ],
   "stock": 12
 },
 {
-  "id": 121,
+  "id": 82,
   "name": "Smart Air Purifier",
   "category": "smart_home",
   "price": 18000,
@@ -1987,14 +1261,154 @@
   "isOnDiscount": true,
   "description": "Breathe clean air with the Smart Air Purifier, featuring advanced filtration.",
   "imageUrl": [
-    "assets/data/images/smart/Smart_Air-1.jpg",
-    "assets/data/images/smart/Smart_Air-2.jpg",
-    "assets/data/images/smart/Smart_Air-3.jpg"
+    "../assets/data/images/smart/Smart_Air-1.jpg",
+    "../assets/data/images/smart/Smart_Air-2.jpg",
+    "../assets/data/images/smart/Smart_Air-3.jpg"
   ],
   "stock": 9
+},
+
+ 
+  {
+    "id": 83,
+    "name": "Geometric Metal Sculpture",
+    "category": "wall_decor",
+    "price": 9800,
+    "discountPrice": 8000,
+    "isOnDiscount": true,
+    "description": "Modern geometric metal sculpture for a contemporary wall decor.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/Geometric_Metal (1).jpg",
+      "../assets/data/images/wallDecor/Geometric_Metal (2).jpg",
+      "../assets/data/images/wallDecor/Geometric_Metal (3).jpg"
+
+    ],
+    "stock": 15
+  },
+  {
+    "id": 84,
+    "name": "Vintage Wall Clock",
+    "category": "wall_decor",
+    "price": 3500,
+    "discountPrice": 0,
+    "isOnDiscount": false,
+    "description": "Classic vintage wall clock with an antique design.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/Vintage_Clock (1).jpg",
+      "../assets/data/images/wallDecor/Vintage_Clock (2).jpg",
+      "../assets/data/images/wallDecor/Vintage_Clock (3).jpg"
+    ],
+    "stock": 12
+  },
+  {
+    "id": 85,
+    "name": "Abstract Metal Wall Art",
+    "category": "wall_decor",
+    "price": 7500,
+    "discountPrice": 0,
+    "isOnDiscount": false,
+    "description": "Abstract metal wall art for a modern and artistic home decor.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/Abstract_Metal (1).jpg",
+      "../assets/data/images/wallDecor/Abstract_Metal (2).jpg",
+      "../assets/data/images/wallDecor/Abstract_Metal (3).jpg"
+   ],
+    "stock": 18
+  },
+  {
+    "id": 86,
+    "name": "Botanical Prints Set",
+    "category": "wall_decor",
+    "price": 4200,
+    "discountPrice": 3200,
+    "isOnDiscount": true,
+    "description": "Set of botanical prints to add a natural touch to your walls.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/Botanical_Prints (1).jpg",
+      "../assets/data/images/wallDecor/Botanical_Prints (2).jpg",
+      "../assets/data/images/wallDecor/Botanical_Prints (3).jpg"
+
+    ],
+    "stock": 25
+  },
+  {
+    "id": 87,
+    "name": "Rustic Wooden Wall Shelves",
+    "category": "wall_decor",
+    "price": 6200,
+    "discountPrice": 0,
+    "isOnDiscount": false,
+    "description": "Rustic wooden wall shelves for displaying decor items.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/Wooden_Shelves (1).jpg",
+      "../assets/data/images/wallDecor/Wooden_Shelves (2).jpg",
+      "../assets/data/images/wallDecor/Wooden_Shelves (3).jpg"
+    ],
+    "stock": 10
+  },
+  {
+    "id": 88,
+    "name": "Modern Abstract Painting",
+    "category": "wall_decor",
+    "price": 8800,
+    "discountPrice": 0,
+    "isOnDiscount": false,
+    "description": "Vibrant modern abstract painting to add color and style to your walls.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/Modern_Painting (1).jpg",
+      "../assets/data/images/wallDecor/Modern_Painting (2).jpg",
+      "../assets/data/images/wallDecor/Modern_Painting (3).jpg"
+    ],
+    "stock": 15
+  },
+  {
+    "id": 89,
+    "name": "Industrial Metal Wall Mirror",
+    "category": "wall_decor",
+    "price": 5400,
+    "discountPrice": 2500,
+    "isOnDiscount": true,
+    "description": "Industrial-style metal wall mirror for a bold and functional decor piece.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/Industrial_Mirror (1).jpg",
+      "../assets/data/images/wallDecor/Industrial_Mirror (2).jpg",
+      "../assets/data/images/wallDecor/Industrial_Mirror (3).jpg"
+    ],
+    "stock": 8
+  },
+  {
+    "id": 90,
+    "name": "Ceramic Wall Art Set",
+    "category": "wall_decor",
+    "price": 6900,
+    "discountPrice": 0,
+    "isOnDiscount": false,
+    "description": "Set of ceramic wall art pieces for an artistic and textured decor.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/Ceramic_Art (1).jpg",
+      "../assets/data/images/wallDecor/Ceramic_Art (2).jpg",
+      "../assets/data/images/wallDecor/Ceramic_Art (3).jpg"
+    ],
+    "stock": 15
+  },
+  {
+    "id": 91,
+    "name": "Minimalist Wall Clock",
+    "category": "wall_decor",
+    "price": 2800,
+    "discountPrice": 1200,
+    "isOnDiscount": true,
+    "description": "Minimalist design wall clock, perfect for modern interiors.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/metal_clock (1).jpg",
+      "../assets/data/images/wallDecor/metal_clock (2).jpg",
+      "../assets/data/images/wallDecor/metal_clock (3).jpg"
+    ],
+    "stock": 20
+  }
+
+] 
 }
 
 
-    ]
-  }
 

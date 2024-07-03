@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Categories</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    
     
@@ -13,7 +13,7 @@
 
    <!-- Pre Header Navbar -->
    <div id="pre-header">
-    <div class="logo">NAME</div>
+    <div class="logo">PACK N' GO</div>
     <input type="checkbox" id="nav_check" hidden>
     <nav>
         <ul>
@@ -50,58 +50,59 @@
         <div></div>
     </label>
  </div>
+ 
  <!-- Categories -->
  <section id="products">
     <div class="container">
         <h2><i class="fas fa-chair"></i> Discover Your Perfect Piece of Furniture and Decor for Every Room, Crafted for Comfort and Stylish</h2>
         <div class="product-grid">
             <div class="product-item" data-category="sofas">
-                <a href="products.html?category=sofas" >
-                    <img src="assets/data/images/product1.webp" height="70%" width="100%" alt="Product 1">
+                <a href="/src/templates/products.html?category=sofas" >
+                    <img src="/src/assets/data/images/product1.webp" height="70%" width="100%" alt="Product 1">
                     <h3>Sofas</h3>
                 </a>
             </div>    
             <div class="product-item" data-category="bedroom">
-                <a href="products.html?category=bedroom" >
-                    <img src="assets/data/images/product3.jpg" height="70%" width="100%" alt="Product 3">
+                <a href="/src/templates/products.html?category=bedroom" >
+                    <img src="/src/assets/data/images/product3.jpg" height="70%" width="100%" alt="Product 3">
                     <h3>Bedroom</h3>
                 </a>
             </div>
             <div class="product-item" data-category="wallDecor">
-                <a href="products.html?category=wallDecor" >
-                    <img src="assets/data/images/product4.jpg" height="70%" width="100%" alt="Product 4">
+                <a href="/src/templates/products.html?category=wall_decor" > 
+                    <img src="/src/assets/data/images/product5.avif" height="70%" width="100%" alt="Product 4">
                     <h3>Wall Decor</h3>
                 </a>
             </div>
             
             <div class="product-item" data-category="chairs">
-                <a href="products.html?category=chairs" >
-                    <img src="assets/data/images/product6.jpg" height="70%" width="100%" alt="Product 6">
+                <a href="/src/templates/products.html?category=chairs" >
+                    <img src="/src/assets/data/images/product6.jpg" height="70%" width="100%" alt="Product 6">
                     <h3>Chairs</h3>
                 </a>
             </div>
-            <div class="product-item" data-category="kitchenAndDining">
-                <a href="products.html?category=kitchenAndDining" >
-                    <img src="assets/data/images/product7.jpg" height="70%" width="100%" alt="Product 7">
+            <div class="product-item" data-category="kitchens">  
+                <a href="/src/templates/products.html?category=kitchens" >
+                    <img src="/src/assets/data/images/product7.jpg" height="70%" width="100%" alt="Product 7">
                     <h3>Kitchen and Dining</h3>
                 </a>
             </div>
             <div class="product-item" data-category="lighting">
-                <a href="products.html?category=lighting" >
-                    <img src="assets/data/images/product9.webp" height="70%" width="100%" alt="Product 9">
+                <a href="/src/templates/products.html?category=lighting" >
+                    <img src="/src/assets/data/images/product9.webp" height="70%" width="100%" alt="Product 9">
                     <h3>Lighting</h3>
                 </a>
             </div>
-            <div class="product-item" data-category="decorativeItem">
-                <a href="products.html?category=decorativeItem" >
-                    <img src="assets/data/images/product9.webp" height="70%" width="100%" alt="Product 9">
+            <div class="product-item" data-category="decorative">
+                <a href="/src/templates/products.html?category=decorative" >
+                    <img src="/src/assets/data/images/product2.webp" height="70%" width="100%" alt="Product 9">
                     <h3>Decorative item</h3>
                 </a>
             </div>
-            <div class="product-item" data-category="smartHomeDevices">
-                <a href="products.html?category=smarHomeDevices" >
+            <div class="product-item" data-category="smart_home">
+                <a href="/src/templates/products.html?category=smart_home" >
 
-                    <img src="assets/data/images/product9.webp" height="70%" width="100%" alt="Product 9">
+                    <img src="/src/assets/data/images/product8.webp" height="70%" width="100%" alt="Product 9">
                     <h3>Smart Home Devices</h3>
                 </a>
             </div>
@@ -134,11 +135,14 @@
             <div class="footer-col">
                 <h4>Online Shop</h4>
                 <ul>
-                    <li><a href="#">Sofas</a></li>
-                    <li><a href="#">Lighting</a></li>
-                    <li><a href="#">Kitchen and Dining</a></li>
-                    <li><a href="#">Decorative Items</a></li>
-                    <li><a href="#">Smart Home Devices</a></li>
+                    <li><a href="/src/templates/products.html?category=sofas">Sofas</a></li>
+                    <li><a href="/src/templates/products.html?category=lighting">Lighting</a></li>
+                    <li><a href="/src/templates/products.html?category=kitchens">Kitchen and Dining</a></li>
+                    <li><a href="/src/templates/products.html?category=decorative">Decorative Items</a></li>
+                    <li><a href="/src/templates/products.html?category=smart_home">Smart Home Devices</a></li>
+                    <li><a href="/src/templates/products.html?category=wall_decor">Wall Decor</a></li>
+                    <li><a href="/src/templates/products.html?category=chairs">Chairs</a></li>
+                    <li><a href="/src/templates/products.html?category=bedroom">Bedroom</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -155,7 +159,8 @@
 </div>
 </footer>
 
-    <script src="main.js"></script>
+    <script src="/src/models/main/main.js"></script>
+    
  
 
 </body>

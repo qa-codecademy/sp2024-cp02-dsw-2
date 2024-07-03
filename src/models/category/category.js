@@ -1,97 +1,164 @@
-// imame vo kodov tri glavni funkcii: vcituvanje na podatoci od JSON fajl, filtriranje na podatoci po category i prikazuvanje na detalite na prozivoдот
-//celta e dinamicki da ovozmozi vcituvanje i prikazuvanje na proizvodi na web stranicata
+document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get("category");
+    console.log("Category:", categoryParam);
 
-// listener za nastani koje se aktivira koga dokumentot kje se vcita celosno
-document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);//window.location.search ja kreira urlParams objekt sto gi sodrzi parametrite na URL-to
-    const category = urlParams.get('category');//da se dobie vrednosta na category od url-to 
-    console.log('Category:', category);
+    // Fetch all products initially
+    fetchProducts();
 
-    if (category) {
-        fetchProductsByCategory(category);
-    } else {
-        fetchProducts();
+    // Set the initial category selection
+    if (categoryParam) {
+        document.getElementById('category-select').value = categoryParam;
+        filterProductsByCategory(categoryParam);
     }
-});//ovde vo uslovot , vrz osnova na postoenjeto na  category se povikuva funkcija za vcituvanje na proizvodi spored category ako e zadadena, ako ne funkcijata za  vcituvanje na  site prozivodi
 
-function fetchProductsByCategory(category) {// ovaa funkcija  gi vcituva i filtrira proizvodi spored kategorijata
-    fetch('assets/data/products.json')
+    // Event listener for category selection change
+    document.getElementById('category-select').addEventListener('change', function() {
+        const selectedCategory = this.value.toLowerCase();
+        filterProductsByCategory(selectedCategory);
+    });
+
+    // Event listener for discount filter
+    document.getElementById('discount-checkbox').addEventListener('change', function() {
+        filterProductsByCategory(document.getElementById('category-select').value.toLowerCase());
+    });
+
+    // Event listener for search input
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', function() {
+        filterProductsByCategory(document.getElementById('category-select').value.toLowerCase());
+    });
+
+    // Event listener for sort select
+    document.getElementById('sort-select').addEventListener('change', function() {
+        filterProductsByCategory(document.getElementById('category-select').value.toLowerCase());
+    });
+
+    const filters = document.querySelector('.filters');
+    const toggleButton = document.getElementById('open-filters-btn');
+    const closeButton = document.getElementById('close-filters-btn');
+
+    // Function to toggle no-scroll class on body
+    const toggleScrollLock = () => {
+        document.body.classList.toggle('no-scroll');
+    };
+
+    // Event listener for opening filters
+    toggleButton.addEventListener('click', () => {
+        filters.classList.remove('collapsed');
+        toggleButton.style.display = 'none';
+        closeButton.style.display = 'block';
+        toggleScrollLock(); 
+    });
+
+    // Event listener for closing filters
+    closeButton.addEventListener('click', () => {
+        filters.classList.add('collapsed');
+        toggleButton.style.display = 'block';
+        closeButton.style.display = 'none';
+        toggleScrollLock(); 
+    });
+
+});
+
+// Function to fetch all products
+function fetchProducts() {
+    fetch("/src/assets/data/products.json")
         .then(response => response.json())
-        .then(data => {
-            console.log('All Products:', data);
-            const productGrid = document.getElementById('product-grid');
-            productGrid.innerHTML = '';// gi cisti predhotno podatocite sto se prikazani
-
-            const filteredProducts = data.filter(product => product.category.toLowerCase() === category.toLowerCase());// gi filtrira spored kategorijata 
-            console.log('Filtered Products:', filteredProducts);
-            //ova prikaz na filtriranite podatoci
-            if (filteredProducts.length > 0) {
-                filteredProducts.forEach(product => {
-                    const productHTML = `
-                    <div class="col-md-5th">
-                        <div class="card">
-                            <img src="${product.image}" class="card-img-top" alt="${product.name}">
-                            <div class="card-body">
-                                <h5 class="card-title">${product.name}</h5>
-                                <p class="card-text">${product.description}</p>
-                                <p class="card-text"><strong>Price: $${product.price.toFixed(2)}</strong></p>
-                                ${product.isOnDiscount ? '<img src="assets/data/images/download.png" alt="Sale" class="sale-icon">' : ''}
-                                <button class="btn btn-primary" onclick="viewProductDetails(${product.id})">Details</button>
-                            </div>
-                        </div>
-                    </div>`;
-                    productGrid.innerHTML += productHTML;// se dodava prozivodot vo HTML
-                });
-            } else {
-                productGrid.innerHTML = '<p>No products found in this category.</p>';
-            }
-        })
-        .catch(error => console.error('Error fetching products:', error));
+        .then(data => renderProducts(data.products))
+        .catch(error => console.error("Error fetching products:", error));
 }
 
-function fetchProducts() {//ova fukcija gi vcituva i prikazuva site produkti , kako predhodnata samo bez filter 
-    fetch('assets/data/products.json')
+// Function to filter and render products by category
+function filterProductsByCategory(category) {
+    fetch("/src/assets/data/products.json")
         .then(response => response.json())
         .then(data => {
-            const productGrid = document.getElementById('product-grid');
-            productGrid.innerHTML = '';
+            let filteredProducts = data.products.filter(product => {
+                return category === 'all' || product.category.toLowerCase() === category.toLowerCase();
+            });
 
-            data.forEach(product => {
-                const productHTML = `
-                <div class="col-md-5th">
+            // discount filter if checked
+            if (document.getElementById('discount-checkbox').checked) {
+                filteredProducts = applyDiscountFilter(filteredProducts);
+            }
+
+            // search filter
+            const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+            if (searchTerm !== '') {
+                filteredProducts = filteredProducts.filter(product =>
+                    product.name.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            // sort filter
+            const sortBy = document.getElementById('sort-select').value;
+            if (sortBy === 'cheapest') {
+                filteredProducts.sort((a, b) => (a.discountPrice || a.price) - (b.discountPrice || b.price));
+            } else if (sortBy === 'expensive') {
+                filteredProducts.sort((a, b) => (b.discountPrice || b.price) - (a.discountPrice || a.price));
+            }
+
+            renderProducts(filteredProducts);
+        })
+        .catch(error => console.error("Error fetching products:", error));
+}
+
+// Function to apply discount filter
+function applyDiscountFilter(products) {
+    return products.filter(product => product.isOnDiscount === true);
+}
+
+// Function to render products on the page
+function renderProducts(products) {
+    const productGrid = document.getElementById("product-grid");
+    productGrid.innerHTML = "";
+
+    if (products.length > 0) {
+        products.forEach(product => {
+            let priceToShow = product.price; // Default to regular price
+            let priceHTML = `<strong>Price: $${priceToShow.toFixed(2)}</strong>`;
+
+            if (document.getElementById('discount-checkbox').checked && product.isOnDiscount) {
+                // Show discounted price with strikethrough
+                priceToShow = product.discountPrice;
+                priceHTML = `
+                    <strong>Price: <del>$${product.price.toFixed(2)}</del> <br /> Discount Price: $${priceToShow.toFixed(2)}</strong>
+                `;
+            }
+
+            const productHTML = `
+                <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                        <img src="${product.imageUrl[0]}" class="card-img-top" alt="${product.name}">
                         <div class="card-body">
                             <h5 class="card-title">${product.name}</h5>
-                             <p class="card-text">${product.description}</p>
-                            <p class="card-text"><strong>Price: $${product.price.toFixed(2)}</strong></p>
-                             ${product.isOnDiscount ? '<img src="assets/data/images/download.png>' : ''}
-
+                            <p class="card-text">${product.description}</p>
+                            <p class="card-text">${priceHTML}</p>
                             <button class="btn btn-primary" onclick="viewProductDetails(${product.id})">Details</button>
                         </div>
                     </div>
                 </div>`;
-                productGrid.innerHTML += productHTML;
-            });
-        })
-        .catch(error => console.error('Error fetching products:', error));
+            productGrid.innerHTML += productHTML;
+        });
+    } else {
+        productGrid.innerHTML = "<p>No products found matching the filters.</p>";
+    }
 }
 
-function viewProductDetails(productId) {// gi prikazuva detalite za izbran prozivod
-    fetch('assets/data/products.json')
+
+// Function to view product details
+function viewProductDetails(productId) {
+    fetch("/src/assets/data/products.json")
         .then(response => response.json())
         .then(data => {
-            const product = data.find(p => p.id === productId);// kje go najde po id produktot
+            const product = data.products.find(p => p.id === productId);
             if (product) {
-                localStorage.setItem('productDetails', JSON.stringify(product));// gi zacuvuva detalite za prozivodot vo local storage
-                window.location.href = 'product_details.html';//ovde prenasocuva na stanicata product_details.html
+                localStorage.setItem("productDetails", JSON.stringify(product));
+                window.location.href = "/src/templates/product_details.html";
             } else {
-                console.error('Product not found');
+                console.error("Product not found");
             }
         })
-        .catch(error => console.error('Error fetching product details:', error));
+        .catch(error => console.error("Error fetching product details:", error));
 }
-
-//kodov : vcituva i prikazuva podatoci spored kategoriajta ili site proizvodi, 
-//        prikazuva detali za proizvodite
-//        koristi locale storage za da gi zacuva informaciite
