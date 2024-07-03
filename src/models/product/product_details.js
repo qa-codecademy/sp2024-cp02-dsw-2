@@ -1,3 +1,5 @@
+//kodot gi vcituva podatocite za prozivodot od locale storage i gi a prikazuva na stranata
+
 document.addEventListener('DOMContentLoaded', () => {
     const productDetails = JSON.parse(localStorage.getItem('productDetails'));
     console.log('Product details from localStorage:', productDetails);

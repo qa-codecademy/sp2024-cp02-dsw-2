@@ -423,6 +423,49 @@ ul{
     transition: 0.7s;
 }
 
+footer {
+    margin-top: 20px;
+    bottom: 0;
+}
+
+#footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.6;
+  }
+ 
+  
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram{
+    background: red;
+    color: white;
+  }
+  
+
 
 .hamburger {
     display: none; 
@@ -596,7 +639,8 @@ ul{
 
     .slideshow-text p {
         font-size: 13px;
-=======
+    }
+
     .slideshow-text h2 {
         font-size: 20px;
         margin-top: 25%; 
@@ -608,11 +652,7 @@ ul{
     }
 
     .slideshow-text .btn {
-       
-        padding: 6px 12px; 
-=======
-        padding: 8px 16px; 
-
+       padding: 6px 12px; 
     }
 
     .product-item {
@@ -672,4 +712,65 @@ ul{
     width: 100%;
 }
 }
+/* CSS for the h2 element category */
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 5px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+h2 i {
+    color: #4CAF50; 
+    margin-right: 10px; 
+}
 
+#products {
+    background-color: #f0f0f0; 
+    padding: 50px 0; 
+}
+/* css for product-item */
+.product-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.product-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+
+.product-item a {
+    display: block;
+    text-decoration: none;
+    color: #333; 
+}
+
+.product-item:hover a {
+    color: #4CAF50; 
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.product-item:hover {
+    background-color: rgb(221, 221, 206)
+}

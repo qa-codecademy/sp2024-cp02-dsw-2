@@ -1,5 +1,8 @@
+// imame vo kodov tri glavni funkcii: vcituvanje na podatoci od JSON fajl, filtriranje na podatoci po category i prikazuvanje na detalite na prozivotot
+
+// listener za nastani koje se aktivira koga dokumentot kje se vcita celosno
 document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(window.location.search);//window.location.search ja kreira urlParams objekt sto gi sodrzi parametrite na URL-to
     const category = urlParams.get('category');
     console.log('Category:', category);
 
@@ -10,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-function fetchProductsByCategory(category) {
+function fetchProductsByCategory(category) { // ovaa funkcija  gi vcituva i filtrira proizvodi spored kategoriajta
     fetch('assets/data/products.json')
         .then(response => response.json())
         .then(data => {
@@ -44,7 +47,7 @@ function fetchProductsByCategory(category) {
         .catch(error => console.error('Error fetching products:', error));
 }
 
-function fetchProducts() {
+function fetchProducts() {//ova fukcija gi vcituva i prikazuva site produkti , kako predhodnata samo bez filter 
     fetch('assets/data/products.json')
         .then(response => response.json())
         .then(data => {
@@ -72,17 +75,22 @@ function fetchProducts() {
         .catch(error => console.error('Error fetching products:', error));
 }
 
-function viewProductDetails(productId) {
+function viewProductDetails(productId) {// gi prikkzuva detali za izbran prozivod
     fetch('assets/data/products.json')
         .then(response => response.json())
         .then(data => {
-            const product = data.find(p => p.id === productId);
+            const product = data.find(p => p.id === productId);// kje go najde po id produktot
             if (product) {
-                localStorage.setItem('productDetails', JSON.stringify(product));
-                window.location.href = 'product_details.html';
+                localStorage.setItem('productDetails', JSON.stringify(product));// gi zacuvuva detalite za prozivodot vo local storage
+                window.location.href = 'product_details.html'; //ovde prenasocuva na stanicata product_details.html
             } else {
                 console.error('Product not found');
             }
         })
         .catch(error => console.error('Error fetching product details:', error));
 }
+
+
+//kodov : vcituva i prikazuva podatoci spored kategoriajta ili site proizvodi, 
+//        prikazuva detali za proizvodite
+//        koristi lokal storage za da gi zacuva informaciite
