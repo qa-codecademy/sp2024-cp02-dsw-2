@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="/src/styles/category.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Product Grid</title>
+    <title>Products</title>
 </head>
 <body>
 
     <div id="pre-header">
         <div class="logo">NAME</div>
         <input type="checkbox" id="nav_check" hidden>
+        
         <nav>
             <ul>
                 <li>
@@ -38,12 +39,57 @@
         </label>
     </div>
 
-    <div class="container my-4" style="padding-top: 70px;">
-        <div class="row justify-content-center" id="product-grid">
-            
+    <!-- Toggle Button -->
+    <button class="toggle-button" id="open-filters-btn"><i class="fas fa-filter"></i></button>
+
+    <!-- Close Button -->
+    <button class="close-button" id="close-filters-btn"><i class="fa-solid fa-xmark"></i></button>
+
+    <!-- Filter Section -->
+    <div class="filters collapsed" id="filters">
+        <div class="filter-items">
+            <h3>Filters</h3>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for products...">
+            </div>
+
+            <div class="filter-category">
+                <h4>Category</h4>
+                <select id="category-select">
+                    <option value="sofas">Sofas</option>
+                    <option value="bedroom">Bedroom</option>
+                    <option value="wall_decor">Wall Decor</option>
+                    <option value="chairs">Chairs</option>
+                    <option value="kitchens">Kitchen</option>
+                    <option value="lighting">Lighting</option>
+                    <option value="decorative">Decorative Items</option>
+                    <option value="smart_home">Smart Home Devices</option>
+                </select>
+            </div>
+
+            <div class="discount-filter">
+                <h4>Discount</h4>
+                <label><input type="checkbox" id="discount-checkbox"> Show Discounted Products</label>
+            </div>
+
+            <div class="filter-brand">
+                <h4>Sort by</h4>
+                <select id="sort-select">
+                    <option value="cheapest">Cheapest > Expensive</option>
+                    <option value="expensive">Expensive > Cheapest</option>
+                </select>
+            </div>
         </div>
     </div>
 
+    <!-- Product Grid Container -->
+    <div class="container my-4 product-container">
+        <div class="row justify-content-center" id="product-grid">
+            <!-- Product items go here -->
+        </div>
+    </div>
+
+    <!-- footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="row">
@@ -67,11 +113,14 @@
                 <div class="footer-col">
                     <h4>Online Shop</h4>
                     <ul>
-                        <li><a href="#">Sofas</a></li>
-                        <li><a href="#">Lighting</a></li>
-                        <li><a href="#">Kitchen and Dining</a></li>
-                        <li><a href="#">Decorative Items</a></li>
-                        <li><a href="#">Smart Home Devices</a></li>
+                        <li><a href="/src/templates/products.html?category=sofas">Sofas</a></li>
+                        <li><a href="/src/templates/products.html?category=lighting">Lighting</a></li>
+                        <li><a href="/src/templates/products.html?category=kitchens">Kitchen and Dining</a></li>
+                        <li><a href="/src/templates/products.html?category=decorative">Decorative Items</a></li>
+                        <li><a href="/src/templates/products.html?category=smart_home">Smart Home Devices</a></li>
+                        <li><a href="/src/templates/products.html?category=wall_decor">Wall Decor</a></li>
+                        <li><a href="/src/templates/products.html?category=chairs">Chairs</a></li>
+                        <li><a href="/src/templates/products.html?category=bedroom">Bedroom</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -85,10 +134,9 @@
                 </div>
             </div>
         </div>
-    </div>
     </footer>
 
-    <script src="../src/models/category/category.js"></script>
+    <script src="/src/models/category/category.js"></script>
 
 </body>
 </html>
