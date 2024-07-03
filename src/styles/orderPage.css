@@ -1,0 +1,23 @@
+.orderContainer {
+    /* margin: 10rem; */
+    width: 70vw;
+}
+
+.cartProductReview {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.productCard {
+
+}
+
+.productCard > img {
+    width: 10rem;
+}
+
+.totalPrice {
+    display: flex;
+    justify-content: flex-end;
+}
