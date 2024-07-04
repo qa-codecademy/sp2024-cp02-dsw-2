@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
 
         const productImagesContainer = document.getElementById('product-images');//dodavenje na slikite od produktot
-        productDetails.detailsImages.forEach(image => {
-            console.log('Adding image:', image);
+        productDetails.detailsImages.forEach(imageUrl => {
+            console.log('Adding image:', imageUrl);
             const imgElement = document.createElement('img');// kreiram elemeent img 
-            imgElement.src = image;// ovde se postavuva url na slikata 
+            imgElement.src = imageUrl;// ovde se postavuva url na slikata 
             imgElement.alt = productDetails.name;
             imgElement.classList.add('img-fluid', 'mb-2'); //css klasa za elementot vo containerot 
             productImagesContainer.appendChild(imgElement);// se apendira img elementot na konejnerot 

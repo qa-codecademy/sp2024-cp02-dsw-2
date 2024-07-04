@@ -106,6 +106,9 @@ flex-wrap: wrap;
     position: fixed;
     top: 0;
     left: 0;
+    padding-top: 20px;
+    
+
 }
 
 #pre-header .logo {

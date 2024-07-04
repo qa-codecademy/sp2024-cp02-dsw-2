@@ -34,7 +34,7 @@ function fetchProductsByCategory(category) {
                     <div class="col-md-5th">
                         <div class="card">
                             <img src="${
-                              product.image
+                              product.imageUrl[0]
                             }" class="card-img-top" alt="${product.name}">
                             <div class="card-body">
                                 <h5 class="card-title">${product.name}</h5>
@@ -74,7 +74,7 @@ function fetchProducts() {
         const productHTML = `
                 <div class="col-md-5th">
                     <div class="card">
-                        <img src="${product.image}" class="card-img-top" alt="${
+                        <img src="${product.imageUrl[0]}" class="card-img-top" alt="${
           product.name
         }">
                         <div class="card-body">
@@ -99,7 +99,9 @@ function fetchProducts() {
       });
     })
     .catch((error) => console.error("Error fetching products:", error));
+    console.log(imageUrl)
 }
+
 
 function viewProductDetails(productId) {
   // gi prikazuva detalite za izbran prozivod
