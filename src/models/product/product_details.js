@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('product-title').textContent = productDetails.name;
 
         const mainImage = document.getElementById('main-image');
-        mainImage.src = productDetails.imageUrl[0]; // Display the first image initially
+        mainImage.src = productDetails.imageUrl[0]; // Display the first image 
         mainImage.alt = productDetails.name;
 
         const thumbnailImages = document.querySelectorAll('.thumbnail');
         thumbnailImages.forEach((thumbnail, index) => {
             if (productDetails.imageUrl[index]) {
-                thumbnail.src = productDetails.imageUrl[index]; // Set thumbnail images if available
+                thumbnail.src = productDetails.imageUrl[index]; 
                 thumbnail.alt = productDetails.name;
             } else {
                 thumbnail.style.display = 'none'; // Hide thumbnails if image URL is not provided
@@ -38,11 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             priceContainer.innerHTML = `<p><strong>Price: $${productDetails.price.toFixed(2)}</strong></p>`;
         }
 
-        document.getElementById('add-to-cart').addEventListener('click', () => {
-            // Add to cart functionality
-            // Replace with your logic for adding product to cart
-            console.log('Product added to cart:', productDetails.name);
-        });
+       
 
     } else {
         console.error('No product details found in localStorage');
