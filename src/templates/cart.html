@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        /* Add your custom styles here */
+        .cart-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .quantity-btn {
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        #total {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+      
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div id="total">
+            <!-- Total sum will be displayed here -->
+        </div>
+        <button id="refresh-button">Refresh Cart</button>
+        <button>Make order</button>
+    </div>
+
+    <script src="/src/models/cart.js"></script>
+</body>
+</html>

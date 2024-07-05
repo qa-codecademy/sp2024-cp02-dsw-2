@@ -135,7 +135,10 @@ function renderProducts(products) {
                             <h5 class="card-title">${product.name}</h5>
                             <p class="card-text">${product.description}</p>
                             <p class="card-text">${priceHTML}</p>
-                            <button class="btn btn-primary" onclick="viewProductDetails(${product.id})">Details</button>
+                            <div class="btn-container">
+                                <button class="btn btn-primary" onclick="viewProductDetails(${product.id})">Details</button>
+                                <button class="btn btn-primary mt-2" onclick="addToCart(${product.id})">Buy Now</button>
+                            </div>    
                         </div>
                     </div>
                 </div>`;
@@ -161,4 +164,39 @@ function viewProductDetails(productId) {
             }
         })
         .catch(error => console.error("Error fetching product details:", error));
+}
+
+
+
+// Function to add product to cart
+function addToCart(productId) {
+    if (!productId) {
+        console.error("Invalid productId:", productId);
+        return;
+    }
+
+    fetch("/src/assets/data/products.json")
+        .then(response => response.json())
+        .then(data => {
+            const product = data.products.find(p => p.id === productId);
+            if (product) {
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+                // Check if the product already exists 
+                const existingItemIndex = cartItems.findIndex(item => item.id === productId);
+                if (existingItemIndex !== -1) {
+                    // If product exists increment its quantity
+                    cartItems[existingItemIndex].quantity++;
+                } else {
+                    product.quantity = 1;
+                    cartItems.push(product);
+                }
+
+                // Update localStorage with the updated cart items array
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            } else {
+                console.error("Product not found for productId:", productId);
+            }
+        })
+        .catch(error => console.error("Error adding product to cart:", error));
 }
