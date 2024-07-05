@@ -20,6 +20,18 @@ a{
     width: 80%;
     margin: 0 auto;
 }
+.make-order {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.make-order h1 {
+    margin-top: 40px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+}
 
       
 /* Pre header Navbar Css */
@@ -84,6 +96,21 @@ a{
 }
 .login-btn:hover {
     background-color: #45a049; /* Darker Green */
+}
+/* Dropdown styles */
+
+#pre-header nav ul .dropdown {
+    position: relative;
+}
+
+#pre-header nav ul .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: -78px;
 }
 
 
@@ -526,14 +553,6 @@ footer {
     background-color: #d83232;
 }
 
-/* 
-#ff6b6b
-#e55b5b
-#333333
-#DDDDDD 
-*/
-
-
 /* Media Querys */
 
 @media only screen and (max-width: 1024px) {
@@ -546,11 +565,10 @@ footer {
     .container {
         width: 90%; 
     }
-
-   
     .container {
         width: 90%; 
     }
+    
 
     /* hamburger menu and pre-header */
     .hamburger {
@@ -565,7 +583,7 @@ footer {
         padding: 30px;
         transition: 0.3s;
     }
-    #pre-header #nav_check:checked ~ nav {
+     #pre-header #nav_check:checked ~ nav {
         left: 0;
     }
     #pre-header nav ul {
@@ -574,8 +592,14 @@ footer {
     #pre-header nav ul li {
         margin: 5px 0;
     }
-    
-
+     #pre-header nav ul .dropdown-content {
+        position: static;
+        box-shadow: none;
+        display: none;
+        background-color: transparent;
+        min-width: auto;
+    } 
+   
     /* SlideShow Media */
     .slideshow-text {
         color: #fff;
@@ -660,6 +684,11 @@ footer {
     #contact {
         width: 100%; 
         margin-top: 20px; 
+    }
+}
+@media screen and (min-width: 769px) {
+    #pre-header nav ul .dropdown:hover .dropdown-content {
+        display: block;
     }
 }
 
