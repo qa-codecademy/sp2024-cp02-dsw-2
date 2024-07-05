@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/src/styles/styles.css">
-    <link rel="stylesheet" href="/src/styles/cart.css">
-    <title>Shopping Cart</title>
-    
+    <title>Make Order</title>
 </head>
 <body>
-     <!-- Pre Header Navbar -->
-     <div id="pre-header" >
+    
+    <!-- Pre Header Navbar -->
+    <div id="pre-header" >
         <div class="logo">PACK N' GO</div>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
@@ -45,21 +44,12 @@
         </label>
     </div>
 
-<!-- Cart Container -->
-    <div class="cart-container">
-        <h1>Your Shopping Cart</h1>
-        <div id="cart-items">
-            <!-- Cart items will be dynamically added here -->
-        </div>
-        <div id="total">
-            <!-- Total sum will be displayed here -->
-        </div>
-        <button id="refresh-button">Empty Cart</button>
-        <button id="make-order" class="order-btn"><a href="/src/templates/make-order.html"> Make Order </a></button>
+    <div class="make-order">
+        <h1>Order Completed...</h1>
     </div>
-
     
-    <!-- footer -->
+
+ <!-- footer section -->
     <footer class="footer">
         <div class="footer-container">
             <div class="row">
@@ -84,13 +74,13 @@
                     <h4>Online Shop</h4>
                     <ul>
                         <li><a href="/src/templates/products.html?category=sofas">Sofas</a></li>
-                        <li><a href="/src/templates/products.html?category=lighting">Lighting</a></li>
-                        <li><a href="/src/templates/products.html?category=kitchens">Kitchen and Dining</a></li>
-                        <li><a href="/src/templates/products.html?category=decorative">Decorative Items</a></li>
-                        <li><a href="/src/templates/products.html?category=smart_home">Smart Home Devices</a></li>
-                        <li><a href="/src/templates/products.html?category=wall_decor">Wall Decor</a></li>
-                        <li><a href="/src/templates/products.html?category=chairs">Chairs</a></li>
-                        <li><a href="/src/templates/products.html?category=bedroom">Bedroom</a></li>
+                    <li><a href="/src/templates/products.html?category=lighting">Lighting</a></li>
+                    <li><a href="/src/templates/products.html?category=kitchens">Kitchen and Dining</a></li>
+                    <li><a href="/src/templates/products.html?category=decorative">Decorative Items</a></li>
+                    <li><a href="/src/templates/products.html?category=smart_home">Smart Home Devices</a></li>
+                    <li><a href="/src/templates/products.html?category=wall_decor">Wall Decor</a></li>
+                    <li><a href="/src/templates/products.html?category=chairs">Chairs</a></li>
+                    <li><a href="/src/templates/products.html?category=bedroom">Bedroom</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -104,8 +94,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </footer>
-
-    <script src="/src/models/cart/cart.js"></script>
 </body>
 </html>

@@ -22,16 +22,16 @@ function displayCartItems() {
         cartItems.forEach(item => {
             const itemHTML = `
             <div class="cart-item">
-            <div><img src="${item.imageUrl[0]}" alt="${item.name}" style="max-width: 100px; max-height: 100px;"></div>
+            <button class="delete-btn" onclick="deleteCartItem(${item.id})">X</button>
+            <div><img src="${item.imageUrl[0]}" alt="${item.name}"></div>
             <div><strong>Name:</strong> ${item.name}</div>
             <div><strong>Price:</strong> $${item.price.toFixed(2)}</div>
-            <div>
+            <div class="quantity-section">
                 <strong>Quantity:</strong>
                 <button class="quantity-btn" onclick="decrementQuantity(${item.id})">-</button>
                 <span id="quantity-${item.id}">${item.quantity}</span>
                 <button class="quantity-btn" onclick="incrementQuantity(${item.id})">+</button>
             </div>
-            <button class="delete-btn" onclick="deleteCartItem(${item.id})">X</button>
         </div>
             `;
             cartItemsContainer.innerHTML += itemHTML;
