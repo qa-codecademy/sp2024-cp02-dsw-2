@@ -11,10 +11,6 @@ body {
     color: #343a40;
     line-height: 1.6;
 }
-a {
-    color: black;
-}
-
 .no-scroll {
     overflow: hidden;
 }
