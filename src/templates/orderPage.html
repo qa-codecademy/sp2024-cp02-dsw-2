@@ -48,8 +48,8 @@
 
     <div class="mainCheckoutBox">
         <form class="formOrderBox" action="#">
-            <div class="orderDivider">
-                    <h1>Your Contact Information</h1>
+            <div class="orderFormsDivider">
+                    <h1>Contact Info</h1>
                 <div>
                     <label for="name">Name</label>
                     <input 
@@ -59,6 +59,8 @@
                     placeholder="Your Name"
                     required
                     class="formControl"
+                    minlength="2"
+                    maxlength="20"
                     />
                 </div>
                 <div>
@@ -70,6 +72,8 @@
                     placeholder="Your Address"
                     required
                     class="formControl"
+                    minlength="5"
+                    maxlength="30"
                     />
                 </div>
                 <div>
@@ -81,6 +85,8 @@
                     placeholder="Contact number"
                     required
                     class="formControl"
+                    minlength="6"
+                    maxlength="8"
                     />
                 </div>
                 <div>
@@ -92,6 +98,8 @@
                     placeholder="Your email"
                     required
                     class="formControl"
+                    minlength="5"
+                    maxlength="40"
                     />
                 </div>
                 <div>
@@ -105,7 +113,7 @@
                     />
                 </div>
             </div>
-            <div class="orderDivider">
+            <div class="orderFormsDivider">
                     <h1 class="formDivide">Card Information</h1>
                     <div>
                         <label for="name">Name</label>
@@ -116,6 +124,8 @@
                         placeholder="Name"
                         required
                         class="formControl"
+                        minlength="3"
+                        maxlength="30"
                         />
                     </div>
                     <div>
@@ -127,6 +137,8 @@
                         placeholder="0000 0000 0000 0000"
                         required
                         class="formControl"
+                        minlength="15"
+                        maxlength="16"
                         />
                     </div>
                     <div>
@@ -148,10 +160,12 @@
                         placeholder="000"
                         required
                         class="formControl"
+                        minlength="2"
+                        maxlength="3"
                         />  
                     </div>
                 </div>
-                <button class="buyButton" type="submit">BUY NOW</button>
+            <button class="buyButton" type="submit">BUY NOW</button>
         </form>
     </div>
 
