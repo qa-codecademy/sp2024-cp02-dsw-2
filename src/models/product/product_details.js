@@ -1,3 +1,5 @@
+//kodot gi vcituva podatocite za prozivodot od locale storage i gi a prikazuva na stranata
+
 document.addEventListener('DOMContentLoaded', () => {
     const productDetails = JSON.parse(localStorage.getItem('productDetails'));// funkcijava gi prezema i parsira podatocite za productot od locale storage
     console.log('Product details from localStorage:', productDetails);
@@ -41,4 +43,3 @@ document.addEventListener('DOMContentLoaded', () => {
 //ako ne error vo consola 
 
 //e sega ovoj kod e vekje vo cart i order , taka da ako vi se dopagja koj go raboti moze da prodolzi ili da go izmeni
-
