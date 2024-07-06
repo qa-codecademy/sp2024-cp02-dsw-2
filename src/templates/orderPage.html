@@ -21,14 +21,14 @@
                 <li class="dropdown">
                     <i class="fa-solid fa-list"></i>
                     <a href='./categories.html'>Categories</a>
-                    <!-- <ul class="dropdown-content">
+                    <ul class="dropdown-content">
                         <li><a href="#">Sofas</a></li>
                         <li><a href="#">Lighting</a></li>
                         <li><a href="#">Tables</a></li>
                         <li><a href="#">Storage Solutions</a></li>
                         <li><a href="#">Bedroom Furniture</a></li>
                         <li><a href="#s">Outdoor Furniture</a></li>
-                    </ul> -->
+                    </ul>
                 </li>
                 <li>
                     <i class="fa-solid fa-address-book"></i>
@@ -46,35 +46,113 @@
         </label>
     </div>
 
-    <div class="orderContainer">
-        <h1>kniga</h1>
-        <div class="cartProductReview">
-            <div class="productCard">
-                <img src="../assets/data/images/1.jpeg">
-                <p>name</p>
-                <p>$$$</p>
-                <form>
-                    <input type="number" name="" id="" value="1">
-                </form>
+    <div class="mainCheckoutBox">
+        <form class="formOrderBox" action="#">
+            <div class="orderDivider">
+                    <h1>Your Contact Information</h1>
+                <div>
+                    <label for="name">Name</label>
+                    <input 
+                    type="text"
+                    id="name" 
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    class="formControl"
+                    />
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input 
+                    type="text"
+                    id="address" 
+                    name="address"
+                    placeholder="Your Address"
+                    required
+                    class="formControl"
+                    />
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone</label>
+                    <input 
+                    type="number"
+                    id="phoneNumber" 
+                    name="phoneNumber"
+                    placeholder="Contact number"
+                    required
+                    class="formControl"
+                    />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email"
+                    required
+                    class="formControl"
+                    />
+                </div>
+                <div>
+                    <label for="date">Preferred delivery day</label>
+                    <input 
+                    type="date" 
+                    id="date"
+                    name="date" 
+                    placeholder="Preferred"
+                    class="formControl"
+                    />
+                </div>
             </div>
-            <div class="productCard">
-                <img src="../assets/data/images/1.jpeg">
-                <p>name</p>
-                <p>$$$</p>
-                <form>
-                    <input type="number" name="" id="" value="1">
-                </form>
-            </div>
-            <div class="productCard">
-                <img src="../assets/data/images/1.jpeg">
-                <p>name</p>
-                <p>$$$</p>
-                <form>
-                    <input type="number" name="" id="" value="1">
-                </form>
-            </div>
-        </div>
-        <h1 class="totalPrice">Total 0.00$</h1>
+            <div class="orderDivider">
+                    <h1 class="formDivide">Card Information</h1>
+                    <div>
+                        <label for="name">Name</label>
+                        <input 
+                        type="text"
+                        id="name" 
+                        name="name"
+                        placeholder="Name"
+                        required
+                        class="formControl"
+                        />
+                    </div>
+                    <div>
+                        <label for="cardNumber">Card Number</label>
+                        <input 
+                        type="number"
+                        id="cardNumber" 
+                        name="cardNumber"
+                        placeholder="0000 0000 0000 0000"
+                        required
+                        class="formControl"
+                        />
+                    </div>
+                    <div>
+                        <label for="expirationDate">Expiration Date</label>
+                        <input 
+                        type="date"
+                        id="expirationDate" 
+                        name="expirationDate"
+                        required
+                        class="formControl"
+                        />    
+                    </div>
+                    <div>
+                        <label for="cvc">CVC</label>
+                        <input 
+                        type="number"
+                        id="cvc" 
+                        name="cvc"
+                        placeholder="000"
+                        required
+                        class="formControl"
+                        />  
+                    </div>
+                </div>
+                <button class="buyButton" type="submit">BUY NOW</button>
+        </form>
     </div>
 
     <footer class="footer">
@@ -121,7 +199,6 @@
                 </div>
             </div>
         </div>
-    </div>
  </footer>
 </body>
 </html>

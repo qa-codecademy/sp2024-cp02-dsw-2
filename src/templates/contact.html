@@ -13,7 +13,6 @@
   
 <body>
 
-   <!-- Pre Header Navbar -->
     <!-- Pre Header Navbar -->
     <div id="pre-header" >
         <div class="logo">PACK N' GO</div>
@@ -50,7 +49,6 @@
     </div>
 
     <section class="contactSection">
-        <!-- <h2>Contact us through this form</h2> -->
         <div class="contactContainer">
             <div class="contactInfo">
                 <h3>Information</h3>
@@ -60,50 +58,53 @@
                 <p>Email: placeholder@mail.com</p>
             </div>
             <form class="contactForm" action="#">
-            <div class="formGroup">
-                <label for="name">Name</label>
-                <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your name"
-                class="formControl"
-                required
-                />
-            </div>
-            <div class="formGroup">
-                <label for="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Your email"
+                <div class="formGroup">
+                    <label for="name">Name</label>
+                    <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    minlength="2"
+                    maxlength="20"
                     class="formControl"
                     required
-                />
-            </div>
-            <div class="formGroup">
-                <label for="comment">Comment</label>
-                <input
-                name="comment"
-                id="comment"
-                cols="30"
-                rows="10"
-                class="formControl"
-                required
-                ></input>
-            </div>
-                <div class="formControls">
-                    <button type="submit">Send</button>
+                    />
                 </div>
+                <div class="formGroup">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your email"
+                        minlength="5"
+                        maxlength="20"
+                        class="formControl"
+                        required
+                    />
+                </div>
+                <div class="formGroup">
+                    <label for="comment">Comment</label>
+                    <input
+                    name="comment"
+                    id="comment"
+                    cols="30"
+                    rows="10"
+                    class="formControl"
+                    minlength="10"
+                    maxlength="50"
+                    required
+                    ></input>
+                </div>
+                    <div class="formControls">
+                        <button type="submit">Send</button>
+                    </div>
             </form>
         </div>
     </section>
    
     
- <!-- Footer -->
-
-
  <!-- footer section -->
  <footer class="footer">
     <div class="footer-container">
