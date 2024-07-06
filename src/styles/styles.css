@@ -139,9 +139,9 @@ a{
     background-color: rgba(0, 0, 0, 0.5); 
 }
 
-img {
+/* img {
     vertical-align:middle;
-}
+} */
 
 .fade {
     animation-name: fade;
@@ -199,6 +199,7 @@ img {
 .slideshow-text h2 {
     font-size: 3rem;
     margin: 0 0 1rem;
+    color: white;
 }
 
 .slideshow-text p {
@@ -761,3 +762,94 @@ h2 i {
 }
 
 
+/* About Us Section styles */
+.about-us {
+    display: flex;
+    align-items: center;
+    padding: 90px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    /* margin: 20px; */
+}
+
+.about-us-image {
+    flex: 1;
+    padding: 35px;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    /* margin-left: -35px; */
+}
+
+.about-us-text {
+    flex: 2;
+    padding: 10px;
+    width: 540px;
+}
+
+.about-us h2 {
+    margin-top: -60px;
+    color: #333;
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-us-text h5 {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #ff6b6b;
+    font-size: 20px;
+}
+
+.about-us-text p {
+    color: #333;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.about-img {
+    height: auto;
+    width: 400px;
+    border-radius: 12px;
+}
+
+.about {
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us-image, .about-us-text {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .about-us h2 {
+        margin-top: 0;
+        font-size: 50px;
+    }
+
+    .about-us-text {
+        width: 100%;
+    }
+}
