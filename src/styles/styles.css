@@ -44,7 +44,7 @@ a{
     justify-content: space-between;
     padding: 0 50px;
     z-index: 1000;
-    position: fixed;
+    /* position: fixed; */
 }
 #pre-header .logo {
     font-size: 40px;
@@ -852,4 +852,49 @@ span {
     .about-us-text {
         width: 100%;
     }
+}
+
+
+
+
+/* css for login */
+#login-form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%; /* Prilagodite širinu prema potrebi */
+    max-width: 400px; /* Ograničite maksimalnu širinu */
+    margin: 20px auto; /* Centriranje i dodavanje prostora oko formulara */
+}
+
+#login-form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#login-form-container input[type="text"],
+#login-form-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-form-container button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; /* Puni širina dugmeta */
+    box-sizing: border-box; /* Uključivanje paddinga i bordera u širinu */
+}
+
+#login-form-container button:hover {
+    background-color: #0056b3;
 }

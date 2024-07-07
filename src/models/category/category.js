@@ -194,6 +194,9 @@ function addToCart(productId) {
 
                 // Update localStorage with the updated cart items array
                 localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+                //Notify the user that the product is added to the cart
+                alert(`${product.name} added to cart!`);
             } else {
                 console.error("Product not found for productId:", productId);
             }
