@@ -7,8 +7,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: rgb(236, 222, 224);
     line-height: 1.6;
 }
 a{
@@ -43,7 +42,7 @@ a{
     top: 70px; 
     left: 10px;
     z-index: 1100;
-    background-color: #007bff;
+    background-color: #042d58;
     color: white;
     border: none;
     padding: 10px;
@@ -113,7 +112,7 @@ a{
 .card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ccc;
+    border: 1px solid #d1baba;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -129,7 +128,7 @@ a{
     width: 100%;
     height: 200px; 
     object-fit: contain; 
-    background-color: #f8f9fa; 
+    background-color: #f1e1e1; 
 }
 
 .card-body {
@@ -137,6 +136,7 @@ a{
     flex-direction: column;
     padding: 15px;
     flex-grow: 1; 
+    background-color: #f8ecef;
 }
 
 .card-title {
@@ -159,7 +159,7 @@ a{
 .btn {
     padding: 10px 20px;
     border: none;
-    background-color: #007bff;
+    background-color:  #95c480;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
@@ -169,7 +169,7 @@ a{
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #7cad65;
 }
 
 @media (max-width: 992px) {
@@ -191,6 +191,11 @@ a{
 
 .product-images {
     text-align: center;
+
+}
+
+.product-images img {
+    border: 2px solid #022244;
 }
 
 .main-image {

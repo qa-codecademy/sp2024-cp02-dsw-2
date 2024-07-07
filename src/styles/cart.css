@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+     background-color: rgb(236, 222, 224);
     color: #343a40;
     line-height: 1.6;
 }
@@ -10,7 +10,7 @@ body {
     margin: 0 auto ;
     margin-bottom: 50px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f3f3f3;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -27,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cac9c9;
     flex-wrap: wrap;
 }
 
