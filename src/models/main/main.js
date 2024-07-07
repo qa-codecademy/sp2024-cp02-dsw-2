@@ -1,6 +1,6 @@
 let slideIndex = 1;
 showSlides(slideIndex);
-autoShowSlides();
+
 
 function plusSlides(n) {
     showSlides(slideIndex += n);

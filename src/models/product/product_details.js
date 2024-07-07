@@ -38,9 +38,27 @@ document.addEventListener('DOMContentLoaded', () => {
             priceContainer.innerHTML = `<p><strong>Price: $${productDetails.price.toFixed(2)}</strong></p>`;
         }
 
-       
+        // Add to Cart functionality
+        const addToCartButton = document.getElementById('add-to-cart');
+        addToCartButton.addEventListener('click', () => {
+            // get existing items from local storage
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
+            const existingProduct = cartItems.find(item => item.id === productDetails.id);
+            if (existingProduct) {
+                existingProduct.quantity += 1;
+            } else {
+                productDetails.quantity = 1;
+                cartItems.push(productDetails);
+            }
+
+            
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            //Notify the user taht the product is added to the cart
+            alert('Product added to cart!');
+        });
     } else {
         console.error('No product details found in localStorage');
     }
 });
+
