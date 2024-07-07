@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="/src/styles/category.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Product Details</title>
 </head>
 <body>
 
-    <div id="pre-header">
+     
+      <!-- Pre Header Navbar -->
+      <div id="pre-header" >
         <div class="logo">PACK N' GO</div>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
@@ -18,34 +21,56 @@
                 <li>
                     <i class="fa-solid fa-house"></i>
                     <a href="./index.html">Home</a>
+                    
                 </li>
-                <li class="dropdown">
+
+                <li>
                     <i class="fa-solid fa-list"></i>
                     <a href='./categories.html'>Categories</a>
                 </li>
+
                 <li>
                     <i class="fa-solid fa-address-book"></i>
                     <a href="./contact.html">Contact Us</a>
                 </li>
-                <li><a href="#" class="fa fa-shopping-cart"></a></li>
-                <button class="login-btn" id="open-popup">Login</button>
+                <li >
+                    <a href="./cart.html" class="fa fa-shopping-cart"></a>
+                </li>
+                <button class="login-btn"><a href="./login.html">Login</a></button>
             </ul>
         </nav>
         <label for="nav_check" class="hamburger">
             <div></div>
             <div></div>
             <div></div>
+            <div></div>
         </label>
     </div>
-    
 
- <div class="container my-4">
+
+ <!-- <div class="container my-4">
         <h1 id="product-title">Product Details</h1>
         <div id="product-images" class="product-images"></div>
         <p id="product-description"></p>
         <div id="product-price"></div>
         <button id="add-to-cart" class="btn btn-primary">Add to Cart</button>
     </div>
+     -->
+
+     <div class="container my-4">
+        <div class="product-images">
+            <img id="main-image" class="main-image img-fluid mb-3" src="" alt="Product Image">
+            <div class="thumbnail-images">
+                <img class="thumbnail img-fluid mr-2" src="" alt="Thumbnail Image 1">
+                <img class="thumbnail img-fluid mr-2" src="" alt="Thumbnail Image 2">
+                <img class="thumbnail img-fluid" src="" alt="Thumbnail Image 3">
+            </div>
+        </div>
+        <h1 id="product-title" class="mt-3"></h1>
+        <div id="product-price"></div>
+        <button id="add-to-cart" class="btn btn-primary mt-3">Add to Cart</button>
+    </div>
+    
     
      <script src="/src/models/product/product_details.js"></script>
    
