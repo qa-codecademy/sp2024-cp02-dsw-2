@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="../styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
 </head>
@@ -12,7 +13,6 @@
   
 <body>
 
-   <!-- Pre Header Navbar -->
     <!-- Pre Header Navbar -->
     <div id="pre-header" >
         <div class="logo">PACK N' GO</div>
@@ -49,56 +49,62 @@
     </div>
 
     <section class="contactSection">
-        <!-- <h2>Contact us through this form</h2> -->
         <div class="contactContainer">
             <div class="contactInfo">
                 <h3>Information</h3>
                 <img src="/src/assets/data/images/logoPlaceholder.jpg" alt="logoImagePlaceholder">
+                <div class="contactInfoDivider"></div>
                 <p>Phone: +389 71 234 567</p>
                 <p>Email: placeholder@mail.com</p>
             </div>
             <form class="contactForm" action="#">
-            <div class="formGroup">
-                <label for="name">Name</label>
-                <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your name"
-                class="formControl"
-                />
-            </div>
-            <div class="formGroup">
-                <label for="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Your email"
+                <div class="formGroup">
+                    <label for="name">Name</label>
+                    <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    minlength="2"
+                    maxlength="20"
                     class="formControl"
-                />
-            </div>
-            <div class="formGroup">
-                <label for="comment">Comment</label>
-                <textarea
-                name="comment"
-                id="comment"
-                cols="30"
-                rows="10"
-                class="formControl"
-                ></textarea>
-            </div>
-                <div class="formControls">
-                    <button type="submit">Send</button>
+                    required
+                    />
                 </div>
+                <div class="formGroup">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your email"
+                        minlength="5"
+                        maxlength="20"
+                        class="formControl"
+                        required
+                    />
+                </div>
+                <div class="formGroup">
+                    <label for="comment">Comment</label>
+                    <input
+                    name="comment"
+                    id="comment"
+                    cols="30"
+                    rows="10"
+                    class="formControl"
+                    minlength="10"
+                    maxlength="50"
+                    required
+                    ></input>
+                </div>
+                    <div class="formControls">
+                        <button type="submit">Send</button>
+                    </div>
             </form>
         </div>
     </section>
    
     
- <!-- Footer -->
-
-
  <!-- footer section -->
  <footer class="footer">
     <div class="footer-container">
