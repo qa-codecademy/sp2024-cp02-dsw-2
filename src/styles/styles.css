@@ -51,6 +51,7 @@ a{
     text-transform: uppercase;
     color: black;
     font-family: 'Dancing Script';
+    font-family: Arial, Helvetica, sans-serif;
 }
 #pre-header nav ul {
     display: flex;
