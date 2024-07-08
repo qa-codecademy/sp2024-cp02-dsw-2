@@ -1,0 +1,72 @@
+.contactSection {
+    padding: 100px 20px;
+    display: grid;
+    justify-items: center;
+}  
+
+.contactSection > h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.contactContainer {
+    max-width: 800px;
+    border: 2px solid black;
+    height: 460px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.contactInfo {
+    font-size: 1.2rem;
+    display: grid;
+    align-content: start;
+    padding-right: 20px;
+    border-right: 1px solid lightgray;
+}
+
+.contactForm {
+    padding-left: 20px;
+}
+
+.formGroup {
+    display: grid;
+    gap: 1px;
+    padding: 5px 0;
+}
+
+.formGroup .formControl {
+    padding: 6px;
+    font-size: 1rem;
+}
+
+#comment {
+    height: 12.6rem;
+}
+
+.formControls {
+    padding-top: 2px;
+    display: grid;
+    justify-items: flex-end;
+}
+
+.formControls button {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #ff6b6b;
+}
+
+.formControls button:hover {
+    background-color: #e55b5b;
+}
+
+.formControls button:active {
+    background-color: #d83232;
+}
+
