@@ -7,103 +7,126 @@
     <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="../styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     
 </head>
 
   
 <body>
 
-    <!-- Pre Header Navbar -->
-    <div id="pre-header" >
-        <div class="logo">PACK N' GO</div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-house"></i>
-                    <a href="./index.html">Home</a>
-                    
-                </li>
+    
+ <!-- Pre Header Navbar -->
+ <div id="pre-header">
+    <div class="logo">PACK N' GO</div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href='./categories.html'>Categories</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+        <div class="nav-right">
+            <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
+            <i class="fa fa-user icon-hover " onclick="showLoginPopup()"></i>
+        </div>
+    </nav>
+    <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+</div>
 
-                <li>
-                    <i class="fa-solid fa-list"></i>
-                    <a href='./categories.html'>Categories</a>
-                </li>
 
-                <li>
-                    <i class="fa-solid fa-address-book"></i>
-                    <a href="./contact.html">Contact Us</a>
-                </li>
-                <li >
-                    <a href="./cart.html" class="fa fa-shopping-cart"></a>
-                </li>
-                <button class="login-btn"><a href="./login.html">Login</a></button>
-            </ul>
-        </nav>
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
+    <!-- Sign Up Popup -->
+    <div id="login-popup" class="login-popup">
+        <form onsubmit="onLogin(event)" class="login-popup-container">
+            <div class="login-popup-title">
+                <h2 id="popup-title">Login</h2>
+                 <p onclick="hideLoginPopup()">X</p>
+            </div>
+            <div class="login-popup-inputs">
+                <input id="name" type="text" placeholder="Your name..." required />
+                <input id="email" type="email" placeholder="Your email..." required />
+                <input id="password" type="password" placeholder="Password" required />
+            </div>
+            <button type="submit">Login</button>
+            <div class="login-popup-condition">
+                <input type="checkbox" required />
+                <p>By continuing, I agree to the terms of use & privacy policy</p>
+            </div>
+            <p id="toggle-state">
+                Create a new account <span onclick="toggleLoginState()">Click here</span>
+            </p>
+        </form>
     </div>
 
-    <section class="contactSection">
-        <div class="contactContainer">
-            <div class="contactInfo">
-                <h3>Information</h3>
-                <img class="unofficialLogo" src="/src/assets/data/images/PACK N` GO (1).png" alt="logoImagePlaceholder">
-                <div class="contactInfoDivider"></div>
-                <p>Phone: +389 71 234 567</p>
-                <p>Email: placeholder@mail.com</p>
-            </div>
-            <form class="contactForm" action="#">
-                <div class="formGroup">
-                    <label for="name">Name</label>
-                    <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Your name"
-                    minlength="2"
-                    maxlength="20"
-                    class="formControl"
-                    required
-                    />
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h2 id="hero-text">Welcome to Interior Design</h2>
+            <button id="scroll-down-btn"><a href="#contact-section">Contact Us</a></button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-section">
+        <div class="contact-container">
+            <h2 class="contact-title">GET IN TOUCH</h2>
+            <p class="contact-description">
+                Need to ask us a question, but not ready for a Custom Quote? Feel free to contact us using the form below. We also have an FAQ page that may be helpful.
+            </p>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
-                <div class="formGroup">
-                    <label for="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Your email"
-                        minlength="5"
-                        maxlength="20"
-                        class="formControl"
-                        required
-                    />
-                </div>
-                <div class="formGroup">
-                    <label for="comment">Comment</label>
-                    <input
-                    name="comment"
-                    id="comment"
-                    cols="30"
-                    rows="10"
-                    class="formControl"
-                    minlength="10"
-                    maxlength="50"
-                    required
-                    ></input>
-                </div>
-                    <div class="formControls">
-                        <button type="submit">Send</button>
-                    </div>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class=" send-button">SEND</button>
             </form>
         </div>
     </section>
+
+    <section class="map-section">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.6407603263633!2d21.43758507560962!3d41.98652215861961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354156e09f8f943%3A0x4f70677f66ebc77c!2sQinshift%20Academy!5e0!3m2!1sen!2smk!4v1725918972990!5m2!1sen!2smk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="info-container">
+            <div class="contact-info">
+                <h3>Visit Us</h3>
+                <p>Visit by appointment or call:</p>
+                <p>641 Gibbons St.<br>Los Angeles, CA 90031</p>
+                <p>213-275-2355</p>
+                <p>Mon-Fri - 9am - 4pm<br>Saturday - 11am - 3pm<br>Sunday - Closed</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="signup-section">
+        <div class="signup-container">
+            <h3>SIGN UP NOW</h3>
+            <h2>Subscribe for product updates, ready-to-go pieces and occasional furniture sales!</h2>
+            <form class="signup-form" action="#" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <button type="submit" class="signup-button">
+                    <i class="fa fa-envelope"></i>
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+    
    
+    
+
+
+
     
  <!-- footer section -->
  <footer class="footer">
@@ -154,5 +177,6 @@
  </footer>
     
      
+ <script src="../models/main/main.js"></script>
 </body>
 </html>

@@ -1,75 +1,262 @@
-.contactSection {
-    padding: 100px 20px;
-    display: grid;
-    justify-items: center;
-}  
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.contactSection > h2 {
+a{
+    color:white;
+}
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-container {
+    max-width: 800px;
     width: 100%;
     text-align: center;
-    padding-bottom: 20px;
+}
+
+.contact-title {
     font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.contact-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-row input {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.send-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+    width: 30%;
+}
+
+.send-button:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+/* General styles for the map section */
+.map-section {
+    position: relative;
+    width: 100%;
+}
+
+.map-container {
+    width: 100%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Style for the contact info section */
+.info-container {
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    right: 20px;
+    width: 22%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.info-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info-container p {
+    margin-bottom: 10px;
     font-weight: 400;
 }
-
-.contactContainer {
-    max-width: 800px;
-    border: 2px solid black;
-    height: 460px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.signup-section {
+    background-color: #f9f9f9; /* Light background for contrast */
     padding: 20px;
-    background-color: #f5f5f5;
+    text-align: center;
 }
 
-.contactInfo {
+.signup-container {
+    max-width: 600px; /* Limits the width of the content */
+    margin: 0 auto; /* Center align */
+}
+
+.signup-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.signup-container h2 {
     font-size: 1.2rem;
-    display: grid;
-    align-content: start;
-    padding-right: 20px;
-    border-right: 1px solid lightgray;
+    margin-bottom: 20px;
 }
 
-.contactForm {
-    padding-left: 20px;
+.signup-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.formGroup {
-    display: grid;
-    gap: 1px;
-    padding: 5px 0;
-}
-
-.formGroup .formControl {
-    padding: 6px;
+.signup-form input {
+    width: calc(100% - 100px); 
+    padding: 10px;
     font-size: 1rem;
-}
-
-#comment {
-    height: 12.6rem;
-}
-
-.formControls {
-    padding-top: 2px;
-    display: grid;
-    justify-items: flex-end;
-}
-
-.formControls button {
-    font-size: 1.2rem;
-    padding: 5px 10px;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    background-color: #ff6b6b;
+    margin-right: 10px;
 }
 
-.formControls button:hover {
-    background-color: #e55b5b;
+.signup-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    color: tomato;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.formControls button:active {
-    background-color: #d83232;
+.signup-form button i {
+    margin-right:15px;
+    width: 10%;
 }
 
-.unofficialLogo {
-    width: 20rem;
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input {
+        max-width: 100%;
+    }
+
+    .info-container {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .signup-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .signup-container h2 {
+        font-size: 1rem;
+    }
+
+    .signup-form input {
+        width: calc(100% - 80px); /* Adjust for smaller screens */
+    }
+
+    .signup-form button {
+        font-size: 0.875rem;
+        padding: 8px 12px;
+    }
+  
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-description {
+        font-size: 0.875rem;
+    }
+
+    .send-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .info-container {
+        font-size: 0.875rem;
+    }
+    .signup-container h3 {
+        font-size: 1rem;
+    }
+
+    .signup-container h2 {
+        font-size: 0.875rem;
+    }
+
+    .signup-form input {
+        width: calc(100% - 60px); /* Adjust for very small screens */
+    }
+
+    .signup-form button {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    
 }

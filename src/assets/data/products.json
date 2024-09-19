@@ -124,7 +124,7 @@
       "imageUrl": [
         "../assets/data/images/sofas/varna.jpg",
         "../assets/data/images/sofas/varna2.jpg",
-        "../assets/data/images/sofas/varna3.jpg"
+        "../assets/data/images/sofas/varna2.jpg"
         
       ],
       "stock":1
@@ -159,6 +159,37 @@
           ],
           "stock": 11
       },
+      {
+        "id": 10,
+        "name": "Sofa Plum",
+        "category": "sofas",
+        "price": 20099,
+        "discountPrice": 2000,
+        "isOnDiscount": true,
+        "description": "",
+        "imageUrl": [
+            "../assets/data/images/sofas/plum.jpg",
+            "../assets/data/images/sofas/plum1.jpg",
+            "../assets/data/images/sofas/plum2.jpg"
+        ],
+        "stock": 11
+    },
+    {
+      "id": 10,
+      "name": "Sofa Plum",
+      "category": "sofas",
+      "price": 20099,
+      "discountPrice": 2000,
+      "isOnDiscount": true,
+      "description": "",
+      "imageUrl": [
+          "../assets/data/images/sofas/plum.jpg",
+          "../assets/data/images/sofas/plum1.jpg",
+          "../assets/data/images/sofas/plum2.jpg"
+      ],
+      "stock": 11
+  },
+  
       {
           "id": 11,
           "name": "Chair Laguno",
@@ -965,7 +996,7 @@
     "../assets/data/images/decorative/Modern_Vase-2.jpg",
     "../assets/data/images/decorative/Modern_Vase-3.jpg"
   ],
-  "stock": 25
+  "stock": 0
 },
 {
   "id": 63,
@@ -1405,7 +1436,87 @@
       "../assets/data/images/wallDecor/metal_clock (3).jpg"
     ],
     "stock": 20
+  },
+  {
+    "id": 92,
+    "name": "Minimalist Wall Clock",
+    "category": "wall_decor",
+    "price": 2800,
+    "discountPrice": 1200,
+    "isOnDiscount": true,
+    "description": "Minimalist design wall clock, perfect for modern interiors.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/metal_clock (1).jpg",
+      "../assets/data/images/wallDecor/metal_clock (2).jpg",
+      "../assets/data/images/wallDecor/metal_clock (3).jpg"
+    ],
+    "stock": 20
+  },
+  {
+    "id": 93,
+    "name": "Minimalist Wall Clock",
+    "category": "wall_decor",
+    "price": 2800,
+    "discountPrice": 1200,
+    "isOnDiscount": true,
+    "description": "Minimalist design wall clock, perfect for modern interiors.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/metal_clock (1).jpg",
+      "../assets/data/images/wallDecor/metal_clock (2).jpg",
+      "../assets/data/images/wallDecor/metal_clock (3).jpg"
+    ],
+    "stock": 20
+  },
+  {
+    "id": 94,
+    "name": "Minimalist Wall Clock",
+    "category": "wall_decor",
+    "price": 2800,
+    "discountPrice": 1200,
+    "isOnDiscount": true,
+    "description": "Minimalist design wall clock, perfect for modern interiors.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/metal_clock (1).jpg",
+      "../assets/data/images/wallDecor/metal_clock (2).jpg",
+      "../assets/data/images/wallDecor/metal_clock (3).jpg"
+    ],
+    "stock": 20
+  },
+  {
+    "id": 95,
+    "name": "Minimalist Wall Clock",
+    "category": "wall_decor",
+    "price": 2800,
+    "discountPrice": 1200,
+    "isOnDiscount": true,
+    "description": "Minimalist design wall clock, perfect for modern interiors.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/metal_clock (1).jpg",
+      "../assets/data/images/wallDecor/metal_clock (2).jpg",
+      "../assets/data/images/wallDecor/metal_clock (3).jpg"
+    ],
+    "stock": 20
+  },
+  {
+    "id": 96,
+    "name": "Minimalist Wall Clock",
+    "category": "wall_decor",
+    "price": 2800,
+    "discountPrice": 1200,
+    "isOnDiscount": true,
+    "description": "Minimalist design wall clock, perfect for modern interiors.",
+    "imageUrl": [
+      "../assets/data/images/wallDecor/metal_clock (1).jpg",
+      "../assets/data/images/wallDecor/metal_clock (2).jpg",
+      "../assets/data/images/wallDecor/metal_clock (3).jpg"
+    ],
+    "stock": 20
   }
+
+
+
+
+
 
 ] 
 }

@@ -1,19 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
     displayCartItems();
 
-    const refreshButton = document.getElementById("refresh-button");
-    if (refreshButton) {
-        refreshButton.addEventListener("click", refreshCart);
+    const proceedToPaymentButton = document.querySelector(".cart-total button");
+    if (proceedToPaymentButton) {
+        proceedToPaymentButton.addEventListener("click", () => {
+            saveTotalsToLocalStorage();
+        });
     }
 });
 
 function displayCartItems() {
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-
     const cartItemsContainer = document.getElementById("cart-items");
-    const totalContainer = document.getElementById("total");
+    const subtotalElement = document.querySelector(".cart-total-details:nth-of-type(1) p:last-of-type");
+    const deliveryFeeElement = document.querySelector(".cart-total-details:nth-of-type(2) p:last-of-type");
+    const totalElement = document.querySelector(".cart-total-details:nth-of-type(3) b:last-of-type");
+
     cartItemsContainer.innerHTML = "";
-    totalContainer.textContent = "";
+    subtotalElement.textContent = "$0.00";
+    deliveryFeeElement.textContent = "$0.00";
+    totalElement.textContent = "$0.00";
 
     if (cartItems.length === 0) {
         cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
@@ -21,55 +27,39 @@ function displayCartItems() {
         let totalSum = 0;
         cartItems.forEach(item => {
             const itemHTML = `
-            <div class="cart-item">
-            <button class="delete-btn" onclick="deleteCartItem(${item.id})">X</button>
-            <div><img src="${item.imageUrl[0]}" alt="${item.name}"></div>
-            <div><strong>Name:</strong> ${item.name}</div>
-            <div><strong>Price:</strong> $${item.price.toFixed(2)}</div>
-            <div class="quantity-section">
-                <strong>Quantity:</strong>
-                <button class="quantity-btn" onclick="decrementQuantity(${item.id})">-</button>
-                <span id="quantity-${item.id}">${item.quantity}</span>
-                <button class="quantity-btn" onclick="incrementQuantity(${item.id})">+</button>
+            <div class="cart-items-title cart-items-item">
+                <img src="${item.imageUrl[0]}" alt="${item.name}" />
+                <p>${item.name}</p>
+                <p>$${item.price.toFixed(2)}</p>
+                <p id="quantity-${item.id}">${item.quantity}</p>
+                <p>$${(item.price * item.quantity).toFixed(2)}</p>
+                <p class="cross" onclick="deleteCartItem(${item.id})">X</p>
             </div>
-        </div>
+            <hr />
             `;
             cartItemsContainer.innerHTML += itemHTML;
             totalSum += item.price * item.quantity;
         });
 
-        totalContainer.textContent = `Total: $${totalSum.toFixed(2)}`;
+        const deliveryFee = totalSum === 0 ? 0 : 2;
+        subtotalElement.textContent = `$${totalSum.toFixed(2)}`;
+        deliveryFeeElement.textContent = `$${deliveryFee.toFixed(2)}`;
+        totalElement.textContent = `$${(totalSum + deliveryFee).toFixed(2)}`;
     }
+}
+
+function saveTotalsToLocalStorage() {
+    const subtotal = document.querySelector(".cart-total-details:nth-of-type(1) p:last-of-type").textContent;
+    const deliveryFee = document.querySelector(".cart-total-details:nth-of-type(2) p:last-of-type").textContent;
+    const total = document.querySelector(".cart-total-details:nth-of-type(3) b:last-of-type").textContent;
+    localStorage.setItem("orderSubtotal", subtotal);
+    localStorage.setItem("orderDeliveryFee", deliveryFee);
+    localStorage.setItem("orderTotal", total);
 }
 
 function deleteCartItem(productId) {
     let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
     cartItems = cartItems.filter(item => item.id !== productId);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
-    displayCartItems();
-}
-
-function incrementQuantity(productId) {
-    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-    const itemIndex = cartItems.findIndex(item => item.id === productId);
-    if (itemIndex !== -1) {
-        cartItems[itemIndex].quantity++;
-        localStorage.setItem("cartItems", JSON.stringify(cartItems));
-        displayCartItems();
-    }
-}
-
-function decrementQuantity(productId) {
-    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-    const itemIndex = cartItems.findIndex(item => item.id === productId);
-    if (itemIndex !== -1 && cartItems[itemIndex].quantity > 1) {
-        cartItems[itemIndex].quantity--;
-        localStorage.setItem("cartItems", JSON.stringify(cartItems));
-        displayCartItems();
-    }
-}
-
-function refreshCart() {
-    localStorage.removeItem("cartItems");
     displayCartItems();
 }

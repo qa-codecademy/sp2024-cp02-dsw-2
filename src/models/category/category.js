@@ -1,205 +1,252 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const categoryParam = urlParams.get("category");
-    console.log("Category:", categoryParam);
+document.addEventListener('DOMContentLoaded', function () {
+    const filterToggle = document.getElementById('filterToggle');
+    const filters = document.querySelector('.filters');
+    const itemCards = document.querySelector('.item-cards');
+    const itemCardsContainer = document.querySelector('.item-cards-container'); 
+    const discountCheckbox = document.getElementById('discountCheckbox');
+    const sortSelect = document.getElementById('sortSelect');
+    const categorySelect = document.getElementById('categorySelect');
+    const inStockCheckbox = document.getElementById('inStockCheckbox');
+    const outOfStockCheckbox = document.getElementById('outOfStockCheckbox');
+    const filterHeader = document.getElementById('filterHeader');
+    const filterContent = document.getElementById('filterContent');
+    const arrowIcon = document.getElementById('arrowIcon');
 
-    // Fetch all products initially
-    fetchProducts();
 
-    // Set the initial category selection
-    if (categoryParam) {
-        document.getElementById('category-select').value = categoryParam;
-        filterProductsByCategory(categoryParam);
+    // Variables for pagination
+    let currentIndex = 0;
+    const itemsPerPage = 10;
+    let isLoading = false; 
+    let allProducts = []; 
+
+    // Function to fetch products from JSON file
+    function fetchProducts() {
+        fetch("/src/assets/data/products.json")
+            .then(response => response.json())
+            .then(data => {
+                allProducts = data.products;
+                const categoryParam = new URLSearchParams(window.location.search).get("category") || 'all';
+                renderItems(categoryParam);
+            })
+            .catch(error => console.error("Error fetching products:", error));
     }
 
-    // Event listener for category selection change
-    document.getElementById('category-select').addEventListener('change', function() {
-        const selectedCategory = this.value.toLowerCase();
-        filterProductsByCategory(selectedCategory);
-    });
+    // Function to render products
+    function renderItems(category) {
+        // Get the state of the filters
+        const showDiscountOnly = discountCheckbox.checked;
+        const showInStockOnly = inStockCheckbox.checked;
+        const showOutOfStockOnly = outOfStockCheckbox.checked;
 
-    // Event listener for discount filter
-    document.getElementById('discount-checkbox').addEventListener('change', function() {
-        filterProductsByCategory(document.getElementById('category-select').value.toLowerCase());
-    });
+        // Filter products by category, discount, and availability
+        let filteredProducts = allProducts.filter(product => {
+            return (category === 'all' || product.category.toLowerCase() === category.toLowerCase()) &&
+                (!showDiscountOnly || product.discountPrice) &&
+                (!showInStockOnly || product.stock > 0) &&
+                (!showOutOfStockOnly || product.stock === 0);
+        });
 
-    // Event listener for search input
-    const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('input', function() {
-        filterProductsByCategory(document.getElementById('category-select').value.toLowerCase());
+        // Sort products based on selected option
+        const sortOption = sortSelect.value;
+        filteredProducts = sortProducts(filteredProducts, sortOption);
+
+        // Clear existing items
+        itemCards.innerHTML = '';
+
+        // Reset pagination
+        currentIndex = 0;
+
+        // Initial render of items
+        function renderCurrentItems() {
+            for (let i = currentIndex; i < currentIndex + itemsPerPage && i < filteredProducts.length; i++) {
+                const item = filteredProducts[i];
+                const itemCard = document.createElement('div');
+                itemCard.classList.add('item-card');
+
+                itemCard.innerHTML = `
+                    <img src="${item.imageUrl[0]}" class="item-img" alt="${item.name}">
+                    <h3>${item.name}</h3>
+                    <div class="price-content">
+                        <p class="price original-price" style="${item.discountPrice ? '' : 'display:none;'}">$${item.price}</p>
+                        <p class="price discount-price" style="${item.discountPrice ? '' : 'display:none;'}">$${item.discountPrice}</p>
+                        <p class="price" style="${!item.discountPrice ? '' : 'display:none;'}">$${item.price}</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-details" onclick="viewProductDetails(${item.id})">View Details</button>
+                        <button class="btn-buy ${item.stock === 0 ? 'disabled' : ''}" onclick="${item.stock === 0 ? '' : `addToCart(${item.id})`}">${item.stock === 0 ? 'Out of Stock' : 'Add to Cart'}</button>
+                    </div>
+                `;
+                itemCards.appendChild(itemCard);
+            }
+            currentIndex += itemsPerPage;
+            isLoading = false;
+        }
+
+        renderCurrentItems();
+
+        // Infinite scroll logic
+        window.addEventListener('scroll', function () {
+            const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
+
+            if (nearBottom && currentIndex < filteredProducts.length && !isLoading) {
+                isLoading = true;
+
+                // Display Loading... message in the item cards container
+                const loadingDiv = document.createElement('div');
+                loadingDiv.classList.add('loading');
+                loadingDiv.innerText = 'Loading more items...';
+                itemCardsContainer.appendChild(loadingDiv);
+
+                // Load more items after 1 second delay
+                setTimeout(function () {
+                    loadingDiv.remove(); 
+                    renderCurrentItems();
+                }, 1000);
+            }
+        });
+    }
+
+    // Function to sort products based on the selected option
+    function sortProducts(products, sortOption) {
+        switch (sortOption) {
+            case 'price-asc':
+                return products.sort((a, b) => (a.discountPrice || a.price) - (b.discountPrice || b.price));
+            case 'price-desc':
+                return products.sort((a, b) => (b.discountPrice || b.price) - (a.discountPrice || a.price));
+            case 'name-asc':
+                return products.sort((a, b) => a.name.localeCompare(b.name));
+            case 'name-desc':
+                return products.sort((a, b) => b.name.localeCompare(a.name));
+            default:
+                return products;
+        }
+    }
+
+    // Event listener for discount checkbox
+    discountCheckbox.addEventListener('change', function () {
+        const categoryParam = new URLSearchParams(window.location.search).get("category") || 'all';
+        renderItems(categoryParam);
     });
 
     // Event listener for sort select
-    document.getElementById('sort-select').addEventListener('change', function() {
-        filterProductsByCategory(document.getElementById('category-select').value.toLowerCase());
+    sortSelect.addEventListener('change', function () {
+        const categoryParam = new URLSearchParams(window.location.search).get("category") || 'all';
+        renderItems(categoryParam);
     });
 
-    const filters = document.querySelector('.filters');
-    const toggleButton = document.getElementById('open-filters-btn');
-    const closeButton = document.getElementById('close-filters-btn');
-
-    // Function to toggle no-scroll class on body
-    const toggleScrollLock = () => {
-        document.body.classList.toggle('no-scroll');
-    };
-
-    // Event listener for opening filters
-    toggleButton.addEventListener('click', () => {
-        filters.classList.remove('collapsed');
-        toggleButton.style.display = 'none';
-        closeButton.style.display = 'block';
-        toggleScrollLock(); 
+    // Event listener for category select
+    categorySelect.addEventListener('change', function () {
+        const selectedCategory = categorySelect.value;
+        if (selectedCategory) {
+            window.location.href = `/src/templates/products.html?category=${selectedCategory}`;
+        }
     });
 
-    // Event listener for closing filters
-    closeButton.addEventListener('click', () => {
-        filters.classList.add('collapsed');
-        toggleButton.style.display = 'block';
-        closeButton.style.display = 'none';
-        toggleScrollLock(); 
+    // Event listener for in-stock checkbox
+    inStockCheckbox.addEventListener('change', function () {
+        if (inStockCheckbox.checked) {
+            outOfStockCheckbox.checked = false;
+        }
+        renderItems(new URLSearchParams(window.location.search).get("category") || 'all');
     });
 
-});
+    // Event listener for out-of-stock checkbox
+    outOfStockCheckbox.addEventListener('change', function () {
+        if (outOfStockCheckbox.checked) {
+            inStockCheckbox.checked = false;
+        }
+        renderItems(new URLSearchParams(window.location.search).get("category") || 'all');
+    });
 
-// Function to fetch all products
-function fetchProducts() {
-    fetch("/src/assets/data/products.json")
-        .then(response => response.json())
-        .then(data => renderProducts(data.products))
-        .catch(error => console.error("Error fetching products:", error));
-}
+    // close open filter section
+    filterHeader.addEventListener('click', function () {
+        const isContentVisible = filterContent.style.display === 'block';
 
-// Function to filter and render products by category
-function filterProductsByCategory(category) {
-    fetch("/src/assets/data/products.json")
-        .then(response => response.json())
-        .then(data => {
-            let filteredProducts = data.products.filter(product => {
-                return category === 'all' || product.category.toLowerCase() === category.toLowerCase();
-            });
+        if (isContentVisible) {
+            filterContent.style.display = 'none';
+            arrowIcon.classList.remove('arrow-up');
+        } else {
+            filterContent.style.display = 'block';
+            arrowIcon.classList.add('arrow-up');
+        }
+    });
 
-            // discount filter if checked
-            if (document.getElementById('discount-checkbox').checked) {
-                filteredProducts = applyDiscountFilter(filteredProducts);
-            }
-
-            // search filter
-            const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
-            if (searchTerm !== '') {
-                filteredProducts = filteredProducts.filter(product =>
-                    product.name.toLowerCase().includes(searchTerm)
-                );
-            }
-
-            // sort filter
-            const sortBy = document.getElementById('sort-select').value;
-            if (sortBy === 'cheapest') {
-                filteredProducts.sort((a, b) => (a.discountPrice || a.price) - (b.discountPrice || b.price));
-            } else if (sortBy === 'expensive') {
-                filteredProducts.sort((a, b) => (b.discountPrice || b.price) - (a.discountPrice || a.price));
-            }
-
-            renderProducts(filteredProducts);
-        })
-        .catch(error => console.error("Error fetching products:", error));
-}
-
-// Function to apply discount filter
-function applyDiscountFilter(products) {
-    return products.filter(product => product.isOnDiscount === true);
-}
-
-// Function to render products on the page
-function renderProducts(products) {
-    const productGrid = document.getElementById("product-grid");
-    productGrid.innerHTML = "";
-
-    if (products.length > 0) {
-        products.forEach(product => {
-            let priceToShow = product.price; // Default to regular price
-            let priceHTML = `<strong>Price: $${priceToShow.toFixed(2)}</strong>`;
-
-            if (document.getElementById('discount-checkbox').checked && product.isOnDiscount) {
-                // Show discounted price with strikethrough
-                priceToShow = product.discountPrice;
-                priceHTML = `
-                    <strong>Price: <del>$${product.price.toFixed(2)}</del> <br /> Discount Price: $${priceToShow.toFixed(2)}</strong>
-                `;
-            }
-
-            const productHTML = `
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="${product.imageUrl[0]}" class="card-img-top" alt="${product.name}">
-                        <div class="card-body">
-                            <h5 class="card-title">${product.name}</h5>
-                            <p class="card-text">${product.description}</p>
-                            <p class="card-text">${priceHTML}</p>
-                            <div class="btn-container">
-                                <button class="btn btn-primary" onclick="viewProductDetails(${product.id})">Details</button>
-                                <button class="btn btn-primary mt-2" onclick="addToCart(${product.id})">Buy Now</button>
-                            </div>    
-                        </div>
-                    </div>
-                </div>`;
-            productGrid.innerHTML += productHTML;
-        });
-    } else {
-        productGrid.innerHTML = "<p>No products found matching the filters.</p>";
-    }
-}
-
-
-// Function to view product details
-function viewProductDetails(productId) {
-    fetch("/src/assets/data/products.json")
-        .then(response => response.json())
-        .then(data => {
-            const product = data.products.find(p => p.id === productId);
-            if (product) {
-                localStorage.setItem("productDetails", JSON.stringify(product));
-                window.location.href = "/src/templates/product_details.html";
-            } else {
-                console.error("Product not found");
-            }
-        })
-        .catch(error => console.error("Error fetching product details:", error));
-}
-
-
-
-// Function to add product to cart
-function addToCart(productId) {
-    if (!productId) {
-        console.error("Invalid productId:", productId);
-        return;
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get('category');
+    if (categoryParam) {
+        categorySelect.value = categoryParam; 
     }
 
-    fetch("/src/assets/data/products.json")
-        .then(response => response.json())
-        .then(data => {
-            const product = data.products.find(p => p.id === productId);
-            if (product) {
-                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-                // Check if the product already exists 
-                const existingItemIndex = cartItems.findIndex(item => item.id === productId);
-                if (existingItemIndex !== -1) {
-                    // If product exists increment its quantity
-                    cartItems[existingItemIndex].quantity++;
+    // Function to view product details
+    window.viewProductDetails = function(productId) {
+        fetch("/src/assets/data/products.json")
+            .then(response => response.json())
+            .then(data => {
+                const product = data.products.find(p => p.id === productId);
+                if (product) {
+                    localStorage.setItem("productDetails", JSON.stringify(product));
+                    window.location.href = "/src/templates/product_details.html";
                 } else {
-                    product.quantity = 1;
-                    cartItems.push(product);
+                    console.error("Product not found for productId:", productId);
                 }
+            })
+            .catch(error => console.error("Error fetching product details:", error));
+    }
 
-                // Update localStorage with the updated cart items array
-                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    // Function to add product to cart
+    window.addToCart = function(productId) {
+        fetch("/src/assets/data/products.json")
+            .then(response => response.json())
+            .then(data => {
+                const product = data.products.find(p => p.id === productId);
+                if (product) {
+                    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+                    const existingItemIndex = cartItems.findIndex(item => item.id === productId);
 
-                //Notify the user that the product is added to the cart
-                alert(`${product.name} added to cart!`);
-            } else {
-                console.error("Product not found for productId:", productId);
-            }
-        })
-        .catch(error => console.error("Error adding product to cart:", error));
-}
+                    if (existingItemIndex !== -1) {
+                        // Item already in cart
+                        showCartPopup('Item is already in cart', false); // Show popup with X icon
+                    } else {
+                        // Item not in cart, add it
+                        product.quantity = 1;
+                        cartItems.push(product);
+                        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                        showCartPopup('Item added to cart successfully!', true); // Show popup with check icon
+                    }
+                } else {
+                    console.error("Product not found for productId:", productId);
+                }
+            })
+            .catch(error => console.error("Error adding product to cart:", error));
+    }
+
+    // Function to show the confirmation popup
+    function showCartPopup(message, success) {
+        const popup = document.getElementById('confirmation-popup');
+        const popupContent = popup.querySelector('.confirmation-popup-content');
+        const icon = popupContent.querySelector('i');
+        const text = popupContent.querySelector('p');
+
+        if (success) {
+            icon.classList.remove('fa-times-circle');
+            icon.classList.add('fa-check-circle');
+            icon.style.color = 'green';
+        } else {
+            icon.classList.remove('fa-check-circle');
+            icon.classList.add('fa-times-circle');
+            icon.style.color = 'red';
+        }
+
+        text.textContent = message;
+        popup.style.display = 'flex';
+    }
+
+    // Function to hide the confirmation popup
+    window.hideConfirmationPopup = function() {
+        const popup = document.getElementById('confirmation-popup');
+        popup.style.display = 'none';
+    }
+
+    // Initial fetch and render
+    fetchProducts();
+});
