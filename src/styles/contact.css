@@ -1,262 +1,255 @@
 /* General Styles */
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    color:white;
+a {
+  color: white;
 }
 .contact-section {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .contact-container {
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
 }
 
 .contact-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #333;
 }
 
 .contact-description {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    color: #555;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
 }
 
 .form-row {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
 }
 
 .form-row input {
-    width: 100%;
-    max-width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 textarea {
-    width: 100%;
-    max-width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .send-button {
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    border: 2px solid transparent;
-    background-color: tomato;
-    color: white;
-    cursor: pointer;
-    border-radius: 0.25rem;
-    transition: background-color 0.3s, color 0.3s;
-    width: 30%;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s;
+  width: 30%;
 }
 
 .send-button:hover {
-    background-color: transparent;
-    color: black;
-    border-color: black;
+  background-color: transparent;
+  color: black;
+  border-color: black;
 }
 
 /* General styles for the map section */
 .map-section {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .map-container {
-    width: 100%;
+  width: 100%;
 }
 
 .map-container iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
+  width: 100%;
+  height: 450px;
+  border: 0;
 }
 
 /* Style for the contact info section */
 .info-container {
-    position: absolute;
-    top: 20%;
-    left: 20px;
-    right: 20px;
-    width: 22%;
-    height: 70%;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 20px;
-    box-sizing: border-box;
-    z-index: 10;
+  position: absolute;
+  top: 20%;
+  left: 20px;
+  right: 20px;
+  width: 22%;
+  height: 70%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 10;
 }
 
 .info-container h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .info-container p {
-    margin-bottom: 10px;
-    font-weight: 400;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 .signup-section {
-    background-color: #f9f9f9; /* Light background for contrast */
-    padding: 20px;
-    text-align: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 20px;
+  text-align: center;
 }
 
 .signup-container {
-    max-width: 600px; /* Limits the width of the content */
-    margin: 0 auto; /* Center align */
+  max-width: 600px; /* Limits the width of the content */
+  margin: 0 auto; /* Center align */
 }
 
 .signup-container h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .signup-container h2 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .signup-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .signup-form input {
-    width: calc(100% - 100px); 
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-right: 10px;
+  width: calc(100% - 100px);
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
 .signup-form button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.875rem;
-    color: tomato;
-    background: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: tomato;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .signup-form button i {
-    margin-right:15px;
-    width: 10%;
+  margin-right: 15px;
+  width: 10%;
 }
-
-
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .form-row {
-        flex-direction: column;
-    }
+  .form-row {
+    flex-direction: column;
+  }
 
-    .form-row input {
-        max-width: 100%;
-    }
+  .form-row input {
+    max-width: 100%;
+  }
 
-    .info-container {
-        position: static;
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-    .signup-container h3 {
-        font-size: 1.2rem;
-    }
+  .info-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .signup-container h3 {
+    font-size: 1.2rem;
+  }
 
-    .signup-container h2 {
-        font-size: 1rem;
-    }
+  .signup-container h2 {
+    font-size: 1rem;
+  }
 
-    .signup-form input {
-        width: calc(100% - 80px); /* Adjust for smaller screens */
-    }
+  .signup-form input {
+    width: calc(100% - 80px); /* Adjust for smaller screens */
+  }
 
-    .signup-form button {
-        font-size: 0.875rem;
-        padding: 8px 12px;
-    }
-  
+  .signup-form button {
+    font-size: 0.875rem;
+    padding: 8px 12px;
+  }
 }
 
 @media (max-width: 480px) {
-    .contact-title {
-        font-size: 1.5rem;
-    }
+  .contact-title {
+    font-size: 1.5rem;
+  }
 
-    .contact-description {
-        font-size: 0.875rem;
-    }
+  .contact-description {
+    font-size: 0.875rem;
+  }
 
-    .send-button {
-        padding: 0.5rem 1rem;
-        font-size: 0.875rem;
-    }
+  .send-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
 
-    .info-container {
-        font-size: 0.875rem;
-    }
-    .signup-container h3 {
-        font-size: 1rem;
-    }
+  .info-container {
+    font-size: 0.875rem;
+  }
+  .signup-container h3 {
+    font-size: 1rem;
+  }
 
-    .signup-container h2 {
-        font-size: 0.875rem;
-    }
+  .signup-container h2 {
+    font-size: 0.875rem;
+  }
 
-    .signup-form input {
-        width: calc(100% - 60px); /* Adjust for very small screens */
-    }
+  .signup-form input {
+    width: calc(100% - 60px); /* Adjust for very small screens */
+  }
 
-    .signup-form button {
-        font-size: 0.75rem;
-        padding: 6px 10px;
-    }
-
-    
+  .signup-form button {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
 }
