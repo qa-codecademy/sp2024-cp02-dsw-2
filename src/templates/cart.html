@@ -39,6 +39,27 @@
         <div></div>
     </label>
 </div>
+<!-- Login Popup -->
+<div id="login-popup" class="login-popup">
+    <form onsubmit="onLogin(event)" class="login-popup-container">
+        <div class="login-popup-title">
+            <h2 id="popup-title">Login</h2>
+            <p onclick="hideLoginPopup()">X</p>
+        </div>
+        <div class="login-popup-inputs">
+            <input id="email" type="email" placeholder="Your email..." required />
+            <input id="password" type="password" placeholder="Password" required />
+        </div>
+        <button type="submit">Login</button>
+        <div class="login-popup-condition">
+            <input type="checkbox" required />
+            <p>By continuing, I agree to the terms of use & privacy policy</p>
+        </div>
+        <p id="toggle-state">
+            Create a new account <span onclick="toggleLoginState()">Click here</span>
+        </p>
+    </form>
+</div>
 
 
 <!-- Cart Container -->
@@ -81,7 +102,7 @@
                 <b>Total</b>
                 <b id="total"></b>
             </div>
-            <button id="make-order" class="order-btn"><a href="/src/templates/orderPage.html">PROCEED TO CHECKOUT</a></button>
+            <button id="make-order" class="order-btn" disabled>PROCEED TO CHECKOUT</button>
         </div>
         
         <!-- Promo Code Section -->
