@@ -9,100 +9,185 @@
 
 </head>
 <body>
-   
-   
-    <!-- Pre Header Navbar -->
-    <div id="pre-header" >
-        <div class="logo">PACK N' GO</div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-house"></i>
-                    <a href="./index.html">Home</a>
-                    
-                </li>
+   <!-- Pre Header Navbar -->
+ <div id="pre-header">
+    <div class="logo">PACK N' GO</div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./categories.html">Categories</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-right">
+            <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
+            <i id="login-icon" class="fa fa-user icon-hover" onclick="showLoginPopup()"></i>
+            <!-- Admin Panel Icon, hidden by default -->
+            <i id="admin-icon" class="fa fa-cog icon-hover" style="display: none;" onclick="window.location.href='./admin.html'"></i>
+        </div>
+    </nav>
+    <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+</div>
 
-                <li>
-                    <i class="fa-solid fa-list"></i>
-                    <a href='./categories.html'>Categories</a>
-                </li>
+<!-- Login Popup -->
+<div id="login-popup" class="login-popup">
+    <form onsubmit="onLogin(event)" class="login-popup-container">
+        <div class="login-popup-title">
+            <h2 id="popup-title">Login</h2>
+            <p onclick="hideLoginPopup()">X</p>
+        </div>
+        <div class="login-popup-inputs">
+            <input id="email" type="email" placeholder="Your email..." required />
+            <input id="password" type="password" placeholder="Password" required />
+        </div>
+        <button type="submit">Login</button>
+        <div class="login-popup-condition">
+            <input type="checkbox" required />
+            <p>By continuing, I agree to the terms of use & privacy policy</p>
+        </div>
+        <p id="toggle-state">
+            Create a new account <span onclick="toggleLoginState()">Click here</span>
+        </p>
+    </form>
+</div>
 
-                <li>
-                    <i class="fa-solid fa-address-book"></i>
-                    <a href="./contact.html">Contact Us</a>
-                </li>
-                <li >
-                    <a href="./cart.html" class="fa fa-shopping-cart"></a>
-                </li>
-                <button class="login-btn"><a href="./login.html">Login</a></button>
-            </ul>
-        </nav>
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-    </div>
+<!-- Dropdown menu for logged-in users -->
+<div id="user-dropdown" class="dropdown" style="display: none;">
+    <a href="./orders.html">Orders</a>
+    <a href="#" onclick="logout()">Logout</a>
+</div>
+
 
     <!-- Header SlideShow -->
-    <section id="slideshow">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="/src/assets/data/images/slide11.webp" style="width:100%">
-                <div class="slideshow-text">
-                    <h2 class="first-text">Welcome to PACK N' GO</h2>
-                    <p>Discover amazing products </p>
-                    <a href="./categories.html" class="btn">Shop Now</a>
+    <div class="header">
+        <div class="slider">
+            <div class="slide active">
+                <img src="../assets/data/images/2.jpeg" alt="Image 1">
+                <div class="slide-content">
+                    <h2> - Modern Elegance</h2>
+                    <p>Discover our collection of modern furniture designed to elevate your living space.</p>
+                    <button id="scroll-down-btn">Explore Collection</button>
                 </div>
             </div>
-            <div class="mySlides fade">
-                <img src="/src/assets/data/images/slide22.jpg" style="width:100%">
-                <div class="slideshow-text">
-                    <h2>Exclusive Deals</h2>
-                    <p>Grab them before they're gone!</p>
-                    <a href="./categories.html" class="btn">Shop Now</a>
+            <div class="slide ">
+                <img src="../assets/data/images/1.jpeg" alt="Image 2">
+               
+                <div class="slide-content">
+                    <h2> - Classic Comfort</h2>
+                    <p>Embrace timeless designs with our range of classic furniture pieces.</p>
+                    <button id="scroll-down-btn">See More</button>
                 </div>
             </div>
-            <div class="mySlides fade">
-                <img src="/src/assets/data/images/slide3.jpg" style="width:100%">
-                <div class="slideshow-text">
-                    <h2>Latest Arrival</h2>
-                    <p>Check out our new products</p>
-                    <a href="./categories.html" class="btn">Shop Now</a>
+            <div class="slide ">
+                <img src="../assets/data/images/3.jpeg" alt="Image 3">
+                
+                <div class="slide-content">
+                    <h2> - Innovative Designs</h2>
+                    <p>Explore cutting-edge designs that blend functionality with aesthetics.</p>
+                    <button id="scroll-down-btn">Browse Now</button>
                 </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
-        <div style="text-align:center">
-            <span class="slide-change" onclick="currentSlide(1)"></span>
-            <span class="slide-change" onclick="currentSlide(2)"></span>
-            <span class="slide-change" onclick="currentSlide(3)"></span>
-        </div>
-    </section>
+    </div>
 
 
- <!-- About Us Section -->
- <section class="about-us">
-    <div class="about">
-        <div class="about-us-image">
-        <img src="/src/assets/data/images/PACK N` GO (1).png" alt="About Us Image" class="about-img">
+<!-- What we do -->
+<section class="services-overview">
+    <div class="services-container">
+        <div class="services-row">
+            <div class="services-col-full">
+                <div class="services-heading">
+                    <h3>What We Do</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
         </div>
-        <div class="about-us-text">
-        <h2>About Us</h2>
-          <h5>Mebel Design    <span>PACK N` GO</span></h5>
-          <p>At Mebel Design PACK N' GO, we revolutionize the way you experience furniture. Our innovative designs blend functionality with style,
-             providing versatile and mobile solutions for modern living. Whether you're moving to a new home or simply looking to refresh your space,
-              our expertly crafted furniture is designed to be easily packed, transported, and reassembled, ensuring convenience without compromising 
-              on quality or aesthetics. With a commitment to exceptional craftsmanship and customer
-             satisfaction, Mebel Design PACK N' GO is your go-to destination for dynamic and elegant furniture solutions.</p>
+        <div class="services-row">
+            <div class="services-col-quarter">
+                <div class="service-item">
+                    <img src="../assets/data/images/sm1.png" alt="Home Decor" />
+                    <a class="service-link" href="#">Home Decorate</a>
+                </div>
+            </div>
+            <div class="services-col-quarter">
+                <div class="service-item">
+                    <img src="../assets/data/images/sm2.png" alt="Office Decor" />
+                    <a class="service-link" href="#">Office Decorate</a>
+                </div>
+            </div>
+            <div class="services-col-quarter">
+                <div class="service-item">
+                    <img src="../assets/data/images/sm3.png" alt="Furniture Decor" />
+                    <a class="service-link" href="#">Furniture Decorate</a>
+                </div>
+            </div>
+            <div class="services-col-quarter">
+                <div class="service-item">
+                    <img src="../assets/data/images/sm4.png" alt="Lighting Decor" />
+                    <a class="service-link" href="#">Lighting Decorate</a>
+                </div>
+            </div>
+        </div>
+        <div class="services-row">
+            <div class="services-col-full">
+                <div class="read-more">
+                    <a class="read-more-link" href="./categories.html">Read More</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+        
+<!-- design section -->
+ 
+<section class="design-section">
+    <div class="design-image-wrapper">
+        <img src="../assets/data/images/lamp.png" alt="Decorative Home Design" class="design-image"/>
+        <div class="full design-content">
+            <div class="design-heading">
+                <h3>Best<br>Decorating for<br>Your home</h3>
+            </div>
+            <div class="design-paragraph">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, odio!</p>
+            </div>
+            <div class="design-cta">
+                <a class="read-more-link design-btn" href="#">Get A Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- About -->
+
+
+<section id="feature" class="section-off-white container-fluid ">
+    <div class="container-features">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mt-5 py-5 pr-lg-5">
+                <h6 class="text-primary font-weight-normal text-uppercase mb-3">Why Choose Us?</h6>
+                <h1 class="mb-4 section-title">25+ Years Experience In The Interior Design Industry</h1>
+                <p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                <ul class="list-inline">
+                    <li><h5><i class="far fa-check-square text-primary mr-3"></i> 25+ Years Experience</h5></li>
+                    <li><h5><i class="far fa-check-square text-primary mr-3"></i> Best Interior Design</h5></li>
+                    <li><h5><i class="far fa-check-square text-primary mr-3"></i> Customer Satisfaction</h5></li>
+                </ul>
+                <a href="#" class="read-more-link">View More</a>
+            </div>
+            <div class="col-lg-5 img-container">
+                <img class="img-feature" src="../assets/data/images/reauture.png" alt="Feature Image">
+            </div>
+        </div>
+    </div>
    
+</section>
+
+
 
  <!-- footer section -->
     <footer class="footer">
