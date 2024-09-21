@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     displayCartItems();
 
-    const proceedToPaymentButton = document.querySelector(".cart-total button");
+    const proceedToPaymentButton = document.getElementById("make-order");
     if (proceedToPaymentButton) {
         proceedToPaymentButton.addEventListener("click", () => {
-            saveTotalsToLocalStorage();
+            if (!proceedToPaymentButton.disabled) {
+                saveTotalsToLocalStorage();
+                window.location.href = "/src/templates/orderPage.html"; // Navigate on click if not disabled
+            }
         });
     }
 });
@@ -15,6 +18,7 @@ function displayCartItems() {
     const subtotalElement = document.querySelector(".cart-total-details:nth-of-type(1) p:last-of-type");
     const deliveryFeeElement = document.querySelector(".cart-total-details:nth-of-type(2) p:last-of-type");
     const totalElement = document.querySelector(".cart-total-details:nth-of-type(3) b:last-of-type");
+    const proceedToPaymentButton = document.getElementById("make-order");
 
     cartItemsContainer.innerHTML = "";
     subtotalElement.textContent = "$0.00";
@@ -23,6 +27,9 @@ function displayCartItems() {
 
     if (cartItems.length === 0) {
         cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+        if (proceedToPaymentButton) {
+            proceedToPaymentButton.disabled = true; // Disable button
+        }
     } else {
         let totalSum = 0;
         cartItems.forEach(item => {
@@ -45,6 +52,10 @@ function displayCartItems() {
         subtotalElement.textContent = `$${totalSum.toFixed(2)}`;
         deliveryFeeElement.textContent = `$${deliveryFee.toFixed(2)}`;
         totalElement.textContent = `$${(totalSum + deliveryFee).toFixed(2)}`;
+
+        if (proceedToPaymentButton) {
+            proceedToPaymentButton.disabled = false; // Enable button
+        }
     }
 }
 

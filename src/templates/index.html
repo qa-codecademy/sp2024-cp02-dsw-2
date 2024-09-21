@@ -9,58 +9,58 @@
 
 </head>
 <body>
-    <!-- Pre Header Navbar -->
-    <div id="pre-header">
-        <div class="logo">PACK N' GO</div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <ul class="nav-links">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href='./categories.html'>Categories</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact Us</a>
-                </li>
-            </ul>
-            <div class="nav-right">
-                <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
-                <i class="fa fa-user icon-hover " onclick="showLoginPopup()"></i>
-            </div>
-        </nav>
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-    </div>
-    
-    
+   <!-- Pre Header Navbar -->
+ <div id="pre-header">
+    <div class="logo">PACK N' GO</div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./categories.html">Categories</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-right">
+            <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
+            <i id="login-icon" class="fa fa-user icon-hover" onclick="showLoginPopup()"></i>
+            <!-- Admin Panel Icon, hidden by default -->
+            <i id="admin-icon" class="fa fa-cog icon-hover" style="display: none;" onclick="window.location.href='./admin.html'"></i>
+        </div>
+    </nav>
+    <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+</div>
 
-    <!-- Sign Up Popup -->
-    <div id="login-popup" class="login-popup">
-        <form onsubmit="onLogin(event)" class="login-popup-container">
-            <div class="login-popup-title">
-                <h2 id="popup-title">Login</h2>
-                 <p onclick="hideLoginPopup()">X</p>
-            </div>
-            <div class="login-popup-inputs">
-                <input id="name" type="text" placeholder="Your name..." required />
-                <input id="email" type="email" placeholder="Your email..." required />
-                <input id="password" type="password" placeholder="Password" required />
-            </div>
-            <button type="submit">Login</button>
-            <div class="login-popup-condition">
-                <input type="checkbox" required />
-                <p>By continuing, I agree to the terms of use & privacy policy</p>
-            </div>
-            <p id="toggle-state">
-                Create a new account <span onclick="toggleLoginState()">Click here</span>
-            </p>
-        </form>
-    </div>
+<!-- Login Popup -->
+<div id="login-popup" class="login-popup">
+    <form onsubmit="onLogin(event)" class="login-popup-container">
+        <div class="login-popup-title">
+            <h2 id="popup-title">Login</h2>
+            <p onclick="hideLoginPopup()">X</p>
+        </div>
+        <div class="login-popup-inputs">
+            <input id="email" type="email" placeholder="Your email..." required />
+            <input id="password" type="password" placeholder="Password" required />
+        </div>
+        <button type="submit">Login</button>
+        <div class="login-popup-condition">
+            <input type="checkbox" required />
+            <p>By continuing, I agree to the terms of use & privacy policy</p>
+        </div>
+        <p id="toggle-state">
+            Create a new account <span onclick="toggleLoginState()">Click here</span>
+        </p>
+    </form>
+</div>
+
+<!-- Dropdown menu for logged-in users -->
+<div id="user-dropdown" class="dropdown" style="display: none;">
+    <a href="./orders.html">Orders</a>
+    <a href="#" onclick="logout()">Logout</a>
+</div>
+
 
     <!-- Header SlideShow -->
     <div class="header">
