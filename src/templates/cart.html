@@ -1,151 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="/src/styles/styles.css">
-    <link rel="stylesheet" href="/src/styles/cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <link rel="stylesheet" href="/src/styles/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Shopping Cart</title>
-    
-</head>
-<body>
-     
- <!-- Pre Header Navbar -->
- <div id="pre-header">
-    <div class="logo">PACK N' GO</div>
-    <input type="checkbox" id="nav_check" hidden>
+  </head>
+  <body>
+    <!-- Pre Header Navbar -->
     <nav>
-        <ul class="nav-links">
-            <li>
-                <a href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href='./categories.html'>Categories</a>
-            </li>
-            <li>
-                <a href="./contact.html">Contact Us</a>
-            </li>
-        </ul>
-        <div class="nav-right">
-            <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
-            <i class="fa fa-user icon-hover " onclick="showLoginPopup()"></i>
-        </div>
+      <img
+        class="logo"
+        src="/src/assets/data/images/new-logo-resized.png"
+        alt="Logo"
+      />
+      <ul>
+        <li>
+          <a class="navbarLinks" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a class="navbarLinks" href="./categories.html">Categories</a>
+        </li>
+        <li>
+          <a class="navbarLinks" href="./contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <i
+          class="fa fa-shopping-cart icon-hover"
+          onclick="window.location.href='./cart.html'"
+        ></i>
+        <i class="fa fa-user icon-hover" onclick="showLoginPopup()"></i>
+      </div>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
     </nav>
-    <label for="nav_check" class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-    </label>
-</div>
 
-
-<!-- Cart Container -->
-<div class="cart-container">
-    
-    
-    <!-- Cart Items Header -->
-    <div class="cart-items-title">
+    <!-- Cart Container -->
+    <div class="cart-container">
+      <!-- Cart Items Header -->
+      <div class="cart-items-title">
         <p>Items</p>
         <p>Title</p>
         <p>Price</p>
         <p>Quantity</p>
         <p>Total</p>
         <p>Remove</p>
-    </div>
-    <hr />
+      </div>
+      <hr />
 
-    <!-- Cart Items will be dynamically added here -->
-    <div id="cart-items">
+      <!-- Cart Items will be dynamically added here -->
+      <div id="cart-items">
         <!-- Cart items will be dynamically added here -->
-    </div>
-    
-  
-    
-    <!-- Cart Totals -->
-    <div class="cart-bottom">
+      </div>
+
+      <!-- Cart Totals -->
+      <div class="cart-bottom">
         <div class="cart-total">
-            <h2>Cart Totals</h2>
-            <div class="cart-total-details">
-                <p>Subtotal</p>
-                <p id="subtotal"></p>
-            </div>
-            <hr />
-            <div class="cart-total-details">
-                <p>Delivery Fee</p>
-                <p id="delivery-fee"></p>
-            </div>
-            <hr />
-            <div class="cart-total-details">
-                <b>Total</b>
-                <b id="total"></b>
-            </div>
-            <button id="make-order" class="order-btn"><a href="/src/templates/orderPage.html">PROCEED TO CHECKOUT</a></button>
+          <h2>Cart Totals</h2>
+          <div class="cart-total-details">
+            <p>Subtotal</p>
+            <p id="subtotal"></p>
+          </div>
+          <hr />
+          <div class="cart-total-details">
+            <p>Delivery Fee</p>
+            <p id="delivery-fee"></p>
+          </div>
+          <hr />
+          <div class="cart-total-details">
+            <b>Total</b>
+            <b id="total"></b>
+          </div>
+          <button id="make-order" class="order-btn">
+            <a href="/src/templates/orderPage.html">PROCEED TO CHECKOUT</a>
+          </button>
         </div>
-        
+
         <!-- Promo Code Section -->
         <div class="cart-promocode">
-            <p>If you have a promo code, enter it here</p>
-            <div class="cart-promocode-input">
-                <input type="text" placeholder="promo code" />
-                <button>Submit</button>
-            </div>
+          <p>If you have a promo code, enter it here</p>
+          <div class="cart-promocode-input">
+            <input type="text" placeholder="promo code" />
+            <button>Submit</button>
+          </div>
         </div>
+      </div>
     </div>
 
-    
-</div>
-
-    
     <!-- footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Get Help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Order Status</a></li>
-                        <li><a href="#">Payment Options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Online Shop</h4>
-                    <ul>
-                        <li><a href="/src/templates/products.html?category=sofas">Sofas</a></li>
-                        <li><a href="/src/templates/products.html?category=lighting">Lighting</a></li>
-                        <li><a href="/src/templates/products.html?category=kitchens">Kitchen and Dining</a></li>
-                        <li><a href="/src/templates/products.html?category=decorative">Decorative Items</a></li>
-                        <li><a href="/src/templates/products.html?category=smart_home">Smart Home Devices</a></li>
-                        <li><a href="/src/templates/products.html?category=wall_decor">Wall Decor</a></li>
-                        <li><a href="/src/templates/products.html?category=chairs">Chairs</a></li>
-                        <li><a href="/src/templates/products.html?category=bedroom">Bedroom</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab  fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Payment Options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li>
+                <a href="/src/templates/products.html?category=sofas">Sofas</a>
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=lighting"
+                  >Lighting</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=kitchens"
+                  >Kitchen and Dining</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=decorative"
+                  >Decorative Items</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=smart_home"
+                  >Smart Home Devices</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=wall_decor"
+                  >Wall Decor</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=chairs"
+                  >Chairs</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=bedroom"
+                  >Bedroom</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="../models/main/main.js"></script>
     <script src="/src/models/cart/cart.js"></script>
-</body>
+  </body>
 </html>

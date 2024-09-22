@@ -9,9 +9,7 @@
 
 </head>
 <body>
-    <!-- Pre Header Navbar -->
-    <div id="pre-header">
-        <!-- <div class="logo">PACK N' GO</div> -->
+    <!-- <div id="pre-header">
          <img class="logo" src="/src/assets/data/images/new-logo.png" alt="Logo">
         <input type="checkbox" id="nav_check" hidden>
         <nav>
@@ -36,8 +34,31 @@
             <div></div>
             <div></div>
         </label>
-    </div>
+    </div> -->
     
+    <nav> 
+        <img class="logo" src="/src/assets/data/images/new-logo-resized.png" alt="Logo">
+        <ul>
+            <li>
+                <a class="navbarLinks" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="navbarLinks" href='./categories.html'>Categories</a>
+            </li>
+            <li>
+                <a class="navbarLinks" href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+        <div class="nav-right">
+            <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
+            <i class="fa fa-user icon-hover " onclick="showLoginPopup()"></i>
+        </div>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </nav>
     
 
     <!-- Sign Up Popup -->
@@ -48,9 +69,24 @@
                  <p onclick="hideLoginPopup()">X</p>
             </div>
             <div class="login-popup-inputs">
-                <input id="name" type="text" placeholder="Your name..." required />
-                <input id="email" type="email" placeholder="Your email..." required />
-                <input id="password" type="password" placeholder="Password" required />
+                <input 
+                type="text" 
+                placeholder="Your name" 
+                minlength="2"
+                maxlength="30" 
+                required />
+                <input 
+                type="email" 
+                placeholder="Your email" 
+                minlength="5" 
+                maxlength="50" 
+                required />
+                <input 
+                type="password" 
+                placeholder="Password" 
+                minlength="8"
+                maxlength="50"
+                required />
             </div>
             <button type="submit">Login</button>
             <div class="login-popup-condition">

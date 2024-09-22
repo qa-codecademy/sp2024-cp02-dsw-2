@@ -1,203 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/styles/styles.css">
-    <link rel="stylesheet" href="/src/styles/products.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <link rel="stylesheet" href="/src/styles/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Products</title>
-</head>
-<body>
-
-     <!-- Pre Header Navbar -->
-     <div id="pre-header">
-        <div class="logo">PACK N' GO</div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <ul class="nav-links">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href='./categories.html'>Categories</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact Us</a>
-                </li>
-            </ul>
-            <div class="nav-right">
-                <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
-                <i class="fa fa-user icon-hover " onclick="showLoginPopup()"></i>
-            </div>
-        </nav>
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-    </div>
-    
+  </head>
+  <body>
+    <nav>
+      <img
+        class="logo"
+        src="/src/assets/data/images/new-logo-resized.png"
+        alt="Logo"
+      />
+      <ul>
+        <li>
+          <a class="navbarLinks" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a class="navbarLinks" href="./categories.html">Categories</a>
+        </li>
+        <li>
+          <a class="navbarLinks" href="./contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <i
+          class="fa fa-shopping-cart icon-hover"
+          onclick="window.location.href='./cart.html'"
+        ></i>
+        <i class="fa fa-user icon-hover" onclick="showLoginPopup()"></i>
+      </div>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </nav>
 
     <!-- Sign Up Popup -->
     <div id="login-popup" class="login-popup">
-        <form onsubmit="onLogin(event)" class="login-popup-container">
-            <div class="login-popup-title">
-                <h2 id="popup-title">Login</h2>
-                 <p onclick="hideLoginPopup()">X</p>
-            </div>
-            <div class="login-popup-inputs">
-                <input id="name" type="text" placeholder="Your name..." required />
-                <input id="email" type="email" placeholder="Your email..." required />
-                <input id="password" type="password" placeholder="Password" required />
-            </div>
-            <button type="submit">Login</button>
-            <div class="login-popup-condition">
-                <input type="checkbox" required />
-                <p>By continuing, I agree to the terms of use & privacy policy</p>
-            </div>
-            <p id="toggle-state">
-                Create a new account <span onclick="toggleLoginState()">Click here</span>
-            </p>
-        </form>
+      <form onsubmit="onLogin(event)" class="login-popup-container">
+        <div class="login-popup-title">
+          <h2 id="popup-title">Login</h2>
+          <p onclick="hideLoginPopup()">X</p>
+        </div>
+        <div class="login-popup-inputs">
+          <input id="name" type="text" placeholder="Your name..." required />
+          <input id="email" type="email" placeholder="Your email..." required />
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+        <div class="login-popup-condition">
+          <input type="checkbox" required />
+          <p>By continuing, I agree to the terms of use & privacy policy</p>
+        </div>
+        <p id="toggle-state">
+          Create a new account
+          <span onclick="toggleLoginState()">Click here</span>
+        </p>
+      </form>
     </div>
 
     <div class="container">
-        <div class="filters">
-            <div class="filter-content">
-        
-             <!-- Category Filter -->
-                <div class="category-select-container">
-                    <h2 class="filter-h2">Categories</h2>
-                    <select id="categorySelect">
-                        <option value="sofas">Sofas</option>
-                        <option value="lighting">Lighting</option>
-                        <option value="decorative">Decorative</option>
-                        <option value="kitchens">Kitchens</option>
-                        <option value="smart_home">Smart Items</option>
-                        <option value="wall_decor">Wall Decor</option>
-                        <option value="chairs">Chairs</option>
-                        <option value="bedroom">Bedroom</option>
-                    </select>
-                </div>
-           
-            <!-- On stock Filter -->
-            <div class="filter-section">
-                <div class="filter-header" id="filterHeader">
-                    <h2 class="filter-h2">Availability <i class="fas fa-chevron-down" id="arrowIcon"></i></h2>
-                </div>
-                <div class="filter-content" id="filterContent">
-                    <div class="checkbox-container">
-                        <label>
-                            In Stock
-                            <input type="checkbox" id="inStockCheckbox">
-                        </label>
-                        <label>
-                            Out of Stock
-                            <input type="checkbox" id="outOfStockCheckbox">
-                        </label>
-                    </div>
-                </div>
+      <div class="filters">
+        <div class="filter-content">
+          <!-- Category Filter -->
+          <div class="category-select-container">
+            <h2 class="filter-h2">Categories</h2>
+            <select id="categorySelect">
+              <option value="sofas">Sofas</option>
+              <option value="lighting">Lighting</option>
+              <option value="decorative">Decorative</option>
+              <option value="kitchens">Kitchens</option>
+              <option value="smart_home">Smart Items</option>
+              <option value="wall_decor">Wall Decor</option>
+              <option value="chairs">Chairs</option>
+              <option value="bedroom">Bedroom</option>
+            </select>
+          </div>
+
+          <!-- On stock Filter -->
+          <div class="filter-section">
+            <div class="filter-header" id="filterHeader">
+              <h2 class="filter-h2">
+                Availability <i class="fas fa-chevron-down" id="arrowIcon"></i>
+              </h2>
             </div>
-        
-             <!-- Discount Filter -->
-             <div class="checkbox-container">
-                <label for="discountCheckbox">On Discount </label>
-                <input type="checkbox" id="discountCheckbox">
+            <div class="filter-content" id="filterContent">
+              <div class="checkbox-container">
+                <label>
+                  In Stock
+                  <input type="checkbox" id="inStockCheckbox" />
+                </label>
+                <label>
+                  Out of Stock
+                  <input type="checkbox" id="outOfStockCheckbox" />
+                </label>
+              </div>
             </div>
-           
-        
-        
-            </div>
+          </div>
+
+          <!-- Discount Filter -->
+          <div class="checkbox-container">
+            <label for="discountCheckbox">On Discount </label>
+            <input type="checkbox" id="discountCheckbox" />
+          </div>
         </div>
-        
-    
-        <div class="item-cards-container">
-            <div class="sort-bar">
-                <select id="sortSelect" class="sort-by">
-                    <option value="price-asc">Price: Lowest to Highest</option>
-                    <option value="price-desc">Price: Highest to Lowest</option>
-                    <option value="name-asc">Name: A to Z</option>
-                    <option value="name-desc">Name: Z to A</option>
-                </select>
-            </div>
-            <div class="item-cards">
-                <!-- Item cards will be dynamically added here -->
-            </div>
-            <div id="loading" class="loading"></div>
+      </div>
+
+      <div class="item-cards-container">
+        <div class="sort-bar">
+          <select id="sortSelect" class="sort-by">
+            <option value="price-asc">Price: Lowest to Highest</option>
+            <option value="price-desc">Price: Highest to Lowest</option>
+            <option value="name-asc">Name: A to Z</option>
+            <option value="name-desc">Name: Z to A</option>
+          </select>
         </div>
-    </div>
-    
-    
-    <!-- Confirmation Popup -->
-    <div id="confirmation-popup" class="confirmation-popup">
-        <div class="popup-overlay"></div>
-        <div class="confirmation-popup-container">
-            <div class="confirmation-popup-title">
-                <h2 class="confirmation-popup-title-h2">Status</h2>
-                <p onclick="hideConfirmationPopup()">X</p> <!-- Close button -->
-            </div>
-            <div class="confirmation-popup-content">
-                <i class="fas success-icon"></i>
-                <p></p> <!-- Popup message -->
-            </div>
+        <div class="item-cards">
+          <!-- Item cards will be dynamically added here -->
         </div>
+        <div id="loading" class="loading"></div>
+      </div>
     </div>
 
+    <!-- Confirmation Popup -->
+    <div id="confirmation-popup" class="confirmation-popup">
+      <div class="popup-overlay"></div>
+      <div class="confirmation-popup-container">
+        <div class="confirmation-popup-title">
+          <h2 class="confirmation-popup-title-h2">Status</h2>
+          <p onclick="hideConfirmationPopup()">X</p>
+          <!-- Close button -->
+        </div>
+        <div class="confirmation-popup-content">
+          <i class="fas success-icon"></i>
+          <p></p>
+          <!-- Popup message -->
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Get Help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Order Status</a></li>
-                        <li><a href="#">Payment Options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Online Shop</h4>
-                    <ul>
-                        <li><a href="/src/templates/products.html?category=sofas">Sofas</a></li>
-                        <li><a href="/src/templates/products.html?category=lighting">Lighting</a></li>
-                        <li><a href="/src/templates/products.html?category=kitchens">Kitchen and Dining</a></li>
-                        <li><a href="/src/templates/products.html?category=decorative">Decorative Items</a></li>
-                        <li><a href="/src/templates/products.html?category=smart_home">Smart Home Devices</a></li>
-                        <li><a href="/src/templates/products.html?category=wall_decor">Wall Decor</a></li>
-                        <li><a href="/src/templates/products.html?category=chairs">Chairs</a></li>
-                        <li><a href="/src/templates/products.html?category=bedroom">Bedroom</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab  fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Payment Options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li>
+                <a href="/src/templates/products.html?category=sofas">Sofas</a>
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=lighting"
+                  >Lighting</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=kitchens"
+                  >Kitchen and Dining</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=decorative"
+                  >Decorative Items</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=smart_home"
+                  >Smart Home Devices</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=wall_decor"
+                  >Wall Decor</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=chairs"
+                  >Chairs</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=bedroom"
+                  >Bedroom</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="/src/models/main/main.js"></script>
     <script src="/src/models/category/category.js"></script>
-   
-    
-
-</body>
+  </body>
 </html>

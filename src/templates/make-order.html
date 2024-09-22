@@ -8,34 +8,29 @@
     <title>Make Order</title>
 </head>
 <body>
-    
-     <!-- Pre Header Navbar -->
-     <div id="pre-header">
-        <div class="logo">PACK N' GO</div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <ul class="nav-links">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href='./categories.html'>Categories</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact Us</a>
-                </li>
-            </ul>
-            <div class="nav-right">
-                <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
-                <i class="fa fa-user icon-hover " onclick="showLoginPopup()"></i>
-            </div>
-        </nav>
+    <nav> 
+        <img class="logo" src="/src/assets/data/images/new-logo-resized.png" alt="Logo">
+        <ul>
+            <li>
+                <a class="navbarLinks" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="navbarLinks" href='./categories.html'>Categories</a>
+            </li>
+            <li>
+                <a class="navbarLinks" href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+        <div class="nav-right">
+            <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
+            <i class="fa fa-user icon-hover " onclick="showLoginPopup()"></i>
+        </div>
         <label for="nav_check" class="hamburger">
             <div></div>
             <div></div>
             <div></div>
         </label>
-    </div>
+    </nav>
     
 
     <!-- Sign Up Popup -->

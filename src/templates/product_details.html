@@ -1,171 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/styles/styles.css">
-    <link rel="stylesheet" href="../styles/product_details.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <link rel="stylesheet" href="../styles/product_details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Product Details</title>
-</head>
-<body>
-     <!-- Pre Header Navbar -->
-     <div id="pre-header">
-        <div class="logo">PACK N' GO</div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <ul class="nav-links">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href='./categories.html'>Categories</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact Us</a>
-                </li>
-            </ul>
-            <div class="nav-right">
-                <i class="fa fa-shopping-cart icon-hover" onclick="window.location.href='./cart.html'"></i>
-                <i class="fa fa-user icon-hover " onclick="showLoginPopup()"></i>
-            </div>
-        </nav>
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-    </div>
-    
+  </head>
+  <body>
+    <nav>
+      <img
+        class="logo"
+        src="/src/assets/data/images/new-logo-resized.png"
+        alt="Logo"
+      />
+      <ul>
+        <li>
+          <a class="navbarLinks" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a class="navbarLinks" href="./categories.html">Categories</a>
+        </li>
+        <li>
+          <a class="navbarLinks" href="./contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <i
+          class="fa fa-shopping-cart icon-hover"
+          onclick="window.location.href='./cart.html'"
+        ></i>
+        <i class="fa fa-user icon-hover" onclick="showLoginPopup()"></i>
+      </div>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </nav>
 
     <!-- Sign Up Popup -->
     <div id="login-popup" class="login-popup">
-        <form onsubmit="onLogin(event)" class="login-popup-container">
-            <div class="login-popup-title">
-                <h2 id="popup-title">Login</h2>
-                <p onclick="hideLoginPopup()">X</p>
-            </div>
-            <div class="login-popup-inputs">
-                <input id="name" type="text" placeholder="Your name..." required />
-                <input id="email" type="email" placeholder="Your email..." required />
-                <input id="password" type="password" placeholder="Password" required />
-            </div>
-            <button type="submit">Login</button>
-            <div class="login-popup-condition">
-                <input type="checkbox" required />
-                <p>By continuing, I agree to the terms of use & privacy policy</p>
-            </div>
-            <p id="toggle-state">
-                Create a new account <span onclick="toggleLoginState()">Click here</span>
-            </p>
-        </form>
+      <form onsubmit="onLogin(event)" class="login-popup-container">
+        <div class="login-popup-title">
+          <h2 id="popup-title">Login</h2>
+          <p onclick="hideLoginPopup()">X</p>
+        </div>
+        <div class="login-popup-inputs">
+          <input id="name" type="text" placeholder="Your name..." required />
+          <input id="email" type="email" placeholder="Your email..." required />
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+        <div class="login-popup-condition">
+          <input type="checkbox" required />
+          <p>By continuing, I agree to the terms of use & privacy policy</p>
+        </div>
+        <p id="toggle-state">
+          Create a new account
+          <span onclick="toggleLoginState()">Click here</span>
+        </p>
+      </form>
     </div>
-
 
     <div class="product-container">
-
-        <!-- Product section -->
-        <div class="product-section">
-            <!-- Thumbnail images  -->
-            <div class="thumbnail-images">
-                <img class="thumbnail" id="thumbnail-1" src="" alt="Thumbnail 1">
-                <img class="thumbnail" id="thumbnail-2" src="" alt="Thumbnail 2">
-                <img class="thumbnail" id="thumbnail-3" src="" alt="Thumbnail 3">
-            </div>
-
-            <!-- Main image container -->
-            <div class="main-image-container">
-                <img id="main-image" class="main-image" src="" alt="Main product image">
-
-                <!-- Arrows for small screens -->
-                <div class="arrow-container">
-                    <button id="prev-arrow" class="arrow-btn">&larr;</button>
-                    <button id="next-arrow" class="arrow-btn">&rarr;</button>
-                </div>
-            </div>
-
-            <!-- Product info section -->
-            <div class="product-info">
-                <h1 id="product-title"></h1>
-                <div id="product-price" class="price-container">
-                    <!-- price here -->
-                </div>
-                <p id="product-description"></p>
-                <div id="stock-status" class="stock-status">
-                    <i id="stock-icon"></i>
-                    <p id="stock-text"></p>
-                  </div>
-                <button id="add-to-cart">Add to Cart</button>
-            </div>
+      <!-- Product section -->
+      <div class="product-section">
+        <!-- Thumbnail images  -->
+        <div class="thumbnail-images">
+          <img class="thumbnail" id="thumbnail-1" src="" alt="Thumbnail 1" />
+          <img class="thumbnail" id="thumbnail-2" src="" alt="Thumbnail 2" />
+          <img class="thumbnail" id="thumbnail-3" src="" alt="Thumbnail 3" />
         </div>
+
+        <!-- Main image container -->
+        <div class="main-image-container">
+          <img
+            id="main-image"
+            class="main-image"
+            src=""
+            alt="Main product image"
+          />
+
+          <!-- Arrows for small screens -->
+          <div class="arrow-container">
+            <button id="prev-arrow" class="arrow-btn">&larr;</button>
+            <button id="next-arrow" class="arrow-btn">&rarr;</button>
+          </div>
+        </div>
+
+        <!-- Product info section -->
+        <div class="product-info">
+          <h1 id="product-title"></h1>
+          <div id="product-price" class="price-container">
+            <!-- price here -->
+          </div>
+          <p id="product-description"></p>
+          <div id="stock-status" class="stock-status">
+            <i id="stock-icon"></i>
+            <p id="stock-text"></p>
+          </div>
+          <button id="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
     </div>
 
- <!-- Confirmation Popup -->
- <div id="confirmation-popup" class="confirmation-popup">
-    <div class="popup-overlay"></div>
-    <div class="confirmation-popup-container">
+    <!-- Confirmation Popup -->
+    <div id="confirmation-popup" class="confirmation-popup">
+      <div class="popup-overlay"></div>
+      <div class="confirmation-popup-container">
         <div class="confirmation-popup-title">
-            <h2 class="confirmation-popup-title-h2">Status</h2>
-            <p onclick="hideConfirmationPopup()">X</p> <!-- Close button -->
+          <h2 class="confirmation-popup-title-h2">Status</h2>
+          <p onclick="hideConfirmationPopup()">X</p>
+          <!-- Close button -->
         </div>
         <div class="confirmation-popup-content">
-            <i class="fas success-icon"></i>
-            <p></p> <!-- Popup message -->
+          <i class="fas success-icon"></i>
+          <p></p>
+          <!-- Popup message -->
         </div>
+      </div>
     </div>
-</div>
-
-   
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Get Help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Order Status</a></li>
-                        <li><a href="#">Payment Options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Online Shop</h4>
-                    <ul>
-                        <li><a href="/src/templates/products.html?category=sofas">Sofas</a></li>
-                        <li><a href="/src/templates/products.html?category=lighting">Lighting</a></li>
-                        <li><a href="/src/templates/products.html?category=kitchens">Kitchen and Dining</a></li>
-                        <li><a href="/src/templates/products.html?category=decorative">Decorative Items</a></li>
-                        <li><a href="/src/templates/products.html?category=smart_home">Smart Home Devices</a></li>
-                        <li><a href="/src/templates/products.html?category=wall_decor">Wall Decor</a></li>
-                        <li><a href="/src/templates/products.html?category=chairs">Chairs</a></li>
-                        <li><a href="/src/templates/products.html?category=bedroom">Bedroom</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Payment Options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li>
+                <a href="/src/templates/products.html?category=sofas">Sofas</a>
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=lighting"
+                  >Lighting</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=kitchens"
+                  >Kitchen and Dining</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=decorative"
+                  >Decorative Items</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=smart_home"
+                  >Smart Home Devices</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=wall_decor"
+                  >Wall Decor</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=chairs"
+                  >Chairs</a
+                >
+              </li>
+              <li>
+                <a href="/src/templates/products.html?category=bedroom"
+                  >Bedroom</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="/src/models/main/main.js"></script>
     <script src="/src/models/product/product_details.js"></script>
-    
-  
-</body>
+  </body>
 </html>

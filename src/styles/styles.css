@@ -6,7 +6,10 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  --tomato: tomato;
+  --darkGray: #3d3d3c;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,116 +18,55 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
 }
+
 a {
-  color: black;
+  color: var(--darkGray);
 }
+
 .icon-hover:hover {
-  color: tomato;
+  color: var(--tomato);
 }
 
-/* Navbar */
-#pre-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  display: flex;
+nav {
+  position: sticky;
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
-  z-index: 9999;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#pre-header .logo {
-  font-size: 40px;
-  text-transform: uppercase;
-  color: black;
+.logo {
+  width: 10rem;
 }
 
-#pre-header nav {
+ul {
   display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: space-between;
+  gap: 3rem;
 }
 
-#pre-header .nav-links {
-  display: flex;
-  gap: 20px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  flex-grow: 1;
-  justify-content: center; /* Center the links */
-}
-
-#pre-header .nav-links li {
-  display: flex;
-  align-items: center;
-}
-
-#pre-header .nav-links li i {
-  margin-right: 5px; /* Space between icon and text */
-  color: black; /* Optional: Adjust icon color */
-}
-
-#pre-header .nav-links li a {
+.navbarLinks {
   display: inline-block;
-  color: #000;
-  padding: 5px 0;
-  margin: 0 10px;
-  border: 3px solid transparent;
-  text-transform: uppercase;
-  transition: 0.2s;
-}
-#pre-header .nav-links li a {
   position: relative;
-  text-decoration: none;
-  display: inline-block;
+  font-size: 1.5rem;
+  border: 0px;
 }
 
-#pre-header .nav-links li a::after {
+.navbarLinks::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: tomato;
-  transition: width 0.3s ease, left 0.3s ease;
+  background-color: var(--tomato);
+  transition: width 0.4s ease, left 0.4s ease;
 }
 
-#pre-header .nav-links li a:hover::after {
+.navbarLinks:hover::after {
   width: 100%;
   left: 0;
-}
-
-#pre-header .nav-links li a:visited {
-  /* Optional styles for visited links */
-  border-bottom-color: tomato;
-}
-
-#pre-header .nav-right {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Space between the cart icon and login button */
-}
-
-#pre-header .login-btn {
-  padding: 5px 15px;
-  font-size: 16px;
-  background-color: transparent;
-  border: 2px solid black;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-#pre-header .login-btn:hover {
-  background-color: grey;
-  color: white;
 }
 
 /* Hamburger menu */
@@ -144,7 +86,7 @@ a {
   background: transparent;
   font-size: 16px;
   color: #49557e;
-  border: 1px solid tomato;
+  border: 1px solid var(--tomato);
   padding: 10px 30px;
   border-radius: 50px;
   cursor: pointer;
@@ -152,11 +94,19 @@ a {
   height: 40%;
   margin-top: 3px;
 }
+
 .login-btn:hover {
   background-color: #fff4ff;
 }
 
 /* popup */
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+  background-image: url(/src/assets/data/images/checked_red.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px);
+}
 
 .login-popup {
   position: fixed;
@@ -182,7 +132,7 @@ a {
   width: 100%;
   padding: 10px;
   border: none;
-  background-color: tomato;
+  background-color: var(--tomato);
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -232,7 +182,7 @@ a {
 }
 
 .login-popup p span {
-  color: tomato;
+  color: var(--tomato);
   cursor: pointer;
   font-size: 15px;
 }
@@ -290,7 +240,7 @@ a {
 
 .slide-content h2 {
   font-size: 52px;
-  color: #3d3d3c;
+  color: var(--darkGray);
   text-transform: uppercase;
   font-weight: 700;
   line-height: 52px;
@@ -305,7 +255,7 @@ a {
   margin-bottom: 40px;
   margin-top: -10px;
   line-height: 35px;
-  color: #3d3d3c;
+  color: var(--darkGray);
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -345,7 +295,7 @@ a {
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
   border: 2px solid transparent;
-  background-color: tomato;
+  background-color: var(--tomato);
   color: white;
   cursor: pointer;
   border-radius: 0.25rem;
@@ -441,7 +391,7 @@ a {
 }
 
 .service-link:hover {
-  background-color: tomato;
+  background-color: var(--tomato);
   color: white;
 }
 
@@ -469,7 +419,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: tomato;
+  background-color: var(--tomato);
   z-index: -1;
   transition: transform 0.3s ease;
   transform: translateX(-100%);
@@ -481,7 +431,7 @@ a {
 
 .read-more-link:hover {
   color: white;
-  border-color: tomato;
+  border-color: var(--tomato);
   border-radius: 0;
 }
 
@@ -517,7 +467,7 @@ a {
 
 .design-heading h3 {
   font-size: 52px;
-  color: #3d3d3c;
+  color: var(--darkGray);
   text-transform: uppercase;
   font-weight: 700;
   line-height: 52px;
@@ -535,7 +485,7 @@ a {
   margin-bottom: 40px;
   margin-top: -10px;
   line-height: 35px;
-  color: #3d3d3c;
+  color: var(--darkGray);
   text-transform: uppercase;
   font-weight: 700;
   margin-left: 53%;
@@ -571,7 +521,7 @@ a {
 }
 
 .text-primary {
-  color: tomato;
+  color: var(--tomato);
 }
 
 .font-weight-normal {
@@ -1098,8 +1048,4 @@ ul {
     right: 5px;
     font-size: 14px;
   }
-}
-
-.logo {
-  width: 20rem;
 }
