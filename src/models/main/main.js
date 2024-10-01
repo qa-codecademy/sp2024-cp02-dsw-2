@@ -27,30 +27,30 @@ function toggleLoginState() {
     }
 }
 
-// mock data
-const users = [
-    {
-        id: 1,
-        name: 'John Doe',
-        email: 'john.doe@example.com',
-        password: 'password123',
-        role: 'user'
-    },
-    {
-        id: 2,
-        name: 'Jane Smith',
-        email: 'jane.smith@example.com',
-        password: 'password123',
-        role: 'user'
-    },
-    {
-        id: 3,
-        name: 'Admin User',
-        email: 'admin@example.com',
-        password: 'admin123',
-        role: 'admin'
-    }
-];
+// // mock data
+// const users = [
+//     {
+//         id: 1,
+//         name: 'John Doe',
+//         email: 'john.doe@example.com',
+//         password: 'password123',
+//         role: 'user'
+//     },
+//     {
+//         id: 2,
+//         name: 'Jane Smith',
+//         email: 'jane.smith@example.com',
+//         password: 'password123',
+//         role: 'user'
+//     },
+//     {
+//         id: 3,
+//         name: 'Admin User',
+//         email: 'admin@example.com',
+//         password: 'admin123',
+//         role: 'admin'
+//     }
+// ];
 
 let loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
@@ -145,10 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Scroll down to categories on button click
-document.getElementById('scroll-down-btn').addEventListener('click', () => {
-    document.getElementById('categories').scrollIntoView({ behavior: 'smooth' });
-});
+// // Scroll down to categories on button click
+// document.getElementById('scroll-down-btn').addEventListener('click', () => {
+//     document.getElementById('categories').scrollIntoView({ behavior: 'smooth' });
+// });
 
 document.addEventListener('DOMContentLoaded', function () {
     const hero = document.getElementById('hero');

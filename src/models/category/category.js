@@ -20,16 +20,38 @@ document.addEventListener('DOMContentLoaded', function () {
     let allProducts = []; 
 
     // Function to fetch products from JSON file
+    // function fetchProducts() {
+    //     fetch("/src/assets/data/products.json")
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             allProducts = data.products;
+    //             const categoryParam = new URLSearchParams(window.location.search).get("category") || 'all';
+    //             renderItems(categoryParam);
+    //         })
+    //         .catch(error => console.error("Error fetching products:", error));
+    // }
+
     function fetchProducts() {
-        fetch("/src/assets/data/products.json")
-            .then(response => response.json())
+        console.log("Fetching products..."); 
+        fetch("http://localhost:3000/api/products")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("You may not be able to fetch the products, status: " + response.status);
+                }
+                return response.json();
+            })
             .then(data => {
-                allProducts = data.products;
+                allProducts = data;
                 const categoryParam = new URLSearchParams(window.location.search).get("category") || 'all';
                 renderItems(categoryParam);
             })
             .catch(error => console.error("Error fetching products:", error));
     }
+    
+
+    console.log("Before fetching products");
+    fetchProducts();
+    console.log("After fetching products");
 
     // Function to render products
     function renderItems(category) {
