@@ -145,10 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// // Scroll down to categories on button click
-// document.getElementById('scroll-down-btn').addEventListener('click', () => {
-//     document.getElementById('categories').scrollIntoView({ behavior: 'smooth' });
-// });
+// Scroll down to categories on button click
+document.getElementById('scroll-down-btn').addEventListener('click', () => {
+    document.getElementById('categories').scrollIntoView({ behavior: 'smooth' });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     const hero = document.getElementById('hero');
