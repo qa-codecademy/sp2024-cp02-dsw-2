@@ -50,7 +50,6 @@
         <div></div>
       </label>
     </nav>
-
     <!-- Sign Up Popup -->
     <div id="login-popup" class="login-popup">
       <form onsubmit="onLogin(event)" class="login-popup-container">
@@ -85,8 +84,8 @@
         <div class="filter-content">
           <!-- Category Filter -->
           <div class="category-select-container">
-            <h2 class="filter-h2">Categories</h2>
-            <select id="categorySelect">
+            <h2 class="filter-h2">CATEGORIES</h2>
+            <!-- <select id="categorySelect">
               <option value="sofas">Sofas</option>
               <option value="lighting">Lighting</option>
               <option value="decorative">Decorative</option>
@@ -95,15 +94,53 @@
               <option value="wall_decor">Wall Decor</option>
               <option value="chairs">Chairs</option>
               <option value="bedroom">Bedroom</option>
-            </select>
+            </select> -->
+            <ul id="categorySelect" class="categoriesList">
+              <li value="sofas">
+                <a href="/src/templates/products.html?category=sofas">Sofas</a>
+              </li>
+              <li value="lighting">
+                <a href="/src/templates/products.html?category=lighting"
+                  >Lighting</a
+                >
+              </li>
+              <li value="decorative">
+                <a href="/src/templates/products.html?category=decorative"
+                  >Decorative</a
+                >
+              </li>
+              <li value="kitchens">
+                <a href="/src/templates/products.html?category=kitchens"
+                  >Kitchens</a
+                >
+              </li>
+              <li value="smart_home">
+                <a href="/src/templates/products.html?category=smart_home"
+                  >Smart Items</a
+                >
+              </li>
+              <li value="wall_decor">
+                <a href="/src/templates/products.html?category=wall_decor"
+                  >Wall Decor</a
+                >
+              </li>
+              <li value="chairs">
+                <a href="/src/templates/products.html?category=chairs"
+                  >Chairs</a
+                >
+              </li>
+              <li value="bedroom">
+                <a href="/src/templates/products.html?category=bedroom"
+                  >Bedroom</a
+                >
+              </li>
+            </ul>
           </div>
 
           <!-- On stock Filter -->
           <div class="filter-section">
             <div class="filter-header" id="filterHeader">
-              <h2 class="filter-h2">
-                Availability <i class="fas fa-chevron-down" id="arrowIcon"></i>
-              </h2>
+              <h2 class="filter-h2">AVAILABILITY</h2>
             </div>
             <div class="filter-content" id="filterContent">
               <div class="checkbox-container">
@@ -120,7 +157,7 @@
           </div>
 
           <!-- Discount Filter -->
-          <div class="checkbox-container">
+          <div class="discountCheckboxContainer">
             <label for="discountCheckbox">On Discount </label>
             <input type="checkbox" id="discountCheckbox" />
           </div>
@@ -128,6 +165,17 @@
       </div>
 
       <div class="item-cards-container">
+        <div class="welcomeContainer">
+          <h1>Quality furniture for modern living.</h1>
+          <p>
+            Welcome to our collection of thoughtfully designed, well-crafted
+            furniture, created to enhance your living space with quality,
+            functionality, and timeless style that lasts for years. Each piece
+            is built to offer lasting comfort and practicality, while blending
+            seamlessly into any room.
+          </p>
+        </div>
+
         <div class="sort-bar">
           <select id="sortSelect" class="sort-by">
             <option value="price-asc">Price: Lowest to Highest</option>

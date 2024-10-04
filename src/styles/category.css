@@ -117,3 +117,7 @@ html {
     font-size: 1.3rem;
   }
 }
+
+.category-btn > a {
+  color: white;
+}
