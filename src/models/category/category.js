@@ -20,16 +20,38 @@ document.addEventListener('DOMContentLoaded', function () {
     let allProducts = []; 
 
     // Function to fetch products from JSON file
+    // function fetchProducts() {
+    //     fetch("/src/assets/data/products.json")
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             allProducts = data.products;
+    //             const categoryParam = new URLSearchParams(window.location.search).get("category") || 'all';
+    //             renderItems(categoryParam);
+    //         })
+    //         .catch(error => console.error("Error fetching products:", error));
+    // }
+
     function fetchProducts() {
-        fetch("/src/assets/data/products.json")
-            .then(response => response.json())
+        console.log("Fetching products..."); 
+        fetch("http://localhost:3000/api/products")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("You may not be able to fetch the products, status: " + response.status);
+                }
+                return response.json();
+            })
             .then(data => {
-                allProducts = data.products;
+                allProducts = data;
                 const categoryParam = new URLSearchParams(window.location.search).get("category") || 'all';
                 renderItems(categoryParam);
             })
             .catch(error => console.error("Error fetching products:", error));
     }
+    
+
+    console.log("Before fetching products");
+    fetchProducts();
+    console.log("After fetching products");
 
     // Function to render products
     function renderItems(category) {
@@ -177,40 +199,77 @@ document.addEventListener('DOMContentLoaded', function () {
         categorySelect.value = categoryParam; 
     }
 
-    // Function to view product details
-    window.viewProductDetails = function(productId) {
-        fetch("/src/assets/data/products.json")
-            .then(response => response.json())
-            .then(data => {
-                const product = data.products.find(p => p.id === productId);
-                if (product) {
-                    localStorage.setItem("productDetails", JSON.stringify(product));
-                    window.location.href = "/src/templates/product_details.html";
-                } else {
-                    console.error("Product not found for productId:", productId);
-                }
-            })
-            .catch(error => console.error("Error fetching product details:", error));
-    }
+// Function to view product details
+window.viewProductDetails = function(productId) {
+    fetch(`http://localhost:3000/api/products/${productId}`) 
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Error fetching product details: " + response.status);
+            }
+            return response.json();
+        })
+        .then(product => {
+            if (product) {
+                localStorage.setItem("productDetails", JSON.stringify(product));
+                window.location.href = "/src/templates/product_details.html";
+            } else {
+                console.error("Product not found for productId:", productId);
+            }
+        })
+        .catch(error => console.error("Error fetching product details:", error));
+}
+
 
     // Function to add product to cart
+    // window.addToCart = function(productId) {
+    //     fetch("/src/assets/data/products.json")
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             const product = data.products.find(p => p.id === productId);
+    //             if (product) {
+    //                 let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    //                 const existingItemIndex = cartItems.findIndex(item => item.id === productId);
+
+    //                 if (existingItemIndex !== -1) {
+    //                     // Item already in cart
+    //                     showCartPopup('Item is already in cart', false); // Show popup with X icon
+    //                 } else {
+    //                     // Item not in cart, add it
+    //                     product.quantity = 1;
+    //                     cartItems.push(product);
+    //                     localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    //                     showCartPopup('Item added to cart successfully!', true); // Show popup with check icon
+    //                 }
+    //             } else {
+    //                 console.error("Product not found for productId:", productId);
+    //             }
+    //         })
+    //         .catch(error => console.error("Error adding product to cart:", error));
+    // }
+    
+    // Function to add product to cart
     window.addToCart = function(productId) {
-        fetch("/src/assets/data/products.json")
-            .then(response => response.json())
-            .then(data => {
-                const product = data.products.find(p => p.id === productId);
+        // Fetch product details from the API
+        fetch(`http://localhost:3000/api/products/${productId}`) 
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Error fetching product details: " + response.status);
+                }
+                return response.json();
+            })
+            .then(product => {
                 if (product) {
                     let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
                     const existingItemIndex = cartItems.findIndex(item => item.id === productId);
-
+    
                     if (existingItemIndex !== -1) {
                         // Item already in cart
                         showCartPopup('Item is already in cart', false); // Show popup with X icon
                     } else {
                         // Item not in cart, add it
-                        product.quantity = 1;
-                        cartItems.push(product);
-                        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                        product.quantity = 1; 
+                        cartItems.push(product); 
+                        localStorage.setItem("cartItems", JSON.stringify(cartItems)); 
                         showCartPopup('Item added to cart successfully!', true); // Show popup with check icon
                     }
                 } else {
@@ -219,6 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(error => console.error("Error adding product to cart:", error));
     }
+    
 
     // Function to show the confirmation popup
     function showCartPopup(message, success) {
