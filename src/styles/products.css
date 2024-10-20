@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -16,18 +17,18 @@ body {
 }
 
 .filters {
-    flex: 0 0 300px;
-    background-color: #f1f1f1;
+    flex: 0 0 250px; /* Reduced width for the filter panel */
     padding: 1rem;
     border-right: 1px solid #ccc;
-    height: 100vh;
-    overflow-y: auto;
+    height: 100vh; /* Full height of the viewport */
     position: sticky;
     top: 0;
     transition: all 0.5s ease-in-out;
     margin-top: 40px;
-    display: block;
+    display: flex;
+    flex-direction: column; /* Stack filters vertically */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allow scrolling */
 }
 
 /* Responsive Design */
@@ -50,6 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-grow: 1; 
 }
 
 /* Category Filter */
@@ -59,60 +61,64 @@ body {
 
 .category-select-container h2 {
     text-align: left;
-    margin-bottom: 10px;
 }
 
-.category-select-container select {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* Ensure all category list items are the same height */
+.category-list {
+    padding-left: 10px; /* Moves all list items to the right */
 }
 
-/* Discount Filter */
+.category-list li {
+    margin-bottom: 10px; /* Adds space between list items */
+    display: flex; /* Make list items flexible */
+    align-items: center; /* Center items vertically */
+    height: 40px; /* Set a fixed height for uniformity */
+}
+
+.category-list li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Customize link color */
+    font-size: 16px; /* Adjust font size */
+    height: 100%; /* Ensure the link occupies the full height */
+    display: flex; /* Make the anchor a flex container */
+    align-items: center; /* Center text vertically */
+}
+
+/* Checkbox styling */
 .checkbox-container {
     display: flex;
-    align-items: center;
-    margin-top: 15px;
+    align-items: center; /* Center checkbox with label */
+    margin: 5px 0; /* Space between checkbox containers */
 }
 
+/* Ensure checkbox labels have same height */
 .checkbox-container label {
-    text-align: left;
-    margin-left: 17px;
-    font-weight: 700;
-    margin-right: 10px;
+    margin-left: 10px; /* Space between checkbox and label */
+    display: flex; /* Flexbox for aligning text */
+    align-items: center; /* Center vertically */
+    height: 40px; /* Set fixed height */
 }
 
- /* Availability Filter */
+/* Filter Section */
 .filter-section {
     margin-top: 20px;
     margin-left: 15px;
 }
 
-.filter-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+.filter-h2 {
+    font-size: 20px;
+    display: flex; /* Make header a flex container */
+    align-items: center; /* Center text vertically */
+    height: 40px; /* Set height for uniformity */
 }
 
- .filter-h2 {
-    font-size: 1.25rem;
-    margin: 0;
-} 
-
- .filter-section.active .filter-content {
-    display: block; 
- }  
-
-#arrowIcon {
-    transition: transform 0.3s ease-in-out;
+.filter-line {
+    width: 20%;
+    height: 3px; 
+    background-color: tomato;
+    margin-top: 0; 
+    margin-bottom: 20px;
 }
-
-.filter-section.active #arrowIcon {
-    transform: rotate(180deg);
-}   
 
 /* Sort Bar */
 .sort-bar {
@@ -135,17 +141,12 @@ body {
     padding: 1rem;
 }
 
-.item-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 /* Loading Indicator */
 .loading {
     text-align: center;
     margin: 20px 0;
 }
+
 /* Main card container */
 .item-cards {
     display: flex;
@@ -176,10 +177,8 @@ body {
 /* Item image */
 .item-img {
     width: 100%;
-    height: auto;
-    max-width: 250px;
-    max-height: 250px;
-    object-fit: cover;
+    height: 250px; /* Set fixed height for all images */
+    object-fit: cover; /* Cover to maintain aspect ratio */
     transition: filter 0.3s ease;
 }
 
@@ -234,7 +233,8 @@ h3 {
     gap: 10px;
 }
 
-.btn-details, .btn-buy {
+.btn-details,
+.btn-buy {
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
@@ -245,7 +245,8 @@ h3 {
     transition: background-color 0.3s ease;
 }
 
-.btn-details:hover, .btn-buy:hover {
+.btn-details:hover,
+.btn-buy:hover {
     background-color: #2980b9;
 }
 
@@ -270,7 +271,7 @@ h3 {
     }
 
     .item-img {
-        max-height: 200px;
+        height: 200px; /* Adjust height for smaller screens */
     }
 }
 
@@ -280,7 +281,7 @@ h3 {
     }
 
     .item-img {
-        max-height: 150px;
+        height: 150px; /* Adjust height for mobile screens */
     }
 }
 
@@ -295,4 +296,8 @@ h3 {
 .btn-buy.disabled:hover {
     background-color: #ccc; /* Maintain the same background on hover */
     color: #666; /* Maintain the same text color on hover */
+}
+
+.category-list li {
+    margin-bottom: 10px; /* Adds space between list items */
 }

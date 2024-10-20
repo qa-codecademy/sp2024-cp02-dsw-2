@@ -67,51 +67,81 @@
     <div class="container">
         <div class="filters">
             <div class="filter-content">
-        
-             <!-- Category Filter -->
                 <div class="category-select-container">
                     <h2 class="filter-h2">Categories</h2>
-                    <select id="categorySelect">
-                        <option value="sofas">Sofas</option>
-                        <option value="lighting">Lighting</option>
-                        <option value="decorative">Decorative</option>
-                        <option value="kitchens">Kitchens</option>
-                        <option value="smart_home">Smart Items</option>
-                        <option value="wall_decor">Wall Decor</option>
-                        <option value="chairs">Chairs</option>
-                        <option value="bedroom">Bedroom</option>
-                    </select>
+                    <div class="filter-line"></div>
+                    <ul class="category-list">
+                        <li data-value="sofas"><a href="#">Sofas</a></li>
+                        <li data-value="lighting"><a href="#">Lighting</a></li>
+                        <li data-value="kitchens"><a href="#">Kitchen and Dining</a></li>
+                        <li data-value="decorative"><a href="#">Decorative Items</a></li>
+                        <li data-value="smart_home"><a href="#">Smart Home Devices</a></li>
+                        <li data-value="wall_decor"><a href="#">Wall Decor</a></li>
+                        <li data-value="chairs"><a href="#">Chairs</a></li>
+                        <li data-value="bedroom"><a href="#">Bedroom</a></li>
+                    </ul>
                 </div>
-           
-            <!-- On stock Filter -->
-            <div class="filter-section">
-                <div class="filter-header" id="filterHeader">
-                    <h2 class="filter-h2">Availability <i class="fas fa-chevron-down" id="arrowIcon"></i></h2>
+        
+                <!-- Availability Filter -->
+                <div class="filter-section">
+                    <h2 class="filter-h2">Availability</h2>
+                    <div class="filter-line"></div>
+                    <div class="checkbox-list">
+                        <div class="checkbox-container">
+                            <label>
+                                <input type="checkbox" id="inStockCheckbox">
+                                In Stock
+                            </label>
+                        </div>
+                        <div class="checkbox-container">
+                            <label>
+                                <input type="checkbox" id="outOfStockCheckbox">
+                                Out of Stock
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="filter-content" id="filterContent">
+        
+                <!-- Price Range Filter -->
+                <div class="filter-section">
+                    <h2 class="filter-h2">Price Range</h2>
+                    <div class="filter-line"></div>
+                    <div class="checkbox-list">
+                        <div class="checkbox-container">
+                            <label>
+                                <input type="checkbox" name="priceRange" value="0-1000">
+                                $0 - $1000
+                            </label>
+                        </div>
+                        <div class="checkbox-container">
+                            <label>
+                                <input type="checkbox" name="priceRange" value="1000-3000">
+                                $1000 - $3000
+                            </label>
+                        </div>
+                        <div class="checkbox-container">
+                            <label>
+                                <input type="checkbox" name="priceRange" value="3000+">
+                                $3000+
+                            </label>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Discount Filter -->
+                <div class="filter-section">
+                    <h2 class="filter-h2">Discount</h2>
+                    <div class="filter-line"></div>
                     <div class="checkbox-container">
                         <label>
-                            In Stock
-                            <input type="checkbox" id="inStockCheckbox">
-                        </label>
-                        <label>
-                            Out of Stock
-                            <input type="checkbox" id="outOfStockCheckbox">
+                            <input type="checkbox" id="discountCheckbox">
+                            On Discount
                         </label>
                     </div>
                 </div>
             </div>
-        
-             <!-- Discount Filter -->
-             <div class="checkbox-container">
-                <label for="discountCheckbox">On Discount </label>
-                <input type="checkbox" id="discountCheckbox">
-            </div>
-           
-        
-        
-            </div>
         </div>
+        
         
     
         <div class="item-cards-container">
