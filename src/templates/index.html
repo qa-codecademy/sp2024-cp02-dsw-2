@@ -35,16 +35,14 @@
 
 <!-- Login Popup -->
 <div id="login-popup" class="login-popup">
-    <form onsubmit="onLogin(event)" class="login-popup-container">
-        <div class="login-popup-title">
-            <h2 id="popup-title">Login</h2>
-            <p onclick="hideLoginPopup()">X</p>
-        </div>
+    <form id="login-form" class="login-popup-container" >
+        <h2 id="popup-title">Login</h2>
+        <p onclick="hideLoginPopup()">X</p>
         <div class="login-popup-inputs">
-            <input id="email" type="email" placeholder="Your email..." required />
-            <input id="password" type="password" placeholder="Password" required />
+            <input id="login-email" type="email" placeholder="Your email..." required />
+            <input id="login-password" type="password" placeholder="Password" required />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Login</button> 
         <div class="login-popup-condition">
             <input type="checkbox" required />
             <p>By continuing, I agree to the terms of use & privacy policy</p>
@@ -52,7 +50,23 @@
         <p id="toggle-state">
             Create a new account <span onclick="toggleLoginState()">Click here</span>
         </p>
+        <p id="login-message"></p>
     </form>
+
+    <form id="registrationForm" class="login-popup-container" style="display: none;">
+        <h2>Register</h2>
+        <p onclick="hideLoginPopup()">X</p>
+        <div class="login-popup-inputs">
+            <input type="text" id="reg-username" placeholder="Username" required />
+            <input type="email" id="reg-email" placeholder="Email" required />
+            <input type="password" id="reg-password" placeholder="Password" required />
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+        </div>
+        <button type="submit">Register</button>
+        <p id="registration-message"></p>
+    </form>
+    
+    
 </div>
 
 <!-- Dropdown menu for logged-in users -->
@@ -238,6 +252,7 @@
  </footer>
 
     <script src="/src/models/main/main.js"></script>
+ 
 </body>
 </html>
 
